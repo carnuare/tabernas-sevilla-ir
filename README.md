@@ -1,1 +1,1 @@
-Prueba
+Proyecto de asignatura Ingeniería de Requisitos de la Universidad de Sevilla. Especificaciones basadas en Madeja.
