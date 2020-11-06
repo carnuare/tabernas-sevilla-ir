@@ -64,35 +64,17 @@
 <rem:description><![CDATA[Eliminado el objeto [PRG-0002]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]] -> [Specifications of the Requirement System [Tabernas Sevilla MadejaIR]]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [STK-0001] dsfhged con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
@@ -110,24 +92,6 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
@@ -137,7 +101,7 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
@@ -147,24 +111,6 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
@@ -181,8 +127,35 @@
 <rem:description><![CDATA[Eliminado el objeto [ORG-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
+<rem:type>U</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]] -> [Specifications of the Requirement System [Tabernas Sevilla MadejaIR]]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
@@ -192,6 +165,123 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [STK-0001] Esteban Cabezas Díaz con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
@@ -209,12 +299,23 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
 <rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -223,106 +324,7 @@
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [STK-0001] Esteban Cabezas Díaz con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [STK-0001] dsfhged con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -338,15 +340,48 @@
 - When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.]]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>U</rem:type>
 <rem:owner>PRG-0006</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>6</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
 <br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command]]]></rem:description>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br><br>
+
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br><br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
