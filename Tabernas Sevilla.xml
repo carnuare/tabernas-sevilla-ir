@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
-<rem:requirementsProject
-xmlns:rem="http://rem.lsi.us.es">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE rem:requirementsProject SYSTEM "https://cdn.jsdelivr.net/gh/amador-duran-toro/rem/xml/remus.dtd">
+<rem:requirementsProject xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Tabernas Sevilla</rem:name>
 <rem:c_requirementsSpecification oid = "CRS-0001">
 <rem:name>Specifications of the Requirement System [Tabernas Sevilla MadejaIR]</rem:name>
@@ -14,13 +13,9 @@ xmlns:rem="http://rem.lsi.us.es">
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno
-</rem:comments>
-<rem:paragraph
- oid = "PRG-0001">
-<rem:name>
-Main page</rem:name>
+<rem:comments>Ninguno</rem:comments>
+<rem:paragraph oid="PRG-0001">
+<rem:name>Main page</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -30,14 +25,11 @@ Main page</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text></rem:text>
 </rem:paragraph>
-<rem:section
- oid = "SEC-0001">
-<rem:name>
-Introduction</rem:name>
+<rem:section oid="SEC-0001">
+<rem:name>Introduction</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -47,14 +39,11 @@ Introduction</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>1 </rem:number>
-<rem:paragraph
- oid = "PRG-0010">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0010">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -64,14 +53,11 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-None</rem:comments>
+<rem:comments>None</rem:comments>
 <rem:text>Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four establishments across the capital, which are usually visited by young adults and families. Its specialty are sevillian tapas and dishes. They also have a very large wine menu<br/><br/>Our system fulfils three fundamental functions for Tabernas Sevilla&apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&apos;s extensive menu they wish to order and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the order on site or selecting delivery to the previously specified address.  <br/>  <br/>In addition, it has the functionality implemented to manage the capacity of the bar&apos;s customers, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the waiting list, which is currently done by hand by the waiters. <br/></rem:text>
 </rem:paragraph>
-<rem:section
- oid = "SEC-0002">
-<rem:name>
-Scope of the project</rem:name>
+<rem:section oid="SEC-0002">
+<rem:name>Scope of the project</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -81,14 +67,11 @@ Scope of the project</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>1.1 </rem:number>
-<rem:paragraph
- oid = "PRG-0009">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0009">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -98,15 +81,12 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-None</rem:comments>
+<rem:comments>None</rem:comments>
 <rem:text>The project is directed to the Owner of &quot;Tabernas Sevilla&quot;, Pablo Arenas, with whom we contacted thanks to one of the members of our project. In his organization, we can find different positions and users of the system to be developed.</rem:text>
 </rem:paragraph>
 </rem:section>
-<rem:section
- oid = "SEC-0003">
-<rem:name>
-Participants in the project</rem:name>
+<rem:section oid="SEC-0003">
+<rem:name>Participants in the project</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -116,14 +96,11 @@ Participants in the project</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>1.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0012">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0012">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -133,14 +110,11 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-None</rem:comments>
+<rem:comments>None</rem:comments>
 <rem:text>The following describes the people involved in the development of the software project and the roles they play:</rem:text>
 </rem:paragraph>
-<rem:section
- oid = "SEC-0004">
-<rem:name>
-Participating Organizations</rem:name>
+<rem:section oid="SEC-0004">
+<rem:name>Participating Organizations</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -150,14 +124,12 @@ Participating Organizations</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>1.2.1 </rem:number>
 <rem:organization
- oid = "ORG-0001">
-<rem:name>
-Tabernas Sevilla</rem:name>
+ oid="ORG-0001">
+<rem:name>Tabernas Sevilla</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -167,17 +139,14 @@ Tabernas Sevilla</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-None</rem:comments>
+<rem:comments>None</rem:comments>
 <rem:address>Avenida de HYTASA nª12 Planta 3<br/>Puerta 19  41005 Sevilla - España</rem:address>
 <rem:telephone>954 622 164</rem:telephone>
 <rem:fax>tabernas@arengalia.es</rem:fax>
 </rem:organization>
 </rem:section>
-<rem:section
- oid = "SEC-0005">
-<rem:name>
-Participating People</rem:name>
+<rem:section oid="SEC-0005">
+<rem:name>Participating People</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -187,14 +156,11 @@ Participating People</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>1.2.2 </rem:number>
-<rem:stakeholder
- oid = "STK-0006">
-<rem:name>
-Arenas, Pablo</rem:name>
+<rem:stakeholder oid="STK-0006">
+<rem:name>Arenas, Pablo</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -204,15 +170,12 @@ Arenas, Pablo</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:stakeholderRole>Employer</rem:stakeholderRole>
 <rem:isCustomer/>
 </rem:stakeholder>
-<rem:stakeholder
- oid = "STK-0001">
-<rem:name>
-Cabezas Díaz, Esteban </rem:name>
+<rem:stakeholder oid="STK-0001">
+<rem:name>Cabezas Díaz, Esteban </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -222,15 +185,12 @@ Cabezas Díaz, Esteban </rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:stakeholderRole>Requirements engineer</rem:stakeholderRole>
 <rem:isDeveloper/>
 </rem:stakeholder>
-<rem:stakeholder
- oid = "STK-0002">
-<rem:name>
-de las Heras Cozar, Adrián</rem:name>
+<rem:stakeholder oid="STK-0002">
+<rem:name>de las Heras Cozar, Adrián</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -240,15 +200,12 @@ de las Heras Cozar, Adrián</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:stakeholderRole>Requirements engineer</rem:stakeholderRole>
 <rem:isDeveloper/>
 </rem:stakeholder>
-<rem:stakeholder
- oid = "STK-0003">
-<rem:name>
-Núñez Arenas, Carlos</rem:name>
+<rem:stakeholder oid="STK-0003">
+<rem:name>Núñez Arenas, Carlos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -258,15 +215,12 @@ Núñez Arenas, Carlos</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:stakeholderRole>Requirements engineer</rem:stakeholderRole>
 <rem:isDeveloper/>
 </rem:stakeholder>
-<rem:stakeholder
- oid = "STK-0004">
-<rem:name>
-Zamudio Amaya, José Antono</rem:name>
+<rem:stakeholder oid="STK-0004">
+<rem:name>Zamudio Amaya, José Antono</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -276,15 +230,12 @@ Zamudio Amaya, José Antono</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:stakeholderRole>Requirements engineer</rem:stakeholderRole>
 <rem:isDeveloper/>
 </rem:stakeholder>
-<rem:stakeholder
- oid = "STK-0005">
-<rem:name>
-Rouichi, Adil</rem:name>
+<rem:stakeholder oid="STK-0005">
+<rem:name>Rouichi, Adil</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -294,17 +245,14 @@ Rouichi, Adil</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:stakeholderRole>Requirements engineer</rem:stakeholderRole>
 <rem:isDeveloper/>
 </rem:stakeholder>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0006">
-<rem:name>
-Project goals</rem:name>
+<rem:section oid="SEC-0006">
+<rem:name>Project goals</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -314,14 +262,11 @@ Project goals</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>1.3 </rem:number>
-<rem:paragraph
- oid = "PRG-0011">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0011">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -331,16 +276,13 @@ Ninguno</rem:comments>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-None</rem:comments>
+<rem:comments>None</rem:comments>
 <rem:text>The following describes the main objectives that are expected to be achieved when the system to be developed is in production:<br/><br/>-	Automate operational processes: In this way we can optimize the company&apos;s resources and achieve a more efficient management.<br/><br/>-	Provide the information that supports the decision making process: the system will provide the organization with various relevant information about the business that can be used to make decisions that directly affect the organization.<br/><br/>-	Achieve competitive advantages: optimizing resources, making processes automatically and obtaining information relevant to the business model will provide the company with strategic supremacy over the competition.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0007">
-<rem:name>
-Information about the domain of the problem</rem:name>
+<rem:section oid="SEC-0007">
+<rem:name>Information about the domain of the problem</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -350,14 +292,11 @@ Information about the domain of the problem</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>2 </rem:number>
-<rem:section
- oid = "SEC-0008">
-<rem:name>
-Introduction to the domain of the problem</rem:name>
+<rem:section oid="SEC-0008">
+<rem:name>Introduction to the domain of the problem</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -367,15 +306,12 @@ Introduction to the domain of the problem</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.1 </rem:number>
 </rem:section>
-<rem:section
- oid = "SEC-0009">
-<rem:name>
-Glossary of terms</rem:name>
+<rem:section oid="SEC-0009">
+<rem:name>Glossary of terms</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -385,16 +321,13 @@ Glossary of terms</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0010">
-<rem:name>
-Description of the current situation</rem:name>
+<rem:section oid="SEC-0010">
+<rem:name>Description of the current situation</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -404,14 +337,11 @@ Description of the current situation</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>3 </rem:number>
-<rem:paragraph
- oid = "PRG-0002">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0002">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -421,14 +351,11 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text>Currently, the business is going through challenging times. The pandemic that we live in makes it hard for the hostelry sector to succeed and reach their business goals. However, Tabernas Sevilla is financially stable and mature enough to resist these challenges. </rem:text>
 </rem:paragraph>
-<rem:section
- oid = "SEC-0011">
-<rem:name>
-Advantages and disadvantages</rem:name>
+<rem:section oid="SEC-0011">
+<rem:name>Advantages and disadvantages</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -438,14 +365,11 @@ Advantages and disadvantages</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.1 </rem:number>
-<rem:section
- oid = "SEC-0012">
-<rem:name>
-Advantages </rem:name>
+<rem:section oid="SEC-0012">
+<rem:name>Advantages </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -455,14 +379,11 @@ Advantages </rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.1.1 </rem:number>
-<rem:paragraph
- oid = "PRG-0003">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0003">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -472,15 +393,12 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text>- The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. &lt;br&gt; &lt;br&gt;<br/>- There are no significant issues to solve now, and that makes us able to make new improvements.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
-<rem:section
- oid = "SEC-0013">
-<rem:name>
-Disadvantages</rem:name>
+<rem:section oid="SEC-0013">
+<rem:name>Disadvantages</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -490,14 +408,11 @@ Disadvantages</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.1.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0004">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0004">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -507,16 +422,13 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text>- The ongoing pandemic makes it difficult to invest in new features and techniques. <br/><br/>- The current process to book a table in a restaurant is complex.  <br/><br/>- There is no social media involvement to promote the business. <br/></rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0014">
-<rem:name>
-Models of the processes of the current business</rem:name>
+<rem:section oid="SEC-0014">
+<rem:name>Models of the processes of the current business</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -526,14 +438,11 @@ Models of the processes of the current business</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
-<rem:section
- oid = "SEC-0015">
-<rem:name>
-Description of the actors of the current business</rem:name>
+<rem:section oid="SEC-0015">
+<rem:name>Description of the actors of the current business</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -543,14 +452,11 @@ Description of the actors of the current business</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.2.1 </rem:number>
-<rem:paragraph
- oid = "PRG-0005">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0005">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -560,15 +466,12 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text>- Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. &lt;br&gt;&lt;br&gt;<br/>- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.&lt;br&gt;&lt;br&gt;<br/>- Waiters: Person in charge of taking commands and bringing dishes to the diner. &lt;br&gt;&lt;br&gt;<br/>- Chefs: Person in charge of preparing and cooking food for the diners.&lt;br&gt;&lt;br&gt;<br/>- Diners: Customer who comes to the business to consume the services we offer. &lt;br&gt;&lt;br&gt;<br/></rem:text>
 </rem:paragraph>
 </rem:section>
-<rem:section
- oid = "SEC-0016">
-<rem:name>
-Description of the processes of the current business</rem:name>
+<rem:section oid="SEC-0016">
+<rem:name>Description of the processes of the current business</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -578,14 +481,11 @@ Description of the processes of the current business</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.2.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0006">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0006">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -595,16 +495,13 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:text>- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. </rem:text>
+<rem:comments>Ninguno</rem:comments>
+<rem:text>- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. <br/>&lt;br&gt;<br/>- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.<br/>&lt;br&gt;<br/>- </rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0017">
-<rem:name>
-Technological environment</rem:name>
+<rem:section oid="SEC-0017">
+<rem:name>Technological environment</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -614,14 +511,11 @@ Technological environment</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.3 </rem:number>
-<rem:section
- oid = "SEC-0018">
-<rem:name>
-Description of the hardware environment</rem:name>
+<rem:section oid="SEC-0018">
+<rem:name>Description of the hardware environment</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -631,14 +525,11 @@ Description of the hardware environment</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.3.1 </rem:number>
-<rem:paragraph
- oid = "PRG-0007">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0007">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -648,15 +539,12 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text>- It is formed by all the working stations that all the four restaurants have, in which the waiters keep track of what the diners order. There is also wi-fi connection in all establishments and several computers in the office, where the owner accesses the general database.</rem:text>
 </rem:paragraph>
 </rem:section>
-<rem:section
- oid = "SEC-0019">
-<rem:name>
-Description of the software environment</rem:name>
+<rem:section oid="SEC-0019">
+<rem:name>Description of the software environment</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -666,14 +554,11 @@ Description of the software environment</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.3.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0008">
-<rem:name>
-</rem:name>
+<rem:paragraph oid="PRG-0008">
+<rem:name></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -683,17 +568,14 @@ Ninguno</rem:comments>
 <rem:day>4</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:text>- The current software environment is composed of an oracle 9 database, a website under the &quot;.es&quot; domain and an application called BDP-Net, which manages the terminals in the restaurants and connects it to the computer in the office.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0020">
-<rem:name>
-Business needs </rem:name>
+<rem:section oid="SEC-0020">
+<rem:name>Business needs </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -703,14 +585,11 @@ Business needs </rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>4 </rem:number>
-<rem:section
- oid = "SEC-0021">
-<rem:name>
-Business goals</rem:name>
+<rem:section oid="SEC-0021">
+<rem:name>Business goals</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -720,15 +599,12 @@ Business goals</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>4.1 </rem:number>
 </rem:section>
-<rem:section
- oid = "SEC-0022">
-<rem:name>
-Models of the processes of the business to implement</rem:name>
+<rem:section oid="SEC-0022">
+<rem:name>Models of the processes of the business to implement</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -738,14 +614,11 @@ Models of the processes of the business to implement</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>4.2 </rem:number>
-<rem:section
- oid = "SEC-0023">
-<rem:name>
-Description of the actors of the business to implement</rem:name>
+<rem:section oid="SEC-0023">
+<rem:name>Description of the actors of the business to implement</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -755,15 +628,12 @@ Description of the actors of the business to implement</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>4.2.1 </rem:number>
 </rem:section>
-<rem:section
- oid = "SEC-0024">
-<rem:name>
-Description of the processes of the business to implement</rem:name>
+<rem:section oid="SEC-0024">
+<rem:name>Description of the processes of the business to implement</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -773,17 +643,14 @@ Description of the processes of the business to implement</rem:name>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>4.2.2 </rem:number>
 </rem:section>
 </rem:section>
 </rem:section>
-<rem:section
- oid = "SEC-0025">
-<rem:name>
-Meeting Minutes</rem:name>
+<rem:section oid="SEC-0025">
+<rem:name>Meeting Minutes</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -793,14 +660,11 @@ Meeting Minutes</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>A </rem:number>
-<rem:meeting
- oid = "MET-0001">
-<rem:name>
-First informal meeting</rem:name>
+<rem:meeting oid="MET-0001">
+<rem:name>First informal meeting</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -810,8 +674,7 @@ First informal meeting</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:date>
 <rem:year>2020</rem:year>
 <rem:month>10</rem:month>
@@ -823,13 +686,11 @@ Ninguno</rem:comments>
 </rem:time>
 <rem:place>&quot;Tabernas Sevilla&quot; Offices</rem:place>
 <rem:results>The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.<br/>He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.<br/>First, we listened to our client how his company was working and the computerized system he was using (&quot;BDP&quot; it&apos;s the software&apos;s name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  <br/>Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:<br/>o	The &quot;take away&quot; and &quot;delivery&quot; system (to fulfil the main goal: sell more).<br/>o	Improvement of the restaurant&apos;s waitlist management:<br/>o	Making possible the online booking without going to the restaurant.<br/>o	Creating a software that manages face-to-face waiting list automatically.<br/></rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0003 STK-0001 STK-0004 STK-0006 "/>
+	<rem:attenders stakeholders = "STK-0006 STK-0001 STK-0002 STK-0003 STK-0004 "/>
 </rem:meeting>
 </rem:section>
-<rem:section
- oid = "SEC-0026">
-<rem:name>
-Relevant Documentation</rem:name>
+<rem:section oid="SEC-0026">
+<rem:name>Relevant Documentation</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -839,15 +700,12 @@ Relevant Documentation</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>B </rem:number>
 </rem:section>
-<rem:section
- oid = "SEC-0027">
-<rem:name>
-Glossary of acronyms and abbreviations</rem:name>
+<rem:section oid="SEC-0027">
+<rem:name>Glossary of acronyms and abbreviations</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -857,8 +715,7 @@ Glossary of acronyms and abbreviations</rem:name>
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>C </rem:number>
 </rem:section>
@@ -874,9 +731,7 @@ Ninguno</rem:comments>
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno
-</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
 <rem:name>Registro de Defectos</rem:name>
@@ -889,9 +744,7 @@ Ninguno
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno
-</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 </rem:defectsSpecification>
 <rem:changeRequestsSpecification oid = "CHS-0004">
 <rem:name>Registro de Peticiones de Cambio</rem:name>
@@ -904,99 +757,11 @@ Ninguno
 <rem:day>2</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Ninguno
-</rem:comments>
+<rem:comments>Ninguno</rem:comments>
 </rem:changeRequestsSpecification>
 <rem:predefinedValueTypes>
-<rem:predefinedValueType
- oid = "PVT-0007">
-<rem:name>
-Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type (non-standard)</rem:comments>
-<rem:description>
-Hour:minutes:seconds</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0003">
-<rem:name>
-Integer</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type</rem:comments>
-<rem:description>
-Integer numbers</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0006">
-<rem:name>
-Date</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type (non-standard)</rem:comments>
-<rem:description>
-Dates</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0005">
-<rem:name>
-String</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Predefined OCL type</rem:comments>
-<rem:description>
-Alphanumeric strings</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0001">
-<rem:name>
-Enum Literal</rem:name>
+<rem:predefinedValueType oid="PVT-0001">
+<rem:name>Enum Literal</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1006,18 +771,12 @@ Enum Literal</rem:name>
 <rem:day>11</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Predefined OCL type (non-standard)</rem:comments>
-<rem:description>
-Enumeration literals</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Enumeration literals</rem:description>
+<rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0002">
-<rem:name>
-Real</rem:name>
+<rem:predefinedValueType oid="PVT-0002">
+<rem:name>Real</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1027,18 +786,12 @@ Real</rem:name>
 <rem:day>30</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Predefined OCL type</rem:comments>
-<rem:description>
-Real numbers</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Real numbers</rem:description>
+<rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType
- oid = "PVT-0004">
-<rem:name>
-Natural</rem:name>
+<rem:predefinedValueType oid="PVT-0003">
+<rem:name>Integer</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1048,21 +801,77 @@ Natural</rem:name>
 <rem:day>30</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>
-Predefined OCL type</rem:comments>
-<rem:description>
-Natural numbers</rem:description>
-<rem:definition>
-(null)
-</rem:definition>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Integer numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0004">
+<rem:name>Natural</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Natural numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0005">
+<rem:name>String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Alphanumeric strings</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0006">
+<rem:name>Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Dates</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0007">
+<rem:name>Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Hour:minutes:seconds</rem:description>
+<rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
-<rem:changeRequestStatusValue oid = "CRV-0002">
-<rem:name>pendiente de análisis</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0003">
 <rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
@@ -1076,11 +885,11 @@ Natural numbers</rem:description>
 <rem:changeRequestStatusValue oid = "CRV-0006">
 <rem:name>rechazado</rem:name>
 </rem:changeRequestStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
-</rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
@@ -1088,22 +897,52 @@ Natural numbers</rem:description>
 <rem:conflictStatusValue oid = "CSV-0002">
 <rem:name>no resuelto</rem:name>
 </rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
-</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0007">
 <rem:name>No implementabilidad</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0015">
@@ -1118,22 +957,10 @@ Natural numbers</rem:description>
 <![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
-<rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0005">
@@ -1142,34 +969,10 @@ Natural numbers</rem:description>
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0009">
-<rem:name>Dependiente del diseño</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+<![CDATA[Por Determinar]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0008">
@@ -1178,16 +981,22 @@ Natural numbers</rem:description>
 <![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0010">
 <rem:name>Redundancia</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0004">
@@ -1196,10 +1005,10 @@ Natural numbers</rem:description>
 <![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0014">
@@ -1208,9 +1017,6 @@ Natural numbers</rem:description>
 <![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0004">
-<rem:name>quedaría bien</rem:name>
-</rem:importanceValue>
 <rem:importanceValue oid = "IMV-0001">
 <rem:name>PD</rem:name>
 </rem:importanceValue>
@@ -1220,53 +1026,47 @@ Natural numbers</rem:description>
 <rem:importanceValue oid = "IMV-0003">
 <rem:name>importante</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0001">
-<rem:name>PD</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0003">
-<rem:name>media</rem:name>
-</rem:stabilityValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0002">
 <rem:name>baja</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0004">
 <rem:name>alta</rem:name>
 </rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0005">
-<rem:name>validado</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0003">
-<rem:name>pendiente de verificación</rem:name>
-</rem:statusValue>
 <rem:terminationValue oid = "TEV-0003">
 <rem:name>queda sin efecto</rem:name>
-</rem:terminationValue>
-<rem:terminationValue oid = "TEV-0002">
-<rem:name>continúa</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0001">
 <rem:name>PD</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0002">
-<rem:name>año(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0008">
-<rem:name>día(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0007">
 <rem:name>semana(s)</rem:name>
@@ -1274,14 +1074,23 @@ Natural numbers</rem:description>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0011">
-<rem:name>segundo(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0014">
 <rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
@@ -1289,9 +1098,6 @@ Natural numbers</rem:description>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
-<rem:urgencyValue oid = "URV-0002">
-<rem:name>inmediatamente</rem:name>
-</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
 </rem:urgencyValue>
@@ -1300,6 +1106,9 @@ Natural numbers</rem:description>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0004">
 <rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0002">
+<rem:name>inmediatamente</rem:name>
 </rem:urgencyValue>
 </rem:predefinedValues>
 </rem:requirementsProject>
