@@ -1,0 +1,628 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Project Tabernas Sevilla</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Project Tabernas Sevilla</h3>
+<p />
+<h1 class="cover">Specifications of the Requirement System [Tabernas Sevilla MadejaIR]</h1>
+<p />
+<h3>Version 1.0</h3>
+<h3>Date 02/11/2020</h3>
+<p />
+<h3>Prepared for:</h3>
+<p><font color="red">?</font></p>
+<p />
+<h3>Prepared by:</h3>
+<p><font color="red">?</font></p>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Table of contents</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Introduction</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0002">
+Scope of the project</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Participants in the project</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0004">
+Participating Organizations</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0005">
+Participating People</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+Project goals</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0007">
+Information about the domain of the problem</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0008">
+Introduction to the domain of the problem</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Glossary of terms</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0010">
+Description of the current situation</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+Advantages and disadvantages</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0012">
+Advantages </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0013">
+Disadvantages</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0014">
+Models of the processes of the current business</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0015">
+Description of the actors of the current business</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0016">
+Description of the processes of the current business</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0017">
+Technological environment</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0018">
+Description of the hardware environment</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0019">
+Description of the software environment</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0020">
+Business needs </a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0021">
+Business goals</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0022">
+Models of the processes of the business to implement</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0023">
+Description of the actors of the business to implement</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0024">
+Description of the processes of the business to implement</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">A </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0025">
+Meeting Minutes</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">B </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0026">
+Relevant Documentation</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">C </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0027">
+Glossary of acronyms and abbreviations</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="PRG-0001" />
+<p>
+</p>
+<a name="SEC-0001" />
+<h1 align="left">1 
+Introduction</h1><a name="PRG-0010" />
+<p>Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four establishments across the capital, which are usually visited by young adults and families. Its specialty are sevillian tapas and dishes. They also have a very large wine menu
+<br />
+<br />Our system fulfils three fundamental functions for Tabernas Sevilla's business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla's extensive menu they wish to order and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the order on site or selecting delivery to the previously specified address.  
+<br />
+<br />In addition, it has the functionality implemented to manage the capacity of the bar's customers, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the waiting list, which is currently done by hand by the waiters. 
+<br />
+</p>
+<a name="SEC-0002" />
+<h2 align="left">1.1 
+Scope of the project</h2><a name="PRG-0009" />
+<p>The project is directed to the Owner of "Tabernas Sevilla", Pablo Arenas, with whom we contacted thanks to one of the members of our project. In his organization, we can find different positions and users of the system to be developed.</p>
+<a name="SEC-0003" />
+<h2 align="left">1.2 
+Participants in the project</h2><a name="PRG-0012" />
+<p>The following describes the people involved in the development of the software project and the roles they play:</p>
+<a name="SEC-0004" />
+<h3 align="left">1.2.1 
+Participating Organizations</h3><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organization</th>
+<th align="left" valign="top" width="100%">
+Tabernas Sevilla</th>
+</tr>
+<tr>
+<th align="left" valign="top">Address</th>
+<td align="left" valign="top" colspan="1">Avenida de HYTASA nª12 Planta 3
+<br />Puerta 19  41005 Sevilla - España</td>
+</tr>
+<tr>
+<th align="left" valign="top">Telephone</th>
+<td align="left" valign="top" colspan="1">954 622 164</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">tabernas@arengalia.es</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+None</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h3 align="left">1.2.2 
+Participating People</h3><a name="STK-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Stakeholder</th>
+<th align="left" valign="top" width="100%">
+Arenas, Pablo</th>
+</tr>
+<tr><th align="left" valign="top">Organization</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Role</th>
+<td align="left" valign="top" colspan="1">Employer</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Is developer</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Is customer</th>
+<td align="left" valign="top">Yes</td>
+</tr>
+<tr><th align="left" valign="top">Is user</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Stakeholder</th>
+<th align="left" valign="top" width="100%">
+Cabezas Díaz, Esteban </th>
+</tr>
+<tr><th align="left" valign="top">Organization</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Role</th>
+<td align="left" valign="top" colspan="1">Requirements engineer</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Is developer</th>
+<td align="left" valign="top">Yes</td>
+</tr>
+<tr><th align="left" valign="top">Is customer</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Is user</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Stakeholder</th>
+<th align="left" valign="top" width="100%">
+de las Heras Cozar, Adrián</th>
+</tr>
+<tr><th align="left" valign="top">Organization</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Role</th>
+<td align="left" valign="top" colspan="1">Requirements engineer</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Is developer</th>
+<td align="left" valign="top">Yes</td>
+</tr>
+<tr><th align="left" valign="top">Is customer</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Is user</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Stakeholder</th>
+<th align="left" valign="top" width="100%">
+Núñez Arenas, Carlos</th>
+</tr>
+<tr><th align="left" valign="top">Organization</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Role</th>
+<td align="left" valign="top" colspan="1">Requirements engineer</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Is developer</th>
+<td align="left" valign="top">Yes</td>
+</tr>
+<tr><th align="left" valign="top">Is customer</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Is user</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Stakeholder</th>
+<th align="left" valign="top" width="100%">
+Zamudio Amaya, José Antono</th>
+</tr>
+<tr><th align="left" valign="top">Organization</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Role</th>
+<td align="left" valign="top" colspan="1">Requirements engineer</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Is developer</th>
+<td align="left" valign="top">Yes</td>
+</tr>
+<tr><th align="left" valign="top">Is customer</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Is user</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Stakeholder</th>
+<th align="left" valign="top" width="100%">
+Rouichi, Adil</th>
+</tr>
+<tr><th align="left" valign="top">Organization</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Role</th>
+<td align="left" valign="top" colspan="1">Requirements engineer</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Is developer</th>
+<td align="left" valign="top">Yes</td>
+</tr>
+<tr><th align="left" valign="top">Is customer</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Is user</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0006" />
+<h2 align="left">1.3 
+Project goals</h2><a name="PRG-0011" />
+<p>The following describes the main objectives that are expected to be achieved when the system to be developed is in production:
+<br />
+<br />-	Automate operational processes: In this way we can optimize the company's resources and achieve a more efficient management.
+<br />
+<br />-	Provide the information that supports the decision making process: the system will provide the organization with various relevant information about the business that can be used to make decisions that directly affect the organization.
+<br />
+<br />-	Achieve competitive advantages: optimizing resources, making processes automatically and obtaining information relevant to the business model will provide the company with strategic supremacy over the competition.
+<br />
+</p>
+<a name="SEC-0007" />
+<h1 align="left">2 
+Information about the domain of the problem</h1><a name="SEC-0008" />
+<h2 align="left">2.1 
+Introduction to the domain of the problem</h2><a name="SEC-0009" />
+<h2 align="left">2.2 
+Glossary of terms</h2><a name="SEC-0010" />
+<h1 align="left">3 
+Description of the current situation</h1><a name="PRG-0002" />
+<p>Currently, the business is going through challenging times. The pandemic that we live in makes it hard for the hostelry sector to succeed and reach their business goals. However, Tabernas Sevilla is financially stable and mature enough to resist these challenges. </p>
+<a name="SEC-0011" />
+<h2 align="left">3.1 
+Advantages and disadvantages</h2><a name="SEC-0012" />
+<h3 align="left">3.1.1 
+Advantages </h3><a name="PRG-0003" />
+<p>- The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. &lt;br&gt; &lt;br&gt;
+<br />- There are no significant issues to solve now, and that makes us able to make new improvements.
+<br />
+</p>
+<a name="SEC-0013" />
+<h3 align="left">3.1.2 
+Disadvantages</h3><a name="PRG-0004" />
+<p>- The ongoing pandemic makes it difficult to invest in new features and techniques. 
+<br />
+<br />- The current process to book a table in a restaurant is complex.  
+<br />
+<br />- There is no social media involvement to promote the business. 
+<br />
+</p>
+<a name="SEC-0014" />
+<h2 align="left">3.2 
+Models of the processes of the current business</h2><a name="SEC-0015" />
+<h3 align="left">3.2.1 
+Description of the actors of the current business</h3><a name="PRG-0005" />
+<p>- Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. &lt;br&gt;&lt;br&gt;
+<br />- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.&lt;br&gt;&lt;br&gt;
+<br />- Waiters: Person in charge of taking commands and bringing dishes to the diner. &lt;br&gt;&lt;br&gt;
+<br />- Chefs: Person in charge of preparing and cooking food for the diners.&lt;br&gt;&lt;br&gt;
+<br />- Diners: Customer who comes to the business to consume the services we offer. &lt;br&gt;&lt;br&gt;
+<br />
+</p>
+<a name="SEC-0016" />
+<h3 align="left">3.2.2 
+Description of the processes of the current business</h3><a name="PRG-0006" />
+<p>- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. </p>
+<a name="SEC-0017" />
+<h2 align="left">3.3 
+Technological environment</h2><a name="SEC-0018" />
+<h3 align="left">3.3.1 
+Description of the hardware environment</h3><a name="PRG-0007" />
+<p>- It is formed by all the working stations that all the four restaurants have, in which the waiters keep track of what the diners order. There is also wi-fi connection in all establishments and several computers in the office, where the owner accesses the general database.</p>
+<a name="SEC-0019" />
+<h3 align="left">3.3.2 
+Description of the software environment</h3><a name="PRG-0008" />
+<p>- The current software environment is composed of an oracle 9 database, a website under the ".es" domain and an application called BDP-Net, which manages the terminals in the restaurants and connects it to the computer in the office.</p>
+<a name="SEC-0020" />
+<h1 align="left">4 
+Business needs </h1><a name="SEC-0021" />
+<h2 align="left">4.1 
+Business goals</h2><a name="SEC-0022" />
+<h2 align="left">4.2 
+Models of the processes of the business to implement</h2><a name="SEC-0023" />
+<h3 align="left">4.2.1 
+Description of the actors of the business to implement</h3><a name="SEC-0024" />
+<h3 align="left">4.2.2 
+Description of the processes of the business to implement</h3><a name="SEC-0025" />
+<h1 align="left">A 
+Meeting Minutes</h1><a name="MET-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Meeting</th>
+<th align="left" valign="top" width="100%">
+First informal meeting</th>
+</tr>
+<tr>
+<th align="left" valign="top">Date</th>
+<td align="left" valign="top" colspan="1">21/10/2020</td>
+</tr>
+<tr>
+<th align="left" valign="top">Time</th>
+<td align="left" valign="top" colspan="1">17:00</td>
+</tr>
+<tr>
+<th align="left" valign="top">Place</th>
+<td align="left" valign="top" colspan="1">"Tabernas Sevilla" Offices</td>
+</tr>
+<tr><th align="left" valign="top">Attenders</th>
+<td align="left" valign="top">
+<ul>
+<li>
+<a href="#STK-0006" title="Arenas, Pablo">
+Arenas, Pablo</a>
+</li>
+<li>
+<a href="#STK-0001" title="Cabezas Díaz, Esteban">
+Cabezas Díaz, Esteban </a>
+</li>
+<li>
+<a href="#STK-0002" title="de las Heras Cozar, Adrián">
+de las Heras Cozar, Adrián</a>
+</li>
+<li>
+<a href="#STK-0003" title="Núñez Arenas, Carlos">
+Núñez Arenas, Carlos</a>
+</li>
+<li>
+<a href="#STK-0004" title="Zamudio Amaya, José Antono">
+Zamudio Amaya, José Antono</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Results</th>
+<td align="left" valign="top" colspan="1">The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.
+<br />He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.
+<br />First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  
+<br />Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:
+<br />o	The "take away" and "delivery" system (to fulfil the main goal: sell more).
+<br />o	Improvement of the restaurant's waitlist management:
+<br />o	Making possible the online booking without going to the restaurant.
+<br />o	Creating a software that manages face-to-face waiting list automatically.
+<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comments</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0026" />
+<h1 align="left">B 
+Relevant Documentation</h1><a name="SEC-0027" />
+<h1 align="left">C 
+Glossary of acronyms and abbreviations</h1></body>
+</html>

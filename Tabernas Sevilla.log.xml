@@ -1,641 +1,31 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="iso-8859-1" ?>
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Documento de Requisitos del Sistema] -> [IR Tabernas Sevilla]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0004] Organizaciones participantes)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0005] Personas participantes)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsAppendix] actualizada [true] -> [false]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [ORG-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
+<rem:type>S</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>STK-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
+<rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>2</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
+<rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [STK-0001] dsfhged con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0002] Alcance del proyecto)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0003] Participantes en el proyecto)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº1 ([STK-0002] de las Heras Cozar, Adrián) y nº2 ([STK-0006] Arenas, Pablo)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº6 ([STK-0005] Rouichi, Adil)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([MET-0001] First informal meeting)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº2 ([STK-0001] Cabezas Díaz, Esteban )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº2 ([STK-0002] de las Heras Cozar, Adrián) y nº3 ([STK-0001] Cabezas Díaz, Esteban )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>STK-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Role] actualizada [Ingeniero de requisitos] -> [Requirements engineer]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>MET-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Results] actualizada [The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.
-He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.
-First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  
-Finally, we chose between the customer and ourselves what we thought was best for his business, we thought two possible solutions:
-"	The "take away" and "delivery" system (to fulfil the main goal: sell more).
-
-"	Improvement of the restaurant's waitlist management:
-
-o	Making possible the online booking without going to the restaurant.
-o	Creating a software that manages face-to-face waiting list automatically.
-] -> [The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.
-He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.
-First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  
-Finally, we chose between the customer and ourselves what we thought was best for his business, we thought two possible solutions:
-o	The "take away" and "delivery" system (to fulfil the main goal: sell more).
-o	Improvement of the restaurant's waitlist management:
-o	Making possible the online booking without going to the restaurant.
-o	Creating a software that manages face-to-face waiting list automatically.
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([STK-0001] Cabezas Díaz, Esteban )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([STK-0001] Cabezas Díaz, Esteban )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>MET-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Results] actualizada [The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.
-He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.
-First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  
-Finally, we chose between the customer and ourselves what we thought was best for his business, we thought two possible solutions:
-o	The "take away" and "delivery" system (to fulfil the main goal: sell more).
-o	Improvement of the restaurant's waitlist management:
-o	Making possible the online booking without going to the restaurant.
-o	Creating a software that manages face-to-face waiting list automatically.
-] -> [The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.
-He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.
-First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  
-Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:
-o	The "take away" and "delivery" system (to fulfil the main goal: sell more).
-o	Improvement of the restaurant's waitlist management:
-o	Making possible the online booking without going to the restaurant.
-o	Creating a software that manages face-to-face waiting list automatically.
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº5 ([STK-0004] Zamudio Amaya, José Antono)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>STK-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Role] actualizada [Ingeniero de requisitos] -> [Requirements engineer]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>STK-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Role] actualizada [Ingeniero de requisitos] -> [Requirements engineer]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº2 ([STK-0001] Cabezas Díaz, Esteban ) y nº3 ([STK-0006] Arenas, Pablo)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>STK-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Role] actualizada [Ingeniero de requisitos] -> [Requirements engineer]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>MET-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº4 ([STK-0003] Núñez Arenas, Carlos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>STK-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Role] actualizada [Ingeniero de requisitos] -> [Requirements engineer]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº3 ([STK-0006] Arenas, Pablo)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([STK-0002] de las Heras Cozar, Adrián)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Personas participantes] -> [Participating People]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Objetivos del proyecto] -> [Project goals]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción de actores de negocio actuales] -> [Description of the actors of the current business]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0011</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Pros y contras de la situación actual] -> [Advantages and disadvantages]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0020</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Necesidades de negocio] -> [Business needs ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0007</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Información sobre el dominio del problema] -> [Information about the domain of the problem]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción de la situación actual] -> [Description of the current situation]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0012</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Fortalezas de la situación actual] -> [Advantages ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0019</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción del entorno de software actual] -> [Description of the software environment]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0016</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción de procesos de negocio actuales] -> [Description of the processes of the current business]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0014</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Modelos de procesos de negocio actuales] -> [Models of the processes of the current business]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Introducción] -> [Introduction]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Objetivos de negocio] -> [Business goals]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción de actores de negocio a implantar] -> [Description of the actors of the business to implement]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0002]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Alcance del proyecto] -> [Scope of the project]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0024] Descripción de procesos de negocio a implantar)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0023] Descripción de actores de negocio a implantar)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción de procesos de negocio a implantar] -> [Description of the processes of the business to implement]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]] -> [Specifications of the Requirement System [Tabernas Sevilla MadejaIR]]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Modelos de procesos de negocio a implantar] -> [Models of the processes of the business to implement]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Participantes en el proyecto] -> [Participants in the project]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Portada] -> [Main page]]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -647,365 +37,103 @@ o	Creating a software that manages face-to-face waiting list automatically.
 <rem:description><![CDATA[Propiedad [Name] actualizada [IR Tabernas Sevilla] -> [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]]]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0008</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Introducción al dominio del problema] -> [Introduction to the domain of the problem]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Debilidades de la situación actual] -> [Disadvantages]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Entorno tecnológico actual] -> [Technological environment]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0009</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Glosario de términos del dominio del problema] -> [Glossary of terms]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Descripción del entorno de hardware actual] -> [Description of the hardware environment]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Organizaciones participantes] -> [Participating Organizations]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0014</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0015] Descripción de actores de negocio actuales)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0020</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0009</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0008</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0007</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0009] Glosario de términos del dominio del problema)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0007</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº3 ([SEC-0006] Objetivos del proyecto)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0011] Pros y contras de la situación actual)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0014</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0014] Modelos de procesos de negocio actuales)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº3 ([SEC-0017] Entorno tecnológico actual)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0019</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0012</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0011</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0020</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0021] Objetivos de negocio)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0011</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0012] Fortalezas de la situación actual)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0019] Descripción del entorno de software actual)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0007</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0008] Introducción al dominio del problema)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0011</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0013] Debilidades de la situación actual)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([SEC-0018] Descripción del entorno de hardware actual)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0020</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0022] Modelos de procesos de negocio a implantar)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0016</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0014</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0016] Descripción de procesos de negocio actuales)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº2 ([SEC-0014] Models of the processes of the current business) y nº3 ([PRG-0002] )]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Documento de Requisitos del Sistema] -> [IR Tabernas Sevilla]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>4</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-	- The current process to book a table in a restaurant is complex.  
-
-	- There is no social media involvement to promote the business. 
-] -> [- The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-- The current process to book a table in a restaurant is complex.  
-
-- There is no social media involvement to promote the business. 
-]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]] -> [Specifications of the Requirement System [Tabernas Sevilla MadejaIR]]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0002]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [ORG-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -1026,26 +154,22 @@ o	Creating a software that manages face-to-face waiting list automatically.
 <rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0003</rem:owner><rem:date>
+<rem:type>C</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>2</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. <br> <br>
--There are no significant issues to solve now, and that makes us able to make new improvements.
-] -> [- The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. <br> <br>
-- There are no significant issues to solve now, and that makes us able to make new improvements.
-]]]></rem:description>
+<rem:description><![CDATA[Documento creado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>STK-0002</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [STK-0001] dsfhged con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -1055,115 +179,6 @@ o	Creating a software that manages face-to-face waiting list automatically.
 <rem:day>5</rem:day>
 </rem:date>
 <rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0027</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0026</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>STK-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0009] sfdg)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº3 ([SEC-0017] Technological environment) y nº4 ([PRG-0002] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>STK-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0026</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsAppendix] actualizada [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº1 ([PRG-0009] sfdg)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº1 ([SEC-0011] Advantages and disadvantages) y nº2 ([PRG-0002] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-	-The current process to book a table in a restaurant is complex.  
-
-	-There is no social media involvement to promote the business. 
-] -> [- The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-	- The current process to book a table in a restaurant is complex.  
-
-	- There is no social media involvement to promote the business. 
-]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -1176,417 +191,137 @@ o	Creating a software that manages face-to-face waiting list automatically.
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
-<rem:owner>STK-0006</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>STK-0005</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0013</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0004] )]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0007</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0019</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0008] )]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0003</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. 
--There are no significant issues to solve now, and that makes us able to make new improvements.
-] -> [-The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. <br>
--There are no significant issues to solve now, and that makes us able to make new improvements.
-]]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
--Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
--Waiters: Person in charge of taking commands and bringing dishes to the diner. 
--Chefs: Person in charge of preparing and cooking food for the diners.
--Diners: Customer who comes to the business to consume the services we offer. 
-] -> [-Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. <br><br>
--Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.<br><br>
--Waiters: Person in charge of taking commands and bringing dishes to the diner. <br><br>
--Chefs: Person in charge of preparing and cooking food for the diners.<br><br>
--Diners: Customer who comes to the business to consume the services we offer. <br><br>
-]]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0016</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0006] )]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. ]]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. <br><br>
--Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.<br><br>
--Waiters: Person in charge of taking commands and bringing dishes to the diner. <br><br>
--Chefs: Person in charge of preparing and cooking food for the diners.<br><br>
--Diners: Customer who comes to the business to consume the services we offer. <br><br>
-] -> [- Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. <br><br>
-- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.<br><br>
-- Waiters: Person in charge of taking commands and bringing dishes to the diner. <br><br>
-- Chefs: Person in charge of preparing and cooking food for the diners.<br><br>
--Diners: Customer who comes to the business to consume the services we offer. <br><br>
-]]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. <br><br>
-- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.<br><br>
-- Waiters: Person in charge of taking commands and bringing dishes to the diner. <br><br>
-- Chefs: Person in charge of preparing and cooking food for the diners.<br><br>
--Diners: Customer who comes to the business to consume the services we offer. <br><br>
-] -> [- Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. <br><br>
-- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.<br><br>
-- Waiters: Person in charge of taking commands and bringing dishes to the diner. <br><br>
-- Chefs: Person in charge of preparing and cooking food for the diners.<br><br>
-- Diners: Customer who comes to the business to consume the services we offer. <br><br>
-]]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº4 ([PRG-0002] )]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-The ongoing pandemic makes it difficult to invest in new features and techniques. <br><br>
-
-	-The current process to book a table in a restaurant is complex.  
-
-	-There is no social media involvement to promote the business. 
-] -> [               -The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-	-The current process to book a table in a restaurant is complex.  
-
-	-There is no social media involvement to promote the business. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. <br>
--There are no significant issues to solve now, and that makes us able to make new improvements.
-] -> [-The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. <br> <br>
--There are no significant issues to solve now, and that makes us able to make new improvements.
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [               -The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-	-The current process to book a table in a restaurant is complex.  
-
-	-There is no social media involvement to promote the business. 
-] -> [-The ongoing pandemic makes it difficult to invest in new features and techniques. 
-
-	-The current process to book a table in a restaurant is complex.  
-
-	-There is no social media involvement to promote the business. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0005] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [<b>Owner<b>: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-] -> [<b Ow >Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [<b Ow >Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-] -> [Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-Chefs: Person in charge of preparing and cooking food for the diners.
-Diners: Customer who comes to the business to consume the services we offer. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [true] -> [false]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0007] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [-The ongoing pandemic makes it difficult to invest in new features and techniques. <br><br>
-
-	-The current process to book a table in a restaurant is complex.  <br><br>
-
-	-There is no social media involvement to promote the business. <br><br>
-] -> [-The ongoing pandemic makes it difficult to invest in new features and techniques. <br><br>
-
-	-The current process to book a table in a restaurant is complex.  
-
-	-There is no social media involvement to promote the business. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0008</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0012</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0003] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada ["	Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-] -> [<b>Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº4 ([PRG-0002] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [<b>Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-] -> [<b>Owner<b>: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-"	Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-"	Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-"	Chefs: Person in charge of preparing and cooking food for the diners.
-"	Diners: Customer who comes to the business to consume the services we offer. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0005</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
-Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
-Waiters: Person in charge of taking commands and bringing dishes to the diner. 
-Chefs: Person in charge of preparing and cooking food for the diners.
-Diners: Customer who comes to the business to consume the services we offer. 
-] -> [-Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman.
--Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.
--Waiters: Person in charge of taking commands and bringing dishes to the diner. 
--Chefs: Person in charge of preparing and cooking food for the diners.
--Diners: Customer who comes to the business to consume the services we offer. 
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº4 ([PRG-0002] )]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 </rem:log>
