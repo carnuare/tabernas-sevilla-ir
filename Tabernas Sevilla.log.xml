@@ -1,69 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [ORG-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº12 ([GLO-0028] Copia de S2 - Order history  (9))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0033</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0039</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16) (4)] -> [S23 - Order denied ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0039</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a staff member, I want to be able to deny a customer an order and specify a reason so that they understand the impossibility of fulfilment ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0032</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>C</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -106,7 +43,25 @@
 <rem:month>11</rem:month>
 <rem:day>2</rem:day>
 </rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Documento de Requisitos del Sistema] -> [IR Tabernas Sevilla]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [IR Tabernas Sevilla] -> [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0002]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -118,13 +73,199 @@
 <rem:description><![CDATA[Propiedad [Name] actualizada [Especificación de Requisitos del Sistema [Tabernas Sevilla MadejaIR]] -> [Specifications of the Requirement System [Tabernas Sevilla MadejaIR]]]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
-<rem:day>4</rem:day>
+<rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0002]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [ORG-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [STK-0001] Esteban Cabezas Díaz con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [STK-0001] dsfhged con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -145,40 +286,76 @@
 <rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [STK-0001] dsfhged con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [STK-0001] Esteban Cabezas Díaz con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>D</rem:type>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Document saved]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -187,25 +364,7 @@
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº17 ([GLO-0033] Copia de S2 - Order history  (14))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>2</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Documento de Requisitos del Sistema] -> [IR Tabernas Sevilla]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [MET-0001]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº3 ([PRG-0019] Copia de user story1 (2))]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -214,7 +373,149 @@
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado hijo nº2 ([PRG-0015] Copia de (sin nombre))]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº2 ([PRG-0017] )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [user story1] -> [Waiter's Opinion ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- Place an order: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
+
+- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
+
+- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
+
+- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
+] -> [- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
+
+- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
+
+- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
+
+- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
+]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [S1 - Waiter's Opinion  
+
+As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.
+
+S1 - Waiter's Opinion  
+
+As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.] -> [As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [The business actors will remain the same as the current ones, with the novelty of User.
+
+- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
+
+-	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
+ 
+-	***Waiter***: Person in charge of taking commands and bringing dishes to the diner. 
+ 
+-	**Chef**: Person in charge of preparing and cooking food. 
+ 
+-	*Diner**: Customer who comes to the business to consume the services we offer. 
+ 
+-	User: Customer who has previously registered on the website to order food and/or to make a reservation
+] -> [The business actors will remain the same as the current ones, with the novelty of User.
+
+- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
+
+-	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
+ 
+-	**Waiter***: Person in charge of taking commands and bringing dishes to the diner. 
+ 
+-	**Chef**: Person in charge of preparing and cooking food. 
+ 
+-	**Diner**: Customer who comes to the business to consume the services we offer. 
+ 
+-	**User**: Customer who has previously registered on the website to order food and/or to make a reservation
+]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [S1 - Waiter's Opinion  
+
+As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.
+
+S1 - Waiter's Opinion  
+
+As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.] -> [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de user story1] -> [S2 - Order history ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0023</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([PRG-0014] (sin nombre))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0020</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -223,7 +524,16 @@
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0001]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0014] (sin nombre) con 0 hijos y 7 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [PRG-0013] user story1 del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -232,7 +542,78 @@
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [NFR-0001]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0017]  con 0 hijos y 2 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 ([GLO-0020] Copia de S2 - Order history )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [The business actors will remain the same as the current ones, with the novelty of User.
+
+- Owner: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
+
+-	Foreman: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
+ 
+-	Waiter: Person in charge of taking commands and bringing dishes to the diner. 
+ 
+-	Chef: Person in charge of preparing and cooking food. 
+ 
+-	Diner: Customer who comes to the business to consume the services we offer. 
+ 
+-	User: Customer who has previously registered on the website to order food and/or to make a reservation
+] -> [The business actors will remain the same as the current ones, with the novelty of User.
+
+- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
+
+-	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
+ 
+-	**Waiter**: Person in charge of taking commands and bringing dishes to the diner. 
+ 
+-	**Chef**: Person in charge of preparing and cooking food. 
+ 
+-	*Diner**: Customer who comes to the business to consume the services we offer. 
+ 
+-	User: Customer who has previously registered on the website to order food and/or to make a reservation
+]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0019</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [PRG-0013] user story1 del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 ([GLO-0021] Copia de S2 - Order history  (2))]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -271,39 +652,26 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>SEC-0023</rem:owner><rem:date>
+<rem:owner>PRG-0016</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([PRG-0015] Copia de (sin nombre))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0014] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº19 ([GLO-0035] Copia de S2 - Order history  (16))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([PRG-0018] Copia de user story1)]]></rem:description>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
+
+- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
+
+- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
+
+- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
+] -> [- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
+
+- **Reserve a table**: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
+
+- **Waiting list management**: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
+
+- **Rate dishes**: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
+]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -312,16 +680,16 @@
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [NFR-0001]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0015] (sin nombre) con 0 hijos y 4 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0018] (sin nombre) con 0 hijos y 3 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
@@ -331,15 +699,6 @@
 <rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0017]  con 0 hijos y 2 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -377,6 +736,202 @@
 ]]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [The business actors will remain the same as the current ones, with the novelty of User.
+
+- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
+
+-	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
+ 
+-	**Waiter***: Person in charge of taking commands and bringing dishes to the diner. 
+ 
+-	**Chef**: Person in charge of preparing and cooking food. 
+ 
+-	**Diner**: Customer who comes to the business to consume the services we offer. 
+ 
+-	**User**: Customer who has previously registered on the website to order food and/or to make a reservation
+] -> [The business actors will remain the same as the current ones, with the novelty of User.
+
+- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
+
+-	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
+ 
+-	**Waiter**: Person in charge of taking commands and bringing dishes to the diner. 
+ 
+-	**Chef**: Person in charge of preparing and cooking food. 
+ 
+-	**Diner**: Customer who comes to the business to consume the services we offer. 
+ 
+-	**User**: Customer who has previously registered on the website to order food and/or to make a reservation
+]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [true] -> [false]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0016] )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([PRG-0018] Copia de user story1)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [FRQ-0001] Waiter's opinion con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [NFR-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [FRQ-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [S1] -> [user story1]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0023</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0014] )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0014] Copia de user story1 con 0 hijos y 3 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0023</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 ([PRG-0015] Copia de (sin nombre))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0001] S2 con 0 hijos y 8 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0015] Copia de (sin nombre))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br><br>
+
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br><br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>C</rem:type>
 <rem:owner>PRG-0016</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -386,13 +941,138 @@
 <rem:description><![CDATA[Creación]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [UC-0002] Copia de  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- Place an order: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
+- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
+- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
+- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
+] -> [- Place an order: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
+
+- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
+
+- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
+
+- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
+]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [FRQ-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [true] -> [false]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [GLO-0017] (sin nombre) con 0 hijos y 5 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([PRG-0015] (sin nombre))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0023</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([PRG-0015] Copia de (sin nombre))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br>
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br>
+- ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([GLO-0014] Copia de user story1)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([IRQ-0001] )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([IRQ-0001] )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 ([PRG-0014] Copia de user story1)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -418,939 +1098,7 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº14 ([GLO-0030] Copia de S2 - Order history  (11))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0001] S2 con 0 hijos y 8 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [FRQ-0001] Waiter's opinion con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0016] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([PRG-0015] Copia de (sin nombre))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [PRG-0013] user story1 del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [GLO-0017] (sin nombre) con 0 hijos y 5 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0020</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº2 ([PRG-0014] Copia de user story1)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([PRG-0017] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [FRQ-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0014] Copia de user story1 con 0 hijos y 3 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº16 ([GLO-0032] Copia de S2 - Order history  (13))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [The business actors will remain the same as the current ones, with the novelty of User.
-
-- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
-
--	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
- 
--	***Waiter***: Person in charge of taking commands and bringing dishes to the diner. 
- 
--	**Chef**: Person in charge of preparing and cooking food. 
- 
--	*Diner**: Customer who comes to the business to consume the services we offer. 
- 
--	User: Customer who has previously registered on the website to order food and/or to make a reservation
-] -> [The business actors will remain the same as the current ones, with the novelty of User.
-
-- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
-
--	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
- 
--	**Waiter***: Person in charge of taking commands and bringing dishes to the diner. 
- 
--	**Chef**: Person in charge of preparing and cooking food. 
- 
--	**Diner**: Customer who comes to the business to consume the services we offer. 
- 
--	**User**: Customer who has previously registered on the website to order food and/or to make a reservation
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [The business actors will remain the same as the current ones, with the novelty of User.
-
-- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
-
--	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
- 
--	**Waiter***: Person in charge of taking commands and bringing dishes to the diner. 
- 
--	**Chef**: Person in charge of preparing and cooking food. 
- 
--	**Diner**: Customer who comes to the business to consume the services we offer. 
- 
--	**User**: Customer who has previously registered on the website to order food and/or to make a reservation
-] -> [The business actors will remain the same as the current ones, with the novelty of User.
-
-- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
-
--	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
- 
--	**Waiter**: Person in charge of taking commands and bringing dishes to the diner. 
- 
--	**Chef**: Person in charge of preparing and cooking food. 
- 
--	**Diner**: Customer who comes to the business to consume the services we offer. 
- 
--	**User**: Customer who has previously registered on the website to order food and/or to make a reservation
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de user story1] -> [S2 - Order history ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0016</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- Place an order: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
-- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
-- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
-- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
-] -> [- Place an order: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
-
-- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
-
-- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
-
-- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [S1 - Waiter's Opinion  
-
-As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.
-
-S1 - Waiter's Opinion  
-
-As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.] -> [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [S1 - Waiter's Opinion  
-
-As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.
-
-S1 - Waiter's Opinion  
-
-As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.] -> [As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº1 ([PRG-0015] (sin nombre))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [true] -> [false]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0016</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
-
-- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
-
-- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
-
-- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
-] -> [- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
-
-- **Reserve a table**: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
-
-- **Waiting list management**: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
-
-- **Rate dishes**: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº7 ([GLO-0023] Copia de S2 - Order history  (4))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0016</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- Place an order: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
-
-- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
-
-- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
-
-- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
-] -> [- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.
-
-- Reserve a table: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance
-
-- Waiting list management: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.
-
-- Rate dishes: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº4 ([GLO-0020] Copia de S2 - Order history )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0014] (sin nombre) con 0 hijos y 7 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [The business actors will remain the same as the current ones, with the novelty of User.
-
-- Owner: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
-
--	Foreman: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
- 
--	Waiter: Person in charge of taking commands and bringing dishes to the diner. 
- 
--	Chef: Person in charge of preparing and cooking food. 
- 
--	Diner: Customer who comes to the business to consume the services we offer. 
- 
--	User: Customer who has previously registered on the website to order food and/or to make a reservation
-] -> [The business actors will remain the same as the current ones, with the novelty of User.
-
-- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. 
-
--	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. 
- 
--	**Waiter**: Person in charge of taking commands and bringing dishes to the diner. 
- 
--	**Chef**: Person in charge of preparing and cooking food. 
- 
--	*Diner**: Customer who comes to the business to consume the services we offer. 
- 
--	User: Customer who has previously registered on the website to order food and/or to make a reservation
-]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0018] (sin nombre) con 0 hijos y 3 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº1 ([PRG-0014] (sin nombre))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº3 ([PRG-0019] Copia de user story1 (2))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº5 ([GLO-0021] Copia de S2 - Order history  (2))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0015] (sin nombre) con 0 hijos y 4 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0019</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [PRG-0013] user story1 del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0017</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [user story1] -> [Waiter's Opinion ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº6 ([GLO-0022] Copia de S2 - Order history  (3))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº8 ([GLO-0024] Copia de S2 - Order history  (5))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0027</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0028</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
-<br>
-- ] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
-<br>
-- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
-<br>
-- ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [true] -> [false]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº11 ([GLO-0027] Copia de S2 - Order history  (8))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0006</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br>
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
-<br>
-- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
-<br><br>
-
-- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
-<br><br>
-- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Document saved]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0002] Copia de  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº9 ([GLO-0025] Copia de S2 - Order history  (6))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0038</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a staff member, I want to be able to update the status on an order or reservation to archive orders and reservations that have been cancelled or already served. ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([GLO-0014] Copia de user story1)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
 <rem:description><![CDATA[Añadido hijo nº1 ([PRG-0013] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [FRQ-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0038</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16) (3)] -> [S22 - Order Status Update ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº15 ([GLO-0031] Copia de S2 - Order history  (12))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº13 ([GLO-0029] Copia de S2 - Order history  (10))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0026</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº1 ([IRQ-0001] )]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -1362,121 +1110,22 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:description><![CDATA[Eliminado el objeto [IRQ-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº18 ([GLO-0034] Copia de S2 - Order history  (15))]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [UC-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº10 ([GLO-0026] Copia de S2 - Order history  (7))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([IRQ-0001] )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [S15 – Dishes ranking ] -> [S15 - Dishes ranking ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0029</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [S1] -> [user story1]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0035</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a cook I want to see the details of the order to attend to them chronologically and guarantee customer satisfaction.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [S9 – New workers ] -> [S9 - New workers ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0023</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (4)] -> [S7 - Online menu]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (5)] -> [S8 - User registration  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0028</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (9)] -> [S12 - Allergen filtering  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I want to evaluate the different dishes I eat to give my opinion and serve as a reference to other customers.  ]]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [NFR-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -1489,12 +1138,21 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0019</rem:owner><rem:date>
+<rem:owner>GLO-0026</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de user story1 (2)] -> [S3 - Web Booking  ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (7)] -> [S10 - Emergency Orders  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (2)] -> [S5 - Rate  ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -1512,85 +1170,34 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (2)] -> [S5 - Rate  ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I want to evaluate the different dishes I eat to give my opinion and serve as a reference to other customers.  ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0019</rem:owner><rem:date>
+<rem:owner>GLO-0031</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [S1 - Waiter's Opinion  
-
-As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.
-
-S1 - Waiter's Opinion  
-
-As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.] -> [As a client I wish to be able to book a table from the website and, optionally, the food I will eat to speed up the process and be waiting less time. ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (12)] -> [S15 – Dishes ranking ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0025</rem:owner><rem:date>
+<rem:owner>GLO-0030</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (6)] -> [S9 – New workers ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (11)] -> [S14 - Cancel reservation  ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0020</rem:owner><rem:date>
+<rem:owner>GLO-0032</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I want to see the promotions available on the web to access the best offers.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0022</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (3)] -> [S6 - Digital control  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0026</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (7)] -> [S10 - Emergency Orders  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0024</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to be able to register on the website so that I do not have to give my details every time I place an order.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Waiter's Opinion ] -> [S1 - Waiter's Opinion  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0027</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (8)] -> [S11 - Estimated time  ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I wish to collect the order on site or selecting delivery to the previously specified address for my convenience.  ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -1611,6 +1218,589 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history ] -> [S4 - Promotions  ]]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0020</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I want to see the promotions available on the web to access the best offers.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0027</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (8)] -> [S11 - Estimated time  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0032</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (13)] -> [S16 - Delivery preference  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0033</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (14)] -> [S17 - Capacity  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0025</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As an admin or manager, I want to be able to register new cooks or waiters into the system to give them the necessary permissions to be able to perform their functions.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (9)] -> [S12 - Allergen filtering  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0031</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to see a ranking with the best valued or most demanded dishes to facilitate my choice.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0027</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a client I would like to have an estimate of the time I will be able to be attended to if I have not booked in advance so as not to be waiting in vain.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0025</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [S9 – New workers ] -> [S9 - New workers ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0024</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (5)] -> [S8 - User registration  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0034</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (15)] -> [S18 – New dish  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0034</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a manager or admin, I want to introduce a new dish to the system to expand the menu. ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0026</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a manager I want to know the estimated time of delivery of the orders to prioritize those that require more speed.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0022</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a cook I want to see the details of the order to attend to them chronologically and guarantee customer satisfaction.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0023</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (4)] -> [S7 - Online menu]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0024</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to be able to register on the website so that I do not have to give my details every time I place an order.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0025</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (6)] -> [S9 – New workers ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0030</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a client I would like to be able to cancel the reservation I have previously made so that I can be reimbursed on time.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0029</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to be able to see the status of the order and the time remaining for delivery so that I can plan the collection.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0029</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (10)] -> [S13 - Order status  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0033</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to know the current capacity of the establishment so that I can go if it is not full.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0022</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (3)] -> [S6 - Digital control  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº17 ([GLO-0033] Copia de S2 - Order history  (14))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0019</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de user story1 (2)] -> [S3 - Web Booking  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0022</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº12 ([GLO-0028] Copia de S2 - Order history  (9))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0025</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0031</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0033</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0024</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0027</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0019</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [S1 - Waiter's Opinion  
+
+As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.
+
+S1 - Waiter's Opinion  
+
+As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.] -> [As a client I wish to be able to book a table from the website and, optionally, the food I will eat to speed up the process and be waiting less time. ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº11 ([GLO-0027] Copia de S2 - Order history  (8))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº6 ([GLO-0022] Copia de S2 - Order history  (3))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº9 ([GLO-0025] Copia de S2 - Order history  (6))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0026</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0032</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº10 ([GLO-0026] Copia de S2 - Order history  (7))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº18 ([GLO-0034] Copia de S2 - Order history  (15))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº13 ([GLO-0029] Copia de S2 - Order history  (10))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº7 ([GLO-0023] Copia de S2 - Order history  (4))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0029</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº16 ([GLO-0032] Copia de S2 - Order history  (13))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0035</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0030</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº15 ([GLO-0031] Copia de S2 - Order history  (12))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0034</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº19 ([GLO-0035] Copia de S2 - Order history  (16))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº8 ([GLO-0024] Copia de S2 - Order history  (5))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0023</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] S2 - Order history  del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº14 ([GLO-0030] Copia de S2 - Order history  (11))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0013</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Waiter's Opinion ] -> [S1 - Waiter's Opinion  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GRF-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0006</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email is sent to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br><br>
+
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br><br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.] -> [- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. 
+<br><br>
+
+- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.
+<br><br>
+- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GRF-0003</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº20 ([GLO-0036] Copia de Copia de S2 - Order history  (16))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº21 ([GLO-0037] Copia de Copia de S2 - Order history  (16) (2))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0038</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16) (3)] -> [S22 - Order Status Update ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0036</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16)] -> [S20 - Subscribe to the newsletter  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº22 ([GLO-0038] Copia de Copia de S2 - Order history  (16) (3))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0038</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0035] Copia de S2 - Order history  (16) del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0035</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (16)] -> [S19 - Unemployment ]]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>C</rem:type>
 <rem:owner>GLO-0036</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -1618,6 +1808,33 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Clonado a partir de [GLO-0035] Copia de S2 - Order history  (16) del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0037</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0035] Copia de S2 - Order history  (16) del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0035</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a user I would like to be able to send my CV to apply for a job.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0039</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a staff member, I want to be able to deny a customer an order and specify a reason so that they understand the impossibility of fulfilment ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -1635,6 +1852,15 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As admin, I want to be able to leave a comment on a review written by a customer – be it for a dish or service to interact with customers. ] -> [As admin, I want to be able to leave a comment on a review written by a customer, to interact with customers. ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0037</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
 <rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As admin, I want to be able to leave a comment on a review written by a customer – be it for a dish or service to interact with customers. ]]]></rem:description>
 </rem:change>
 <rem:change>
@@ -1644,196 +1870,7 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº20 ([GLO-0036] Copia de Copia de S2 - Order history  (16))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a client I would like to be able to cancel the reservation I have previously made so that I can be reimbursed on time.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0035</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (16)] -> [S19 - Unemployment ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0026</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a manager I want to know the estimated time of delivery of the orders to prioritize those that require more speed.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0038</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0035] Copia de S2 - Order history  (16) del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0025</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As an admin or manager, I want to be able to register new cooks or waiters into the system to give them the necessary permissions to be able to perform their functions.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (11)] -> [S14 - Cancel reservation  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0033</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to know the current capacity of the establishment so that I can go if it is not full.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (12)] -> [S15 – Dishes ranking ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº22 ([GLO-0038] Copia de Copia de S2 - Order history  (16) (3))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0035</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a user I would like to be able to send my CV to apply for a job.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0036</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16)] -> [S20 - Subscribe to the newsletter  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0036</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a client I would like to be able to subscribe to the Tabernas Sevilla newsletter to keep up to date with the latest news.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0029</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to be able to see the status of the order and the time remaining for delivery so that I can plan the collection.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a manager or admin, I want to introduce a new dish to the system to expand the menu. ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0029</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (10)] -> [S13 - Order status  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº21 ([GLO-0037] Copia de Copia de S2 - Order history  (16) (2))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0021</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
 <rem:description><![CDATA[Añadido hijo nº23 ([GLO-0039] Copia de Copia de S2 - Order history  (16) (4))]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (15)] -> [S18 – New dish  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0032</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (13)] -> [S16 - Delivery preference  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0037</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0035] Copia de S2 - Order history  (16) del proyecto C:\Users\adria\Desktop\IR\proyecto git\tabernas-sevilla-ir\Tabernas Sevilla.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I would like to see a ranking with the best valued or most demanded dishes to facilitate my choice.  ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
@@ -1846,39 +1883,30 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0037</rem:owner><rem:date>
+<rem:owner>GLO-0031</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As admin, I want to be able to leave a comment on a review written by a customer – be it for a dish or service to interact with customers. ] -> [As admin, I want to be able to leave a comment on a review written by a customer, to interact with customers. ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [S15 – Dishes ranking ] -> [S15 - Dishes ranking ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0033</rem:owner><rem:date>
+<rem:owner>GLO-0039</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de S2 - Order history  (14)] -> [S17 - Capacity  ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16) (4)] -> [S23 - Order denied ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GLO-0032</rem:owner><rem:date>
+<rem:owner>GLO-0038</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a customer I wish to collect the order on site or selecting delivery to the previously specified address for my convenience.  ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0027</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a client I would like to have an estimate of the time I will be able to be attended to if I have not booked in advance so as not to be waiting in vain.  ]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a staff member, I want to be able to update the status on an order or reservation to archive orders and reservations that have been cancelled or already served. ]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -1888,5 +1916,59 @@ As a customer I want to be able to rate the waiters in the restaurant so that ot
 <rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de S2 - Order history  (16) (2)] -> [S21 - Comment the review ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0036</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. ] -> [As a client I would like to be able to subscribe to the Tabernas Sevilla newsletter to keep up to date with the latest news.  ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([GRF-0001] )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([GRF-0002] Customers enterns a tavern)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 ([GRF-0003] Waiting list process)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GRF-0001</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Process of current reservation] -> [Process of booking]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GRF-0002</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
 </rem:change>
 </rem:log>
