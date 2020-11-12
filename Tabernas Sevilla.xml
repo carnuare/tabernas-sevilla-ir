@@ -611,7 +611,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>- The current software environment is composed of an oracle 9 database, a website under the &quot;.es&quot; domain and an application called BDP-Net, which manages the terminals in the restaurants and connects it to the computer in the office.</rem:text>
+<rem:text>- The current software environment is composed of a database, a website under the &quot;.es&quot; domain and an application called BDP-Net, which manages the terminals in the restaurants and connects it to the computer in the office.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -645,7 +645,7 @@
 <rem:level>2</rem:level>
 <rem:number>4.1 </rem:number>
 <rem:glossaryItem oid="GLO-0013">
-<rem:name>S1 - Waiter's Opinion  </rem:name>
+<rem:name>US-001 Waiter's Rating</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -656,10 +656,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I want to be able to rate the waiters in the restaurant so that other customers can have more opinions.</rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to be able to rate the waiters in the restaurant<br/><br/>**So that** other customers can have more opinions.<br/></rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0018">
-<rem:name>S2 - Order history </rem:name>
+<rem:name>US-002 Order history </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -670,10 +670,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to be able to see my order history so that I can repeat an order I have already placed. </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to be able to see my order history<br/><br/>**So that** I can repeat an order I have already placed. </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0019">
-<rem:name>S3 - Web Booking  </rem:name>
+<rem:name>US-003 Web Booking  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -684,10 +684,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a client I wish to be able to book a table from the website and, optionally, the food I will eat to speed up the process and be waiting less time. </rem:text>
+<rem:text><br/><br/>**As a** client<br/><br/>**I want** to be able to book a table from the website and, optionally, the food I will eat<br/><br/>**So that** I could speed up the process and be waiting less time. </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0020">
-<rem:name>S4 - Promotions  </rem:name>
+<rem:name>US-004 Promotions  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -698,10 +698,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I want to see the promotions available on the web to access the best offers.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to see the promotions available on the web<br/><br/>**So that** I could access the best offers  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0021">
-<rem:name>S5 - Rate  </rem:name>
+<rem:name>US-005 Rate  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -712,10 +712,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I want to evaluate the different dishes I eat to give my opinion and serve as a reference to other customers.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to evaluate the different dishes I eat<br/><br/>**So that** I could give my opinion and serve as a reference to other customers</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0022">
-<rem:name>S6 - Digital control  </rem:name>
+<rem:name>US-006 Digital control  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -726,10 +726,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a cook I want to see the details of the order to attend to them chronologically and guarantee customer satisfaction.  </rem:text>
+<rem:text><br/><br/>**As a** cook<br/><br/>**I want** to see the details of the order<br/><br/>**So that** I could attend to them chronologically and guarantee customer satisfaction.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0023">
-<rem:name>S7 - Online menu</rem:name>
+<rem:name>US-007 Online menu</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -740,10 +740,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to be able to see the menu on the website with photos to have a proper preview of the dishes on offer.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to be able to see the menu on the website with photos<br/><br/>**So that** I could have a proper preview of the dishes on offer.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0024">
-<rem:name>S8 - User registration  </rem:name>
+<rem:name>US-008 User registration  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -754,10 +754,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to be able to register on the website so that I do not have to give my details every time I place an order.  </rem:text>
+<rem:text><br/><br/>**As a** customer <br/><br/>**I want** to be able to register on the website<br/><br/>**So that** I do not have to give my details every time I place an order.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0025">
-<rem:name>S9 - New workers </rem:name>
+<rem:name>US-009 New workers </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -768,10 +768,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As an admin or manager, I want to be able to register new cooks or waiters into the system to give them the necessary permissions to be able to perform their functions.  </rem:text>
+<rem:text><br/><br/>**As an** admin<br/><br/>**I want** to be able to register new cooks or waiters into the system <br/><br/>**So that** I could give them the necessary permissions to be able to perform their functions.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0026">
-<rem:name>S10 - Emergency Orders  </rem:name>
+<rem:name>US-010 Emergency Orders  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -782,10 +782,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a manager I want to know the estimated time of delivery of the orders to prioritize those that require more speed.  </rem:text>
+<rem:text><br/><br/>**As a** manager<br/><br/>**I want** to know the estimated time of delivery of the orders<br/><br/>**So that** I could prioritize those that require more speed</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0027">
-<rem:name>S11 - Estimated time  </rem:name>
+<rem:name>US-011 Estimated time  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -796,10 +796,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a client I would like to have an estimate of the time I will be able to be attended to if I have not booked in advance so as not to be waiting in vain.  </rem:text>
+<rem:text><br/><br/>**As a** client<br/><br/>**I want** to have an estimate of the time I will be able to be attended <br/><br/>**So that** I could be able to choose if I want to wait or not</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0028">
-<rem:name>S12 - Allergen filtering  </rem:name>
+<rem:name>US-012 Allergen filtering  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -810,10 +810,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to be able to filter the menu according to allergens to avoid food poisoning.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to be able to filter the menu according to allergens<br/><br/>**So that** I could avoid food poisoning.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0029">
-<rem:name>S13 - Order status  </rem:name>
+<rem:name>US-013 Order status  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -824,10 +824,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to be able to see the status of the order and the time remaining for delivery so that I can plan the collection.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want to** be able to see the status of the order and the time remaining for delivery<br/><br/>**So that** I can plan the collection</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0030">
-<rem:name>S14 - Cancel reservation  </rem:name>
+<rem:name>US-014 Cancel reservation  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -838,10 +838,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a client I would like to be able to cancel the reservation I have previously made so that I can be reimbursed on time.  </rem:text>
+<rem:text><br/><br/>**As a** client<br/><br/>**I want  to** be able to cancel the reservation I have previously made<br/><br/>**So that** I can be reimbursed on time.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0031">
-<rem:name>S15 - Dishes ranking </rem:name>
+<rem:name>US-015 Dishes ranking </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -852,10 +852,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to see a ranking with the best valued or most demanded dishes to facilitate my choice.  </rem:text>
+<rem:text><br/><br/>**As a** customer <br/><br/>**I want to** see a ranking with the best valued or most demanded dishes <br/><br/>**So that** I could choose between a lot of dishes  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0032">
-<rem:name>S16 - Delivery preference  </rem:name>
+<rem:name>US-016 Make an order</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -866,10 +866,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I wish to collect the order on site or selecting delivery to the previously specified address for my convenience.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to place orders, either to be picked up locally or to be sent to the address you specify<br/><br/>**So that** I could choose the best option for me.<br/></rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0033">
-<rem:name>S17 - Capacity  </rem:name>
+<rem:name>US-017 Capacity  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -880,10 +880,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a customer I would like to know the current capacity of the establishment so that I can go if it is not full.  </rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to know the current capacity of the establishment <br/><br/>**So that** I can go if it is not full</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0034">
-<rem:name>S18 - New dish  </rem:name>
+<rem:name>US-018 New dish</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -894,10 +894,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a manager or admin, I want to introduce a new dish to the system to expand the menu. </rem:text>
+<rem:text><br/><br/>**As a** admin <br/><br/>**I want** to introduce a new dish to the system <br/><br/>**So that** I could expand the menu </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0035">
-<rem:name>S19 - Unemployment </rem:name>
+<rem:name>US-019 Unemployment</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -908,10 +908,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a user I would like to be able to send my CV to apply for a job.  </rem:text>
+<rem:text><br/><br/>**As an** user <br/><br/>**I want** to be able to send my CV<br/><br/>**So that** I could apply for a job </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0036">
-<rem:name>S20 - Subscribe to the newsletter  </rem:name>
+<rem:name>US-020 Subscribe to the newsletter  </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -922,10 +922,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a client I would like to be able to subscribe to the Tabernas Sevilla newsletter to keep up to date with the latest news.  </rem:text>
+<rem:text><br/><br/>**As a** client<br/><br/>**I want** to be able to subscribe to the Tabernas Sevilla newsletter<br/><br/>**So that** I can keep up to date with the latest news.  </rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0037">
-<rem:name>S21 - Comment the review </rem:name>
+<rem:name>US-021 Comment the review </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -936,24 +936,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As admin, I want to be able to leave a comment on a review written by a customer, to interact with customers. </rem:text>
-</rem:glossaryItem>
-<rem:glossaryItem oid="GLO-0038">
-<rem:name>S22 - Order Status Update </rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:text>As a staff member, I want to be able to update the status on an order or reservation to archive orders and reservations that have been cancelled or already served. </rem:text>
+<rem:text><br/><br/>**As an** admin<br/><br/>**I want** to be able to leave a comment on a review written by a customer, <br/><br/>**So that** I could interact with customers</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0039">
-<rem:name>S23 - Order denied </rem:name>
+<rem:name>US-022 Order denied </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -964,7 +950,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>As a staff member, I want to be able to deny a customer an order and specify a reason so that they understand the impossibility of fulfilment </rem:text>
+<rem:text><br/><br/>**As a** staff member<br/><br/>**I want** to be able to deny a customer an order and specify a reason <br/><br/>**So that** they understand the impossibility of fulfilment </rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section oid="SEC-0022">
@@ -1007,7 +993,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>The business actors will remain the same as the current ones, with the novelty of User.<br/><br/>- **Owner**: maximum responsible of a restaurant or a chain of restaurants. He delegates his functions to the foreman. <br/><br/>-	**Foreman**: skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers. <br/> <br/>-	**Waiter**: Person in charge of taking commands and bringing dishes to the diner. <br/> <br/>-	**Chef**: Person in charge of preparing and cooking food. <br/> <br/>-	**Diner**: Customer who comes to the business to consume the services we offer. <br/> <br/>-	**User**: Customer who has previously registered on the website to order food and/or to make a reservation<br/></rem:text>
+<rem:text>The business actors will remain the same as the current ones, with the novelty of User.<br/> <br/>-	**User**: Customer who has previously registered on the website to order food and/or to make a reservation<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0024">
@@ -1181,36 +1167,6 @@
 <rem:description>Enumeration literals</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0007">
-<rem:name>Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Hour:minutes:seconds</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0003">
-<rem:name>Integer</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Integer numbers</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0004">
 <rem:name>Natural</rem:name>
 <rem:version>
@@ -1224,21 +1180,6 @@
 </rem:version>
 <rem:comments>Predefined OCL type</rem:comments>
 <rem:description>Natural numbers</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0005">
-<rem:name>String</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Alphanumeric strings</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0006">
@@ -1256,6 +1197,36 @@
 <rem:description>Dates</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0003">
+<rem:name>Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Integer numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0007">
+<rem:name>Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Hour:minutes:seconds</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0002">
 <rem:name>Real</rem:name>
 <rem:version>
@@ -1271,22 +1242,37 @@
 <rem:description>Real numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0005">
+<rem:name>String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Alphanumeric strings</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
-<rem:changeRequestStatusValue oid = "CRV-0003">
-<rem:name>pendiente de aprobar/rechazar</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0001">
-<rem:name>PD</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0005">
 <rem:name>verificado</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0002">
 <rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0006">
 <rem:name>rechazado</rem:name>
@@ -1303,46 +1289,22 @@
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
 </rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
-</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0023">
-<rem:name>Otro</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0007">
@@ -1351,28 +1313,10 @@
 <![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0005">
-<rem:name>No verificabilidad</rem:name>
-<rem:description>
-<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0010">
@@ -1381,16 +1325,10 @@
 <![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0004">
@@ -1399,16 +1337,10 @@
 <![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0009">
-<rem:name>Dependiente del diseño</rem:name>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
-<rem:description>
-<![CDATA[Por Determinar]]>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0006">
@@ -1417,50 +1349,104 @@
 <![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0016">
 <rem:name>No rastreabilidad</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0004">
-<rem:name>quedaría bien</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0003">
-<rem:name>importante</rem:name>
-</rem:importanceValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:importanceValue oid = "IMV-0001">
 <rem:name>PD</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0002">
 <rem:name>vital</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0001">
-<rem:name>PD</rem:name>
-</rem:stabilityValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0002">
 <rem:name>baja</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0003">
-<rem:name>media</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0004">
 <rem:name>alta</rem:name>
 </rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0005">
-<rem:name>validado</rem:name>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0003">
-<rem:name>pendiente de verificación</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
 </rem:statusValue>
 <rem:terminationValue oid = "TEV-0001">
 <rem:name>PD</rem:name>
@@ -1474,11 +1460,17 @@
 <rem:timeUnitValue oid = "TUV-0001">
 <rem:name>PD</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0012">
-<rem:name>décima(s) de segundo</rem:name>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0010">
 <rem:name>minuto(s)</rem:name>
@@ -1486,23 +1478,17 @@
 <rem:timeUnitValue oid = "TUV-0011">
 <rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0013">
-<rem:name>centésima(s) de segundo</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0014">
-<rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
