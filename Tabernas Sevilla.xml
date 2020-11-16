@@ -54,7 +54,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>None</rem:comments>
-<rem:text>Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four establishments across the capital, which are usually visited by young adults and families. Its specialty are sevillian tapas and dishes. They also have a very large wine menu<br/><br/>Our system fulfils three fundamental functions for Tabernas Sevilla&apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&apos;s extensive menu they wish to order and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the order on site or selecting delivery to the previously specified address.  <br/>  <br/>In addition, it has the functionality implemented to manage the capacity of the bar&apos;s customers, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the waiting list, which is currently done by hand by the waiters. <br/></rem:text>
+<rem:text>Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four <rem:ref oid="GLO-0043">establishments</rem:ref> across the capital, which are usually visited by young adults and families. Its specialty are sevillian <rem:ref oid="GLO-0040">tapas</rem:ref> and dishes. They also have a very large wine menu<br/><br/>Our system fulfils three fundamental functions for Tabernas Sevilla&apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&apos;s extensive menu they wish to order and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the order on site or selecting delivery to the previously specified address.  <br/>  <br/>In addition, it has the functionality implemented to manage the capacity of the bar&apos;s <rem:ref oid="GLO-0046">customers</rem:ref>, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the <rem:ref oid="GLO-0049">waiting list</rem:ref>, which is currently done by hand by the waiters. <br/></rem:text>
 </rem:paragraph>
 <rem:section oid="SEC-0002">
 <rem:name>Scope of the project</rem:name>
@@ -82,7 +82,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>None</rem:comments>
-<rem:text>The project is directed to the Owner of &quot;Tabernas Sevilla&quot;, Pablo Arenas, with whom we contacted thanks to one of the members of our project. In his organization, we can find different positions and users of the system to be developed.</rem:text>
+<rem:text>The project is directed to the <rem:ref oid="GLO-0048">Owner</rem:ref> of &quot;Tabernas Sevilla&quot;, Pablo Arenas, with whom we contacted thanks to one of the members of our project. In his organization, we can find different positions and users of the system to be developed.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0003">
@@ -309,6 +309,20 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.1 </rem:number>
+<rem:paragraph oid="PRG-0041">
+<rem:name></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text>The company for which the creation of our system is intended is called Tabernas Sevilla. This chain of restaurants with 4 <rem:ref oid="GLO-0043">establishments</rem:ref> in Seville has been serving <rem:ref oid="GLO-0040">tapas</rem:ref> and wine since 2001.<br/><br/>These restaurants work very well both for regular <rem:ref oid="GLO-0046">customers</rem:ref> and for passers-by, so we decided to provide new distribution methods and make the existing ones more efficient in order to allow this company to sell more products.<br/><br/>Tabernas Sevilla already has a website that allows the reservation of tables with or without a menu selection beforehand. We intend to add to the website the possibility for <rem:ref oid="GLO-0046">customers</rem:ref> to have their meals delivered wherever they want around the restaurants. We also plan to add a take away system to avoid waiting for <rem:ref oid="GLO-0046">customers</rem:ref>. These two systems will make it possible to sell products without being limited by the capacity of the different restaurants of Tabernas Sevilla.<br/><br/>In addition to these new sales methods, we are going to implement a social media involvement system consisting of a <rem:ref oid="GLO-0044">review</rem:ref> system and others in order to inform the customer and, as its name suggests, involve him in the life of Tabernas Sevilla.<br/><br/>Finally, we have decided to improve the management of the <rem:ref oid="GLO-0049">waiting list</rem:ref> by allowing us to inform the customer of how much time he or she has left before being able to settle in the restaurant.<br/><br/>All these actions can be carried out via the website once the customer has registered and logged in to their profile.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0009">
 <rem:name>Glossary of terms</rem:name>
@@ -324,6 +338,146 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
+<rem:glossaryItem oid="GLO-0048">
+<rem:name>GLO-001 Bookings</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/><rem:ref oid="GLO-0048">Bookings</rem:ref> at Tabernas Sevilla can be made either by phone or directly through their website. These are only available for groups of 6 to 20 people and are available until 2:30 pm for lunch and 9:30 pm for dinner. Reservations are not made on the terrace so that there is always room for passers-by.<br/><br/>Once the reservation is made, an email will be sent to the customer to pay 25% of the price if he chose his menu during the reservation or 3 euros if he will order on the spot to validate the reservation. If the customer has not chosen a menu during the reservation, then he will not be able to order tapa unless it is the only format of the desired dish.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0046">
+<rem:name>GLO-002 Customers</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/><rem:ref oid="GLO-0046">Customers</rem:ref> of Tabernas Sevilla are mostly families and young adults. We noticed that there were very few children when we went there.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0045">
+<rem:name>GLO-003 Delivery and take away system</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Our site will offer an online ordering system that can then be either delivered or picked up directly at the desired restaurant. In addition, the details of the order will be available as well as the invoice.<br/><br/>The delivery system will display in real time the status of the order with an estimated time of arrival.<br/><br/>An estimated time for order pickup will also be provided.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0043">
+<rem:name>GLO-004 Establishments</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Tabernas Sevilla has 4 restaurants or taverns in Seville.<br/>The one in Porvenir is the first to be opened.<br/>The second is the one in Torneo, 3 years later.<br/>Then came Nervión tavern.<br/>And finally, the one in Arenal.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0047">
+<rem:name>GLO-005 Manager</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Tabernas Sevilla&apos;s <rem:ref oid="GLO-0047">manager</rem:ref> is named Pablo Arenas. He is half <rem:ref oid="GLO-0048">owner</rem:ref> of this business.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0044">
+<rem:name>GLO-006 Review</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Our site will have a <rem:ref oid="GLO-0044">review</rem:ref> system that will allow you to rate and leave comments about the different dishes offered by this restaurant.<br/><br/>Thus, <rem:ref oid="GLO-0046">customers</rem:ref> will be able to be informed of the success of a dish and have more details than a note thanks to the comments.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0040">
+<rem:name>GLO-007 Tapas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/><rem:ref oid="GLO-0040">Tapas</rem:ref> are small Spanish savoury dishes, typically served with drinks at a bar. Tabernas Sevilla sells 60 different <rem:ref oid="GLO-0040">tapas</rem:ref> classified in 8 categories: dessert, meat, its own kitchen, salad, omelettes, its bar, boards, cheese and cold cuts.<br/><br/>These dishes are offered in 3 different quantities, in tapa, half ration and full ration.<br/><br/>Their prices range from 2 to 18 euros.<br/>All of them can be find at this address : https://www.arengalia.es/carta-de-<rem:ref oid="GLO-0040">tapas</rem:ref><br/>There are some photos of <rem:ref oid="GLO-0040">tapas</rem:ref> proposed.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0049">
+<rem:name>GLO-008 Waiting list</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>The <rem:ref oid="GLO-0049">waiting list</rem:ref> is independent at each Tabernas Sevilla restaurant. It is managed directly by the waiters and the restaurant <rem:ref oid="GLO-0047">manager</rem:ref>.<br/><br/>It is for the moment very rudimentary but is intended to be computerized in order to allow a less long waiting time for <rem:ref oid="GLO-0046">customers</rem:ref> and a better management for the staff.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0050">
+<rem:name>GLO-009 Website's user</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/>The client will be able to connect to the Tabernas Sevilla website in order to access different functionalities such as delivery or take away of meals.<br/><br/>In addition, they will be able to give their opinion on the different 	dishes ordered through their profile and will be able to access the history of their orders in order to find a particular dish.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0042">
+<rem:name>GLO-010 Wines</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Tabernas Sevilla offers 5 types of <rem:ref oid="GLO-0042">wines</rem:ref>: The generous, cellar, rosé, white and red.<br/><br/>These <rem:ref oid="GLO-0042">wines</rem:ref> are offered in bottles, and some of them are also available in glass.<br/><br/>Prices range from the cheapest glass at 1.8 euros to the most expensive bottle at 35 euros.<br/><br/>Guests can ask the waiter what the wine of the week is once on site.<br/>They offer a total of 41 different <rem:ref oid="GLO-0042">wines</rem:ref>.<br/><br/>All of them can be find at this adress : https://www.arengalia.es/carta-de-vinos<br/></rem:text>
+</rem:glossaryItem>
 </rem:section>
 </rem:section>
 <rem:section oid="SEC-0010">
@@ -467,7 +621,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>- Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. &lt;br&gt;&lt;br&gt;<br/>- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.&lt;br&gt;&lt;br&gt;<br/>- Waiters: Person in charge of taking commands and bringing dishes to the diner. &lt;br&gt;&lt;br&gt;<br/>- Chefs: Person in charge of preparing and cooking food for the diners.&lt;br&gt;&lt;br&gt;<br/>- Diners: Customer who comes to the business to consume the services we offer. &lt;br&gt;&lt;br&gt;<br/></rem:text>
+<rem:text>- <rem:ref oid="GLO-0048">Owner</rem:ref>: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The <rem:ref oid="GLO-0048">owner</rem:ref> contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the foreman. &lt;br&gt;&lt;br&gt;<br/>- Foremans: Skilled person with experience who is in charge of an establishment on behalf of the <rem:ref oid="GLO-0048">owner</rem:ref> and also watches over a group of workers.&lt;br&gt;&lt;br&gt;<br/>- Waiters: Person in charge of taking commands and bringing dishes to the diner. &lt;br&gt;&lt;br&gt;<br/>- Chefs: Person in charge of preparing and cooking food for the diners.&lt;br&gt;&lt;br&gt;<br/>- Diners: Customer who comes to the business to consume the services we offer. &lt;br&gt;&lt;br&gt;<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0016">
@@ -496,7 +650,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. <br/>&lt;br&gt;&lt;br&gt;<br/><br/>- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.<br/>&lt;br&gt;&lt;br&gt;<br/>- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.</rem:text>
+<rem:text>- To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no <rem:ref oid="GLO-0040">tapas</rem:ref> will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. <br/>&lt;br&gt;&lt;br&gt;<br/><br/>- When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in the electronic command, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them.<br/>&lt;br&gt;&lt;br&gt;<br/>- When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the wating list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.</rem:text>
 </rem:paragraph>
 <rem:graphicFile oid="GRF-0001">
 <rem:name>Process of booking</rem:name>
@@ -513,7 +667,7 @@
 <rem:fileName><![CDATA[..\..\..\..\Pictures\Screenshots\Captura de pantalla (258).png]]></rem:fileName>
 </rem:graphicFile>
 <rem:graphicFile oid="GRF-0002">
-<rem:name>Customers enterns a tavern</rem:name>
+<rem:name><rem:ref oid="GLO-0046">Customers</rem:ref> enterns a tavern</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -527,7 +681,7 @@
 <rem:fileName><![CDATA[..\..\..\..\Pictures\Screenshots\Captura de pantalla (260).png]]></rem:fileName>
 </rem:graphicFile>
 <rem:graphicFile oid="GRF-0003">
-<rem:name>Waiting list process</rem:name>
+<rem:name><rem:ref oid="GLO-0049">Waiting list</rem:ref> process</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -582,7 +736,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>- It is formed by all the working stations that all the four restaurants have, in which the waiters keep track of what the diners order. There is also wi-fi connection in all establishments and several computers in the office, where the owner accesses the general database.</rem:text>
+<rem:text>- It is formed by all the working stations that all the four restaurants have, in which the waiters keep track of what the diners order. There is also wi-fi connection in all <rem:ref oid="GLO-0043">establishments</rem:ref> and several computers in the office, where the <rem:ref oid="GLO-0048">owner</rem:ref> accesses the general database.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0019">
@@ -670,7 +824,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to be able to rate the waiters in the restaurant<br/><br/>**So that** other customers can have more opinions.<br/></rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to be able to rate the waiters in the restaurant<br/><br/>**So that** other <rem:ref oid="GLO-0046">customers</rem:ref> can have more opinions.<br/></rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0021">
 <rem:name>US-005 Rate dishes</rem:name>
@@ -684,7 +838,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to evaluate the different dishes I eat<br/><br/>**So that** I could give my opinion and serve as a reference to other customers</rem:text>
+<rem:text><br/><br/>**As a** customer<br/><br/>**I want** to evaluate the different dishes I eat<br/><br/>**So that** I could give my opinion and serve as a reference to other <rem:ref oid="GLO-0046">customers</rem:ref></rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0031">
 <rem:name>US-015 Dishes ranking </rem:name>
@@ -712,7 +866,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text><br/><br/>**As an** admin<br/><br/>**I want** to be able to leave a comment on a review written by a customer, <br/><br/>**So that** I could interact with customers</rem:text>
+<rem:text><br/><br/>**As an** admin<br/><br/>**I want** to be able to leave a comment on a <rem:ref oid="GLO-0044">review</rem:ref> written by a customer, <br/><br/>**So that** I could interact with <rem:ref oid="GLO-0046">customers</rem:ref></rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section oid="SEC-0029">
@@ -883,7 +1037,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text><br/><br/>**As a** manager<br/><br/>**I want** to know the estimated time of delivery of the orders<br/><br/>**So that** I could prioritize those that require more speed</rem:text>
+<rem:text><br/><br/>**As a** <rem:ref oid="GLO-0047">manager</rem:ref><br/><br/>**I want** to know the estimated time of delivery of the orders<br/><br/>**So that** I could prioritize those that require more speed</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem oid="GLO-0029">
 <rem:name>US-013 Order status  </rem:name>
@@ -1097,7 +1251,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.<br/><br/>- **Reserve a table**: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don&apos;t have to wait too long. You cannot book a table less than one hour in advance<br/><br/>- **Waiting list management**: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.<br/><br/>- **Rate dishes**: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.<br/></rem:text>
+<rem:text>- **Place an order**: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.<br/><br/>- **Reserve a table**: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don&apos;t have to wait too long. You cannot book a table less than one hour in advance<br/><br/>- **<rem:ref oid="GLO-0049">Waiting list</rem:ref> management**: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the <rem:ref oid="GLO-0048">bookings</rem:ref> already selected.<br/><br/>- **Rate dishes**: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -1138,8 +1292,8 @@
 <rem:minute>0</rem:minute>
 </rem:time>
 <rem:place>&quot;Tabernas Sevilla&quot; Offices</rem:place>
-<rem:results>The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.<br/>He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.<br/>First, we listened to our client how his company was working and the computerized system he was using (&quot;BDP&quot; it&apos;s the software&apos;s name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  <br/>Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:<br/>o	The &quot;take away&quot; and &quot;delivery&quot; system (to fulfil the main goal: sell more).<br/>o	Improvement of the restaurant&apos;s waitlist management:<br/>o	Making possible the online booking without going to the restaurant.<br/>o	Creating a software that manages face-to-face waiting list automatically.<br/></rem:results>
-	<rem:attenders stakeholders = "STK-0006 STK-0003 STK-0001 STK-0004 STK-0002 "/>
+<rem:results>The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.<br/>He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.<br/>First, we listened to our client how his company was working and the computerized system he was using (&quot;BDP&quot; it&apos;s the software&apos;s name) to better understand his business model and how we could improve it or design new functionalities. We asked him several questions, especially about better features.  <br/>Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:<br/>o	The &quot;take away&quot; and &quot;delivery&quot; system (to fulfil the main goal: sell more).<br/>o	Improvement of the restaurant&apos;s waitlist management:<br/>o	Making possible the online booking without going to the restaurant.<br/>o	Creating a software that manages face-to-face <rem:ref oid="GLO-0049">waiting list</rem:ref> automatically.<br/></rem:results>
+	<rem:attenders stakeholders = "STK-0004 STK-0006 STK-0001 STK-0002 STK-0003 "/>
 </rem:meeting>
 </rem:section>
 <rem:section oid="SEC-0026">
@@ -1171,20 +1325,6 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>C </rem:number>
-<rem:paragraph oid="PRG-0040">
-<rem:name>Glossary</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>8</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:text>Tapas :<br/>Tapas are small Spanish savoury dishes, typically served with drinks at a bar. Tabernas Sevilla sells 60 different tapas classified in 8 categories:<br/>dessert, meat, its own kitchen, salad, omelettes, its bar, boards, cheese and cold cuts.<br/>These dishes are offered in 3 different quantities, in tapa, half ration and full ration.<br/>Their prices range from 2 to 18 euros.<br/>All of them can be find at this address : https://www.arengalia.es/carta-de-tapas<br/><br/><br/><br/><br/>Wines :<br/>Tabernas Sevilla offers 5 types of wines: The generous, cellar, rosé, white and red.<br/>These wines are offered in bottles, and some of them are also available in glass.<br/>Prices range from the cheapest glass at 1.8 euros to the most expensive bottle at 35 euros.<br/>Guests can ask the waiter what the wine of the week is once on site.<br/>They offer a total of 41 different wines.<br/>All of them can be find at this adress : https://www.arengalia.es/carta-de-vinos<br/><br/><br/><br/>Establishments :<br/>Tabernas Sevilla has 4 restaurants or taverns in Seville.<br/>The one in Porvenir is the first to be opened.<br/>The second is the one in Torneo, 3 years later.<br/>Then came Nervión tavern.<br/>And finally, the one in Arenal.<br/><br/><br/><br/><br/>Review :<br/>Our site will have a review system that will allow you to rate and leave comments about the different dishes offered by this restaurant. Thus, customers will be able to be informed of the success of a dish and have more details than a note thanks to the comments.<br/><br/>Delivery and take away system :<br/>Our site will offer an online ordering system that can then be either delivered or picked up directly at the desired restaurant. In addition, the details of the order will be available as well as the invoice.<br/>The delivery system will display in real time the status of the order with an estimated time of arrival.<br/>An estimated time for order pickup will also be provided.<br/><br/>Customers :<br/>Customers of Tabernas Sevilla are mostly families and young adults. We noticed that there were very few children when we went there.<br/><br/><br/><br/>Foreman :<br/>The person in charge of an establishment, also called the manager. Each tavern has one single foreman.<br/><br/>Owner:<br/>Tabernas Sevilla&apos;s owner is named Pablo Arenas. He is half owner of this business.<br/><br/></rem:text>
-</rem:paragraph>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
@@ -1242,23 +1382,8 @@
 <rem:description>Alphanumeric strings</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0001">
-<rem:name>Enum Literal</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>10</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Enumeration literals</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0003">
-<rem:name>Integer</rem:name>
+<rem:predefinedValueType oid="PVT-0007">
+<rem:name>Time</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1268,8 +1393,8 @@
 <rem:day>30</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Integer numbers</rem:description>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Hour:minutes:seconds</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0006">
@@ -1287,36 +1412,6 @@
 <rem:description>Dates</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0002">
-<rem:name>Real</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Real numbers</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0007">
-<rem:name>Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Hour:minutes:seconds</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0004">
 <rem:name>Natural</rem:name>
 <rem:version>
@@ -1332,6 +1427,51 @@
 <rem:description>Natural numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0002">
+<rem:name>Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Real numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0003">
+<rem:name>Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Integer numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0001">
+<rem:name>Enum Literal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>10</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Enumeration literals</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
 <rem:changeRequestStatusValue oid = "CRV-0003">
@@ -1340,20 +1480,23 @@
 <rem:changeRequestStatusValue oid = "CRV-0006">
 <rem:name>rechazado</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0002">
-<rem:name>pendiente de análisis</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0005">
 <rem:name>verificado</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0001">
-<rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0004">
 <rem:name>pendiente de realización</rem:name>
 </rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
@@ -1361,11 +1504,11 @@
 <rem:conflictStatusValue oid = "CSV-0004">
 <rem:name>resuelto</rem:name>
 </rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0002">
-<rem:name>no resuelto</rem:name>
-</rem:conflictStatusValue>
 <rem:defectStatusValue oid = "DSV-0001">
 <rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0002">
+<rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
@@ -1373,73 +1516,10 @@
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0002">
-<rem:name>no eliminado</rem:name>
-</rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0023">
-<rem:name>Otro</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0010">
-<rem:name>Redundancia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
-</rem:description>
-</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0005">
 <rem:name>No verificabilidad</rem:name>
 <rem:description>
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
-<rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0009">
@@ -1448,22 +1528,22 @@
 <![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0014">
@@ -1478,6 +1558,66 @@
 <![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0016">
 <rem:name>No rastreabilidad</rem:name>
 <rem:description>
@@ -1490,29 +1630,26 @@
 <rem:importanceValue oid = "IMV-0002">
 <rem:name>vital</rem:name>
 </rem:importanceValue>
-<rem:importanceValue oid = "IMV-0003">
-<rem:name>importante</rem:name>
-</rem:importanceValue>
 <rem:importanceValue oid = "IMV-0004">
 <rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0002">
-<rem:name>baja</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0003">
-<rem:name>media</rem:name>
-</rem:stabilityValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0001">
 <rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0004">
 <rem:name>alta</rem:name>
 </rem:stabilityValue>
-<rem:statusValue oid = "STV-0003">
-<rem:name>pendiente de verificación</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0004">
-<rem:name>pendiente de validación</rem:name>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0002">
 <rem:name>en construcción</rem:name>
@@ -1520,23 +1657,26 @@
 <rem:statusValue oid = "STV-0005">
 <rem:name>validado</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0001">
-<rem:name>PD</rem:name>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
-<rem:terminationValue oid = "TEV-0001">
-<rem:name>PD</rem:name>
-</rem:terminationValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
 <rem:terminationValue oid = "TEV-0002">
 <rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0003">
 <rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
@@ -1544,38 +1684,38 @@
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0014">
-<rem:name>milisegundo(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0011">
-<rem:name>segundo(s)</rem:name>
-</rem:timeUnitValue>
-<rem:urgencyValue oid = "URV-0001">
-<rem:name>PD</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0003">
-<rem:name>hay presión</rem:name>
-</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0004">
 <rem:name>puede esperar</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
 </rem:urgencyValue>
 </rem:predefinedValues>
 </rem:requirementsProject>
