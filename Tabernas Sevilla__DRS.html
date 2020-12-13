@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -129,20 +130,80 @@
 <h1>Índice</h1>
 <ul class="toc_list toc_list_level_1">
 <li>1 <a href="#SEC-0034">Introduction</a></li>
-<li>2 <a href="#SEC-0035">Logic architechture of the system</a></li>
-<li>3 <a href="#SEC-0036">Model of classesl of the system</a></li>
+<li>2 <a href="#SEC-0035">Logic architecture of the system</a></li>
+<ul class="toc_list">
+<li>2.1 <a href="#SEC-0058">Architecture of the system diagrams</a></li>
+<li>2.2 <a href="#SEC-0059">Architecture of the system description</a></li>
+</ul>
+<li>3 <a href="#SEC-0036">Model of classes of the system</a></li>
 <li>4 <a href="#SEC-0037">Model of the user cases of the sytem</a></li>
 <li>5 <a href="#SEC-0038">User interface</a></li>
 </ul>
 </nav>
 <div class="pagebreak"></div>
 <h1 id="SEC-0034" class="section">1 Introduction</h1>
-<h1 id="SEC-0035" class="section">2 Logic architechture of the system</h1>
-<h1 id="SEC-0036" class="section">3 Model of classesl of the system</h1>
+<div id="PRG-0059">
+<textarea id="PRG-0059-text-md" class="markdown">
+</textarea>
+<div id="PRG-0059-text-html" class=""></div>
+<script>generate_markdown("PRG-0059-text");</script>
+</div>
+<h1 id="SEC-0035" class="section">2 Logic architecture of the system</h1>
+<h2 id="SEC-0058" class="section">2.1 Architecture of the system diagrams</h2>
+<div id="GRF-0040" class="figure">
+<img class="figure_image" src=".\Fotos Tabernas Sevilla\1BigArchDiagram.jpg" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 14: </span>
+<textarea id="GRF-0040-name-md" class="markdown">
+<a href="#GLO-0060" class="rem_ref">Most external view of the system</a>
+</textarea>
+<span id="GRF-0040-name-html"></span>
+<script>generate_markdown("GRF-0040-name",true);</script>
+</p>
+</div>
+<div id="GRF-0041" class="figure">
+<img class="figure_image" src=".\Fotos Tabernas Sevilla\2mvcPatternDiagram.jpg" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 15: </span>
+<textarea id="GRF-0041-name-md" class="markdown">
+<a href="#GLO-0061" class="rem_ref">Model-View-Controller pattern diagram</a>
+</textarea>
+<span id="GRF-0041-name-html"></span>
+<script>generate_markdown("GRF-0041-name",true);</script>
+</p>
+</div>
+<div id="GRF-0042" class="figure">
+<img class="figure_image" src=".\Fotos Tabernas Sevilla\3mvcSpringPattern.jpg" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 16: </span>
+<textarea id="GRF-0042-name-md" class="markdown">
+<a href="#GLO-0062" class="rem_ref">The MVC pattern in Spring</a>
+</textarea>
+<span id="GRF-0042-name-html"></span>
+<script>generate_markdown("GRF-0042-name",true);</script>
+</p>
+</div>
+<h2 id="SEC-0059" class="section">2.2 Architecture of the system description</h2>
+<div id="GLO-0060" class="glo">
+<textarea id="GLO-0060-text-md" class="markdown">**Most external view of the system**: ¬¬The connection to the web app is made through the http standard, where the web server makes (if needed) an sql request to the database to show the client (browser) the request made using different web-programming languages such as html, css, js....¬</textarea>
+<div id="GLO-0060-text-html" class=""></div>
+<script>generate_markdown("GLO-0060-text");</script>
+</div>
+<div id="GLO-0061" class="glo">
+<textarea id="GLO-0061-text-md" class="markdown">**Model-View-Controller pattern diagram**: ¬¬Architectural pattern that structures an application in three different components:¬¬- Model: It is the representation of the information. It includes both the data and the business logic that is necessary to work with them. No business logic should be placed outside the model.¬¬¬- View: It is the presentation of the model in a way the user can interact with it. It is usually done by means of an User Interface.¬¬¬- Controller: It responds to events in the user interface (HTTP requests in our case), invokes changes in the model, and, probably, in the view.¬</textarea>
+<div id="GLO-0061-text-html" class=""></div>
+<script>generate_markdown("GLO-0061-text");</script>
+</div>
+<div id="GLO-0062" class="glo">
+<textarea id="GLO-0062-text-md" class="markdown">**The MVC pattern in Spring**: ¬¬The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.¬¬The Model encapsulates the application data and in general they will consist of POJO.¬¬The View is responsible for rendering the model data and in general it generates HTML output that the client's browser can interpret.¬¬The Controller is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.</textarea>
+<div id="GLO-0062-text-html" class=""></div>
+<script>generate_markdown("GLO-0062-text");</script>
+</div>
+<h1 id="SEC-0036" class="section">3 Model of classes of the system</h1>
 <div id="GRF-0038" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\data model.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 14: </span>
+<span class="figure_caption_label">Figura 17: </span>
 <textarea id="GRF-0038-name-md" class="markdown">Data model</textarea>
 <span id="GRF-0038-name-html"></span>
 <script>generate_markdown("GRF-0038-name",true);</script>
@@ -158,7 +219,7 @@
 <div id="GRF-0018" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 1.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 15: </span>
+<span class="figure_caption_label">Figura 18: </span>
 <textarea id="GRF-0018-name-md" class="markdown">General view of the <a href="#GLO-0050" class="rem_ref">website</a>, where we can see how to access most of the functionalities of the web app.</textarea>
 <span id="GRF-0018-name-html"></span>
 <script>generate_markdown("GRF-0018-name",true);</script>
@@ -167,7 +228,7 @@
 <div id="GRF-0019" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 2.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 16: </span>
+<span class="figure_caption_label">Figura 19: </span>
 <textarea id="GRF-0019-name-md" class="markdown">Registration view</textarea>
 <span id="GRF-0019-name-html"></span>
 <script>generate_markdown("GRF-0019-name",true);</script>
@@ -176,7 +237,7 @@
 <div id="GRF-0020" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 3.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 17: </span>
+<span class="figure_caption_label">Figura 20: </span>
 <textarea id="GRF-0020-name-md" class="markdown">Online menu. Unregistered user view. You can select whether if you like to view food or drinks. There is also a filter to see which ones do not have specific allergens.</textarea>
 <span id="GRF-0020-name-html"></span>
 <script>generate_markdown("GRF-0020-name",true);</script>
@@ -185,7 +246,7 @@
 <div id="GRF-0021" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 4.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 18: </span>
+<span class="figure_caption_label">Figura 21: </span>
 <textarea id="GRF-0021-name-md" class="markdown">Product <a href="#GLO-0044" class="rem_ref">review</a> view. Where a registered who had previously ordered the item can write or just rate a product with up to 5 stars. The admin can interact with the <a href="#GLO-0046" class="rem_ref">customers</a> by replying to the comment.</textarea>
 <span id="GRF-0021-name-html"></span>
 <script>generate_markdown("GRF-0021-name",true);</script>
@@ -194,7 +255,7 @@
 <div id="GRF-0022" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 5.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 19: </span>
+<span class="figure_caption_label">Figura 22: </span>
 <textarea id="GRF-0022-name-md" class="markdown">Promotions view. Unregistered user view. Where anyone can see the promotions available. </textarea>
 <span id="GRF-0022-name-html"></span>
 <script>generate_markdown("GRF-0022-name",true);</script>
@@ -203,7 +264,7 @@
 <div id="GRF-0023" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 6.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 20: </span>
+<span class="figure_caption_label">Figura 23: </span>
 <textarea id="GRF-0023-name-md" class="markdown">
 <a href="#GLO-0056" class="rem_ref">User profile</a> view. Registered user view. Where you can change your credentials and personal data, add an address for your deliveries, and access other functionalities of the web-app.</textarea>
 <span id="GRF-0023-name-html"></span>
@@ -213,7 +274,7 @@
 <div id="GRF-0024" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 7.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 21: </span>
+<span class="figure_caption_label">Figura 24: </span>
 <textarea id="GRF-0024-name-md" class="markdown">History view. Registered user view. Where you can view past orders easily in case you want to repeat something. </textarea>
 <span id="GRF-0024-name-html"></span>
 <script>generate_markdown("GRF-0024-name",true);</script>
@@ -222,7 +283,7 @@
 <div id="GRF-0025" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 8.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 22: </span>
+<span class="figure_caption_label">Figura 25: </span>
 <textarea id="GRF-0025-name-md" class="markdown">Privacy settings view. Registered user view. Where you can subscribe to the Newsletter or delete your account. </textarea>
 <span id="GRF-0025-name-html"></span>
 <script>generate_markdown("GRF-0025-name",true);</script>
@@ -231,7 +292,7 @@
 <div id="GRF-0026" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 9.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 23: </span>
+<span class="figure_caption_label">Figura 26: </span>
 <textarea id="GRF-0026-name-md" class="markdown">User reviews view. Registered user view. Here you can see the reviews the registered user has written.</textarea>
 <span id="GRF-0026-name-html"></span>
 <script>generate_markdown("GRF-0026-name",true);</script>
@@ -240,7 +301,7 @@
 <div id="GRF-0027" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 10.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 24: </span>
+<span class="figure_caption_label">Figura 27: </span>
 <textarea id="GRF-0027-name-md" class="markdown">Booking/<a href="#GLO-0052" class="rem_ref">reservation</a> view. Unregistered user view. Where you can make a <a href="#GLO-0052" class="rem_ref">reservation</a> in any of the <a href="#GLO-0043" class="rem_ref">establishments</a>, inside or outside. You can also select if you are lactose intolerant or celiac to take it into account. </textarea>
 <span id="GRF-0027-name-html"></span>
 <script>generate_markdown("GRF-0027-name",true);</script>
@@ -249,7 +310,7 @@
 <div id="GRF-0028" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 11.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 25: </span>
+<span class="figure_caption_label">Figura 28: </span>
 <textarea id="GRF-0028-name-md" class="markdown">Chef data view. Registered chef view. Where the user-type-chef can see and change their personal data. This chef is registered by the administrator (seen later).</textarea>
 <span id="GRF-0028-name-html"></span>
 <script>generate_markdown("GRF-0028-name",true);</script>
@@ -258,7 +319,7 @@
 <div id="GRF-0029" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 12.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 26: </span>
+<span class="figure_caption_label">Figura 29: </span>
 <textarea id="GRF-0029-name-md" class="markdown">Electronic command view. Registered chef view. Where a chef can see the orders associated with their establishment. The orders are shown depending on the emergency, and they can be cancelled by the chef. </textarea>
 <span id="GRF-0029-name-html"></span>
 <script>generate_markdown("GRF-0029-name",true);</script>
@@ -267,7 +328,7 @@
 <div id="GRF-0030" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 13.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 27: </span>
+<span class="figure_caption_label">Figura 30: </span>
 <textarea id="GRF-0030-name-md" class="markdown">Manage chefs' view. Admin view. The admin is the only type of user who can add chefs to a given establishment (or to delete them). </textarea>
 <span id="GRF-0030-name-html"></span>
 <script>generate_markdown("GRF-0030-name",true);</script>
@@ -276,7 +337,7 @@
 <div id="GRF-0031" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 14.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 28: </span>
+<span class="figure_caption_label">Figura 31: </span>
 <textarea id="GRF-0031-name-md" class="markdown">Register chef view. Admin view. Form to register a new chef. </textarea>
 <span id="GRF-0031-name-html"></span>
 <script>generate_markdown("GRF-0031-name",true);</script>
@@ -285,7 +346,7 @@
 <div id="GRF-0032" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 16.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 29: </span>
+<span class="figure_caption_label">Figura 32: </span>
 <textarea id="GRF-0032-name-md" class="markdown">Checkout view. Unregistered user view. When you finish selecting what you want to eat, you must confirm the <a href="#GLO-0055" class="rem_ref">order</a>. You can choose to have it delivered to you address or to pick it up in a tavern. You must be logged in before ordering food. </textarea>
 <span id="GRF-0032-name-html"></span>
 <script>generate_markdown("GRF-0032-name",true);</script>
@@ -294,7 +355,7 @@
 <div id="GRF-0033" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 17.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 30: </span>
+<span class="figure_caption_label">Figura 33: </span>
 <textarea id="GRF-0033-name-md" class="markdown">Confirmation of <a href="#GLO-0055" class="rem_ref">order</a> view. Registered user view. When you confirm an <a href="#GLO-0055" class="rem_ref">order</a>, you can see the state of it, its details, and the estimated <a href="#GLO-0045" class="rem_ref">delivery</a> time. </textarea>
 <span id="GRF-0033-name-html"></span>
 <script>generate_markdown("GRF-0033-name",true);</script>
@@ -303,7 +364,7 @@
 <div id="GRF-0034" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 18.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 31: </span>
+<span class="figure_caption_label">Figura 34: </span>
 <textarea id="GRF-0034-name-md" class="markdown">Establishment view. Unregistered user view. When selecting a tavern, you can see a ranking of the waiters whom you can rate and write reviews about when you log in. This view also indicated the current capacity and the estimated time of availability.</textarea>
 <span id="GRF-0034-name-html"></span>
 <script>generate_markdown("GRF-0034-name",true);</script>
@@ -312,7 +373,7 @@
 <div id="GRF-0035" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 19.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 32: </span>
+<span class="figure_caption_label">Figura 35: </span>
 <textarea id="GRF-0035-name-md" class="markdown">Manage products view. Admin view. Where the admin can view and add all the dishes and <a href="#GLO-0042" class="rem_ref">wines</a>/drinks available in all <a href="#GLO-0043" class="rem_ref">taverns</a>.</textarea>
 <span id="GRF-0035-name-html"></span>
 <script>generate_markdown("GRF-0035-name",true);</script>
@@ -321,7 +382,7 @@
 <div id="GRF-0036" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 20.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 33: </span>
+<span class="figure_caption_label">Figura 36: </span>
 <textarea id="GRF-0036-name-md" class="markdown">Add product view. Admin view. Where the admin adds a new item, dish or drink. </textarea>
 <span id="GRF-0036-name-html"></span>
 <script>generate_markdown("GRF-0036-name",true);</script>
@@ -330,7 +391,7 @@
 <div id="GRF-0037" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 21.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 34: </span>
+<span class="figure_caption_label">Figura 37: </span>
 <textarea id="GRF-0037-name-md" class="markdown">Employment view. Registered user view (can be accessed without registration). Where you can send your CV to the business. </textarea>
 <span id="GRF-0037-name-html"></span>
 <script>generate_markdown("GRF-0037-name",true);</script>
