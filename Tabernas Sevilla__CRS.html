@@ -2,97 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="iso-8859-1" />
-<meta name="generatedBy" content="REMUS (REM 1.3)" />
+<meta name="generatedBy" content="REMUS" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/stylesheets/remus.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/stylesheets/madeja.css" />
 <title>Project Tabernas Sevilla</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.2/showdown.js"></script>
 <script>
-            // showdown 1.0.2 (supported in IE 7 without es5-shim)
-            // Usage
-            // var result = converter.makeHtml(text);
-            // converter.setOption( "key", "value" );
-
-            var converter = new showdown.Converter();
-
-            // function to be used in XLST templates
-            // if inline=true, all CRLF tags are replaced
-            // by spaces to avoid internal <p>..</p> and
-            // the enclosing <p>..</p> (if any) is discarded.
-
-            function generate_markdown( id, inline )
-            {
-                // optional parameter
-                if ( inline === undefined ) {
-                    inline = false;
-                }
-
-                var md_id   = id + "-md";
-                var html_id = id + "-html";
-
-                var md_container   = document.getElementById( md_id );
-                var html_container = document.getElementById( html_id );
-
-                var md_text = md_container.value;
-
-                md_container.value = "remus_text = " + md_text; // for debugging
-
-                // Simple text replace can be performed using split and join faster
-                // than using replace with a regular expression as described in:
-                // https://dmitripavlutin.com/replace-all-string-occurrences-javascript/
-
-                /* no internal <p>...</p> in inline mode */
-                var newline = inline ? " " : "\n";
-                var two_newlines = newline + newline;
-
-                var crlf_tag             = "¬";
-                var two_crlf_tags        = crlf_tag + crlf_tag;
-                var three_spaces_newline = "   " + newline;
-                var reg_exp = new RegExp( "(" + crlf_tag + ")(?!(\\d\\.)|\\*|\\+|\\-|\\<)", 'g' );
-
-                // if ( inline )
-                //      replace all CRLF by spaces
-                // else
-                //      replace all CRLF+CRLF into \n\n
-                //      replace all CRLF not followed by *,+,-,&gt; or a digit+period into 3 spaces + \n
-                //      replace all remaining CRLF into \n
-                // endif
-                //
-                // try regular expressions at: https://regexr.com/
-
-                if ( inline ) {
-                    md_text = md_text.split( crlf_tag ).join( newline );
-                }
-                else {
-                    md_text = md_text.split( two_crlf_tags ).join( newline + newline );
-                    md_text = md_text.replace( reg_exp, three_spaces_newline + "$2" );
-                    md_text = md_text.split( crlf_tag ).join( newline );
-                }
-
-                md_container.value += "\n\nmd_text = " + md_text; // for debugging
-
-                // Don't get rid of enclosing <p>...</p> in paragraph mode,
-                // double \n inside markdown will close the first <p> generating an
-                // unbalanced </p> later and wrong html that will raise an
-                // error when assigned to innerHTML.
-
-                var html_text = converter.makeHtml( md_text );
-
-                if ( inline ) {
-                    // get rid of enclosing <p>...</p> (if any)
-                    // warning: generated item lists are not inside <p>...</p>
-                    // length("<p>") == 3, length("</p>") == 4
-                    if ( html_text.indexOf("<p>")       == 0 &&
-                         html_text.lastIndexOf("</p>")  == html_text.length - 4 )
-                    {
-                        html_text = html_text.slice( 3, -4 );
-                    }
-                }
-
-                md_container.value += ("\n\nhtml_text = " + html_text); // for debugging
-
-                html_container.innerHTML = html_text;
-            }
-
             // array for user warnings
             var warnings = new Array();
         </script>
@@ -105,13 +19,7 @@
 <div id="document_cover">
 <div id="browser_info">
 <script>
-                document.write( navigator.userAgent + "<br />" );
-                for( var opt in converter.getOptions() ) {
-                    document.write( "local option : " + opt + " = " + converter.getOption(opt) + "<br />" );
-                }
-                for( var opt in showdown.getOptions() ) {
-                    document.write( "global option : " + opt + " = " + showdown.getOption(opt) + "<br />" );
-                }
+                document.write( navigator.userAgent );
             </script>
 </div>
 <div id="project_name">Project Tabernas Sevilla</div>
@@ -121,8 +29,14 @@
 <div id="document_name">Specifications of the Requirement System [Tabernas Sevilla MadejaIR]</div>
 <div id="document_version">Version 1.0</div>
 <div id="document_date">Date 02/11/2020</div>
-<div id="document_prepared_for">Prepared for:<p class="tbd">?</p></div>
-<div id="document_prepared_by">Prepared by:<p class="tbd">?</p></div>
+<div id="document_prepared_for">Prepared for:<p>
+<a href="#ORG-0001">Tabernas Sevilla</a>
+</p>
+</div>
+<div id="document_prepared_by">Prepared by:<p>
+<a href="#ORG-0002">Universidad de Sevilla</a>
+</p>
+</div>
 </div>
 <div class="pagebreak"></div>
 <nav id="toc" role="navigation">
@@ -204,54 +118,37 @@
 <li>6.5 <a href="#SEC-0056">Technical restrictions</a></li>
 <li>6.6 <a href="#SEC-0057">Integration requirements</a></li>
 </ul>
-<li>A <a href="#SEC-0025">Meeting Minutes</a></li>
-<li>B <a href="#SEC-0026">Relevant Documentation</a></li>
-<li>C <a href="#SEC-0027">Glossary of acronyms and abbreviations</a></li>
 </ul>
 </nav>
 <div class="pagebreak"></div>
 <div id="PRG-0001">
-<textarea id="PRG-0001-text-md" class="markdown">
-</textarea>
 <div id="PRG-0001-text-html" class=""></div>
-<script>generate_markdown("PRG-0001-text");</script>
 </div>
 <h1 id="SEC-0001" class="section">1 Introduction</h1>
-<div id="PRG-0010">
-<textarea id="PRG-0010-text-md" class="markdown">Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four &lt;rem:ref oid="GLO-0043"&gt;<a href="#GLO-0043" class="rem_ref">establishments</a>&lt;/rem:ref&gt; across the capital, which are usually visited by young adults and families. Its specialty are sevillian &lt;rem:ref oid="GLO-0040"&gt;<a href="#GLO-0040" class="rem_ref">tapas</a>&lt;/rem:ref&gt; and dishes. They also have a very large wine menu&lt;br/&gt;&lt;br/&gt;Our system fulfils three fundamental functions for Tabernas Sevilla&amp;apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&amp;apos;s extensive menu they wish to &lt;rem:ref oid="GLO-0055"&gt;<a href="#GLO-0055" class="rem_ref">order</a>&lt;/rem:ref&gt; and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the &lt;rem:ref oid="GLO-0055"&gt;<a href="#GLO-0055" class="rem_ref">order</a>&lt;/rem:ref&gt; on site or selecting &lt;rem:ref oid="GLO-0045"&gt;<a href="#GLO-0045" class="rem_ref">delivery</a>&lt;/rem:ref&gt; to the previously specified address.  &lt;br/&gt;  &lt;br/&gt;In addition, it has the functionality implemented to manage the capacity of the bar&amp;apos;s &lt;rem:ref oid="GLO-0046"&gt;<a href="#GLO-0046" class="rem_ref">customers</a>&lt;/rem:ref&gt;, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the &lt;rem:ref oid="GLO-0049"&gt;<a href="#GLO-0049" class="rem_ref">waiting list</a>&lt;/rem:ref&gt;, which is currently done by hand by the waiters. &lt;br/&gt;&lt;/rem:text&gt;</textarea>
-<div id="PRG-0010-text-html" class=""></div>
-<script>generate_markdown("PRG-0010-text");</script>
+<div id="PRG-0010"><div id="PRG-0010-text-html" class=""><p>Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four <rem:ref oid="GLO-0043">establishments</rem:ref> across the capital, which are usually visited by young adults and families. Its specialty are sevillian <rem:ref oid="GLO-0040">tapas</rem:ref> and dishes. They also have a very large wine menu<br/><br/>Our system fulfils three fundamental functions for Tabernas Sevilla&apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&apos;s extensive menu they wish to <rem:ref oid="GLO-0055">order</rem:ref> and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the <rem:ref oid="GLO-0055">order</rem:ref> on site or selecting <rem:ref oid="GLO-0045">delivery</rem:ref> to the previously specified address.  <br/>  <br/>In addition, it has the functionality implemented to manage the capacity of the bar&apos;s <rem:ref oid="GLO-0046">customers</rem:ref>, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the <rem:ref oid="GLO-0049">waiting list</rem:ref>, which is currently done by hand by the waiters. <br/></rem:text></p></div>
 </div>
 <div id="GRF-0009" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\maps.jpeg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 1: </span>
-<textarea id="GRF-0009-name-md" class="markdown">Location of the restaurants</textarea>
-<span id="GRF-0009-name-html"></span>
-<script>generate_markdown("GRF-0009-name",true);</script>
+<span class="figure_caption_label">Figure 1:
+                 </span>
+<span id="GRF-0009-name-html" class="">Location of the restaurants</span>
 </p>
 </div>
 <h2 id="SEC-0002" class="section">1.1 Scope of the project</h2>
-<div id="PRG-0009">
-<textarea id="PRG-0009-text-md" class="markdown">The project is directed to the <a href="#GLO-0047" class="rem_ref">Owner</a> of "Tabernas Sevilla", Pablo Arenas, with whom we contacted thanks to one of the members of our project. In his organization, we can find different positions and users of the system to be developed.</textarea>
-<div id="PRG-0009-text-html" class=""></div>
-<script>generate_markdown("PRG-0009-text");</script>
+<div id="PRG-0009"><div id="PRG-0009-text-html" class=""><p>The project is directed to the Owner of "Tabernas Sevilla", Pablo Arenas, with whom we contacted thanks to one of the members of our project. In his organization, we can find different positions and users of the system to be developed.</p></div>
 </div>
 <div id="GRF-0008" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\foto oficina.jpeg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 2: </span>
-<textarea id="GRF-0008-name-md" class="markdown">Office of the <a href="#GLO-0047" class="rem_ref">owner</a>
-</textarea>
-<span id="GRF-0008-name-html"></span>
-<script>generate_markdown("GRF-0008-name",true);</script>
+<span class="figure_caption_label">Figure 2:
+                 </span>
+<span id="GRF-0008-name-html" class="">Office of the owner</span>
 </p>
 </div>
 <h2 id="SEC-0003" class="section">1.2 Participants in the project</h2>
 <div id="PRG-0012">
-<textarea id="PRG-0012-text-md" class="markdown">The following describes the people involved in the development of the software project and the roles they play:</textarea>
-<div id="PRG-0012-text-html" class=""></div>
-<script>generate_markdown("PRG-0012-text");</script>
+<div id="PRG-0012-text-html" class=""><p>The following describes the people involved in the development of the software project and the roles they play:</p></div>
 </div>
 <h3 id="SEC-0004" class="section">1.2.1 Participating Organizations</h3>
 <div id="ORG-0001">
@@ -266,9 +163,8 @@
 <tr>
 <th>Address</th>
 <td colspan="1">
-<textarea id="ORG-0001-address-md" class="markdown">Avenida de HYTASA nª12 Planta 3¬Puerta 19  41005 Sevilla - España</textarea>
-<div id="ORG-0001-address-html" class=""></div>
-<script>generate_markdown("ORG-0001-address");</script>
+<div id="ORG-0001-address-html" class=""><p>Avenida de HYTASA nª12 Planta 3<br />
+Puerta 19  41005 Sevilla - España</p></div>
 </td>
 </tr>
 <tr>
@@ -282,9 +178,34 @@
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="ORG-0001-comments-md" class="markdown">None</textarea>
-<div id="ORG-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ORG-0001-comments");</script>
+<div id="ORG-0001-comments-html" class="remus_comments"><p>None</p></div>
+</td>
+</tr>
+</table>
+</div>
+<div id="ORG-0002">
+<table class="organization remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/organization.png" /> Organization</th>
+<th class="name_column" colspan="1">Universidad de Sevilla</th>
+</tr>
+</thead>
+<tr>
+<th>Address</th>
+<td colspan="1">
+<div id="ORG-0002-address-html" class=""><p>Calle San Fernando, 4, 41004 Sevilla</p></div>
+</td>
+</tr>
+<tr>
+<th>Telephone</th>
+<td colspan="1">954 55 10 00</td>
+</tr>
+<tr>
+<th>Comments</th>
+<td colspan="1">
+<div id="ORG-0002-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -306,17 +227,13 @@
 <tr>
 <th>Role</th>
 <td colspan="1">
-<textarea id="STK-0006-stakeholderRole-md" class="markdown">Employer                        (is customer)                    </textarea>
-<span id="STK-0006-stakeholderRole-html"></span>
-<script>generate_markdown("STK-0006-stakeholderRole",true);</script>
+<span id="STK-0006-stakeholderRole-html" class="">Employer                        (is customer)                    </span>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="STK-0006-comments-md" class="markdown">Ninguno</textarea>
-<div id="STK-0006-comments-html" class="remus_comments"></div>
-<script>generate_markdown("STK-0006-comments");</script>
+<div id="STK-0006-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -337,17 +254,13 @@
 <tr>
 <th>Role</th>
 <td colspan="1">
-<textarea id="STK-0001-stakeholderRole-md" class="markdown">Requirements engineer                        (is developer)                    </textarea>
-<span id="STK-0001-stakeholderRole-html"></span>
-<script>generate_markdown("STK-0001-stakeholderRole",true);</script>
+<span id="STK-0001-stakeholderRole-html" class="">Requirements engineer                        (is developer)                    </span>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="STK-0001-comments-md" class="markdown">Ninguno</textarea>
-<div id="STK-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("STK-0001-comments");</script>
+<div id="STK-0001-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -368,17 +281,13 @@
 <tr>
 <th>Role</th>
 <td colspan="1">
-<textarea id="STK-0002-stakeholderRole-md" class="markdown">Requirements engineer                        (is developer)                    </textarea>
-<span id="STK-0002-stakeholderRole-html"></span>
-<script>generate_markdown("STK-0002-stakeholderRole",true);</script>
+<span id="STK-0002-stakeholderRole-html" class="">Requirements engineer                        (is developer)                    </span>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="STK-0002-comments-md" class="markdown">Ninguno</textarea>
-<div id="STK-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("STK-0002-comments");</script>
+<div id="STK-0002-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -399,17 +308,13 @@
 <tr>
 <th>Role</th>
 <td colspan="1">
-<textarea id="STK-0003-stakeholderRole-md" class="markdown">Requirements engineer                        (is developer)                    </textarea>
-<span id="STK-0003-stakeholderRole-html"></span>
-<script>generate_markdown("STK-0003-stakeholderRole",true);</script>
+<span id="STK-0003-stakeholderRole-html" class="">Requirements engineer                        (is developer)                    </span>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="STK-0003-comments-md" class="markdown">Ninguno</textarea>
-<div id="STK-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("STK-0003-comments");</script>
+<div id="STK-0003-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -430,17 +335,13 @@
 <tr>
 <th>Role</th>
 <td colspan="1">
-<textarea id="STK-0004-stakeholderRole-md" class="markdown">Requirements engineer                        (is developer)                    </textarea>
-<span id="STK-0004-stakeholderRole-html"></span>
-<script>generate_markdown("STK-0004-stakeholderRole",true);</script>
+<span id="STK-0004-stakeholderRole-html" class="">Requirements engineer                        (is developer)                    </span>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="STK-0004-comments-md" class="markdown">Ninguno</textarea>
-<div id="STK-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("STK-0004-comments");</script>
+<div id="STK-0004-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -461,398 +362,364 @@
 <tr>
 <th>Role</th>
 <td colspan="1">
-<textarea id="STK-0005-stakeholderRole-md" class="markdown">Requirements engineer                        (is developer)                    </textarea>
-<span id="STK-0005-stakeholderRole-html"></span>
-<script>generate_markdown("STK-0005-stakeholderRole",true);</script>
+<span id="STK-0005-stakeholderRole-html" class="">Requirements engineer                        (is developer)                    </span>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="STK-0005-comments-md" class="markdown">Ninguno</textarea>
-<div id="STK-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("STK-0005-comments");</script>
+<div id="STK-0005-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
 </div>
 <h2 id="SEC-0006" class="section">1.3 Project goals</h2>
 <div id="PRG-0011">
-<textarea id="PRG-0011-text-md" class="markdown">The following describes the main objectives that are expected to be achieved when the system to be developed is in production:¬¬-	Automate operational processes: In this way we can optimize the company's resources and achieve a more efficient management.¬¬-	Provide the information that supports the decision making process: the system will provide the organization with various relevant information about the business that can be used to make decisions that directly affect the organization.¬¬-	Achieve competitive advantages: optimizing resources, making processes automatically and obtaining information relevant to the business model will provide the company with strategic supremacy over the competition.¬</textarea>
-<div id="PRG-0011-text-html" class=""></div>
-<script>generate_markdown("PRG-0011-text");</script>
+<div id="PRG-0011-text-html" class=""><p>The following describes the main objectives that are expected to be achieved when the system to be developed is in production:</p>
+<ul>
+<li><p>Automate operational processes: In this way we can optimize the company's resources and achieve a more efficient management.</p></li>
+<li><p>Provide the information that supports the decision making process: the system will provide the organization with various relevant information about the business that can be used to make decisions that directly affect the organization.</p></li>
+<li><p>Achieve competitive advantages: optimizing resources, making processes automatically and obtaining information relevant to the business model will provide the company with strategic supremacy over the competition.   </p></li>
+</ul></div>
 </div>
 <h1 id="SEC-0007" class="section">2 Information about the domain of the problem</h1>
 <h2 id="SEC-0008" class="section">2.1 Introduction to the problem domain</h2>
-<div id="PRG-0041">
-<textarea id="PRG-0041-text-md" class="markdown">The company for which the creation of our system is intended is called Tabernas Sevilla. This chain of restaurants with 4 <a href="#GLO-0043" class="rem_ref">establishments</a> in Seville has been serving <a href="#GLO-0040" class="rem_ref">tapas</a> and wine since 2001.¬¬These restaurants work very well both for regular <a href="#GLO-0046" class="rem_ref">customers</a> and for passers-by, so we decided to provide new distribution methods and make the existing ones more efficient in <a href="#GLO-0055" class="rem_ref">order</a> to allow this company to sell more products.¬¬Tabernas Sevilla already has a <a href="#GLO-0050" class="rem_ref">website</a> that allows the <a href="#GLO-0052" class="rem_ref">reservation</a> of tables with or without a menu selection beforehand. We intend to add to the <a href="#GLO-0050" class="rem_ref">website</a> the possibility for <a href="#GLO-0046" class="rem_ref">customers</a> to have their meals delivered wherever they want around the restaurants. We also plan to add a take away system to avoid waiting for <a href="#GLO-0046" class="rem_ref">customers</a>. These two systems will make it possible to sell products without being limited by the capacity of the different restaurants of Tabernas Sevilla.¬¬In addition to these new sales methods, we are going to implement a social media involvement system consisting of a <a href="#GLO-0044" class="rem_ref">review</a> system and others in <a href="#GLO-0055" class="rem_ref">order</a> to inform the customer and, as its name suggests, involve him in the life of Tabernas Sevilla.¬¬Finally, we have decided to improve the management of the <a href="#GLO-0049" class="rem_ref">waiting list</a> by allowing us to inform the customer of how much time he or she has left before being able to settle in the restaurant.¬¬All these actions can be carried out via the <a href="#GLO-0050" class="rem_ref">website</a> once the customer has registered and logged in to their profile.</textarea>
-<div id="PRG-0041-text-html" class=""></div>
-<script>generate_markdown("PRG-0041-text");</script>
+<div id="PRG-0041"><div id="PRG-0041-text-html" class=""><p>The company for which the creation of our system is intended is called Tabernas Sevilla. This chain of restaurants with 4 establishments in Seville has been serving tapas and wine since 2001.</p>
+<p>These restaurants work very well both for regular customers and for passers-by, so we decided to provide new distribution methods and make the existing ones more efficient in order to allow this company to sell more products.</p>
+<p>Tabernas Sevilla already has a website that allows the reservation of tables with or without a menu selection beforehand. We intend to add to the website the possibility for customers to have their meals delivered wherever they want around the restaurants. We also plan to add a take away system to avoid waiting for customers. These two systems will make it possible to sell products without being limited by the capacity of the different restaurants of Tabernas Sevilla.</p>
+<p>In addition to these new sales methods, we are going to implement a social media involvement system consisting of a review system and others in order to inform the customer and, as its name suggests, involve him in the life of Tabernas Sevilla.</p>
+<p>Finally, we have decided to improve the management of the waiting list by allowing us to inform the customer of how much time he or she has left before being able to settle in the restaurant.</p>
+<p>All these actions can be carried out via the website once the customer has registered and logged in to their profile.</p></div>
 </div>
 <h2 id="SEC-0009" class="section">2.2 Glossary of terms of the problem domain</h2>
-<div id="GLO-0048" class="glo">
-<textarea id="GLO-0048-text-md" class="markdown">**Bookings**: ¬¬<a href="#GLO-0048" class="rem_ref">Bookings</a> at Tabernas Sevilla can be made either by phone or directly through their <a href="#GLO-0050" class="rem_ref">website</a>. These are only available for groups of 6 to 20 people and are available until 2:30 pm for lunch and 9:30 pm for dinner. Reservations are not made on the terrace so that there is always room for passers-by.¬¬Once the <a href="#GLO-0052" class="rem_ref">reservation</a> is made, an email will be sent to the customer to pay 25% of the price if he chose his menu during the <a href="#GLO-0052" class="rem_ref">reservation</a> or 3 euros if he will <a href="#GLO-0055" class="rem_ref">order</a> on the spot to validate the <a href="#GLO-0052" class="rem_ref">reservation</a>. If the customer has not chosen a menu during the <a href="#GLO-0052" class="rem_ref">reservation</a>, then he will not be able to <a href="#GLO-0055" class="rem_ref">order</a> tapa unless it is the only format of the desired dish.¬</textarea>
-<div id="GLO-0048-text-html" class=""></div>
-<script>generate_markdown("GLO-0048-text");</script>
+<div id="GLO-0048" class="glo"><div id="GLO-0048-text-html" class=""><p><strong>Bookings</strong>: </p>
+<p>Bookings at Tabernas Sevilla can be made either by phone or directly through their website. These are only available for groups of 6 to 20 people and are available until 2:30 pm for lunch and 9:30 pm for dinner. Reservations are not made on the terrace so that there is always room for passers-by.</p>
+<p>Once the reservation is made, an email will be sent to the customer to pay 25% of the price if he chose his menu during the reservation or 3 euros if he will order on the spot to validate the reservation. If the customer has not chosen a menu during the reservation, then he will not be able to order tapa unless it is the only format of the desired dish.   </p></div>
 </div>
-<div id="GLO-0046" class="glo">
-<textarea id="GLO-0046-text-md" class="markdown">**Customers, Diner**: ¬¬<a href="#GLO-0046" class="rem_ref">Customers</a> of Tabernas Sevilla are mostly families and young adults. We noticed that there were very few children when we went there. </textarea>
-<div id="GLO-0046-text-html" class=""></div>
-<script>generate_markdown("GLO-0046-text");</script>
+<div id="GLO-0046" class="glo"><div id="GLO-0046-text-html" class=""><p><strong>Customers, Diner</strong>: </p>
+<p>Customers of Tabernas Sevilla are mostly families and young adults. We noticed that there were very few children when we went there. </p></div>
 </div>
-<div id="GLO-0045" class="glo">
-<textarea id="GLO-0045-text-md" class="markdown">**Delivery**: ¬¬Our site will offer an online ordering system that can then be either delivered or picked up directly at the desired restaurant. In addition, the details of the <a href="#GLO-0055" class="rem_ref">order</a> will be available as well as the invoice.¬¬The <a href="#GLO-0045" class="rem_ref">delivery</a> system will display in real time the status of the <a href="#GLO-0055" class="rem_ref">order</a> with an estimated time of arrival.¬¬An estimated time for <a href="#GLO-0055" class="rem_ref">order</a> pickup will also be provided.¬</textarea>
-<div id="GLO-0045-text-html" class=""></div>
-<script>generate_markdown("GLO-0045-text");</script>
+<div id="GLO-0045" class="glo"><div id="GLO-0045-text-html" class=""><p><strong>Delivery</strong>: </p>
+<p>Our site will offer an online ordering system that can then be either delivered or picked up directly at the desired restaurant. In addition, the details of the order will be available as well as the invoice.</p>
+<p>The delivery system will display in real time the status of the order with an estimated time of arrival.</p>
+<p>An estimated time for order pickup will also be provided.   </p></div>
 </div>
-<div id="GLO-0043" class="glo">
-<textarea id="GLO-0043-text-md" class="markdown">**Establishments, Taverns**: ¬¬Tabernas Sevilla has four restaurants in different areas of the city of Seville, which in <a href="#GLO-0055" class="rem_ref">order</a> of their opening are in Porvenir, Torneo, Nervión and Arenal. ¬These <a href="#GLO-0043" class="rem_ref">establishments</a> all operate independently, however, they all offer the same menu, allowing <a href="#GLO-0046" class="rem_ref">customers</a> to enjoy the same products regardless of the restaurant of this brand. In addition, all its <a href="#GLO-0043" class="rem_ref">establishments</a> have a bar and a room, only the layout of these two elements and their location in the city change. </textarea>
-<div id="GLO-0043-text-html" class=""></div>
-<script>generate_markdown("GLO-0043-text");</script>
+<div id="GLO-0043" class="glo"><div id="GLO-0043-text-html" class=""><p><strong>Establishments, Taverns</strong>: </p>
+<p>Tabernas Sevilla has four restaurants in different areas of the city of Seville, which in order of their opening are in Porvenir, Torneo, Nervión and Arenal.<br />
+These establishments all operate independently, however, they all offer the same menu, allowing customers to enjoy the same products regardless of the restaurant of this brand. In addition, all its establishments have a bar and a room, only the layout of these two elements and their location in the city change. </p></div>
 </div>
 <div id="GRF-0010" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\restaurant (2).jpeg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 3: </span>
-<textarea id="GRF-0010-name-md" class="markdown">Taberna Arenal</textarea>
-<span id="GRF-0010-name-html"></span>
-<script>generate_markdown("GRF-0010-name",true);</script>
+<span class="figure_caption_label">Figure 3:
+                 </span>
+<span id="GRF-0010-name-html" class="">Taberna Arenal</span>
 </p>
 </div>
-<div id="GLO-0047" class="glo">
-<textarea id="GLO-0047-text-md" class="markdown">**Owner**: ¬¬Tabernas Sevilla's manager is named Pablo Arenas. He is half <a href="#GLO-0047" class="rem_ref">owner</a> of this business.¬</textarea>
-<div id="GLO-0047-text-html" class=""></div>
-<script>generate_markdown("GLO-0047-text");</script>
+<div id="GLO-0047" class="glo"><div id="GLO-0047-text-html" class=""><p><strong>Owner</strong>: </p>
+<p>Tabernas Sevilla's manager is named Pablo Arenas. He is half owner of this business.   </p></div>
 </div>
-<div id="GLO-0044" class="glo">
-<textarea id="GLO-0044-text-md" class="markdown">**Review**: ¬¬Our site will be equipped with a rating system that will allow you to rate and leave comments on the different dishes offered by this restaurant. Indeed, logged users will be able to give a rating from 0 to 5 stars and write a comment to support their rating.¬¬ Thus, <a href="#GLO-0046" class="rem_ref">customers</a> and restaurant staff will have the opportunity to be informed of the success of a dish and have more details than a rating thanks to the comments.</textarea>
-<div id="GLO-0044-text-html" class=""></div>
-<script>generate_markdown("GLO-0044-text");</script>
+<div id="GLO-0044" class="glo"><div id="GLO-0044-text-html" class=""><p><strong>Review</strong>: </p>
+<p>Our site will be equipped with a rating system that will allow you to rate and leave comments on the different dishes offered by this restaurant. Indeed, logged users will be able to give a rating from 0 to 5 stars and write a comment to support their rating.</p>
+<p>Thus, customers and restaurant staff will have the opportunity to be informed of the success of a dish and have more details than a rating thanks to the comments.</p></div>
 </div>
-<div id="GLO-0040" class="glo">
-<textarea id="GLO-0040-text-md" class="markdown">**Tapas**: ¬¬<a href="#GLO-0040" class="rem_ref">Tapas</a> are small salty Spanish dishes, usually served with drinks in a bar.Tabernas Sevilla sells 60 different <a href="#GLO-0040" class="rem_ref">tapas</a> classified in 8 categories which are dessert, meat, own kitchen, salad, omelettes, bar, boards, cheese and cold meats which prices vary between 2 and 18 euros depending on the desired dish and its quantity. ¬¬These dishes are offered in 3 different quantities, in tapa, half ration and full ration, however, the <a href="#GLO-0040" class="rem_ref">tapas</a> portions are only available by <a href="#GLO-0052" class="rem_ref">reservation</a> if the customer indicates these dishes, otherwise, only the dishes only offered in <a href="#GLO-0040" class="rem_ref">tapas</a> will be available once on site.¬¬They are all available at this address: https://www.arengalia.es/carta-de-<a href="#GLO-0040" class="rem_ref">tapas</a>¬</textarea>
-<div id="GLO-0040-text-html" class=""></div>
-<script>generate_markdown("GLO-0040-text");</script>
+<div id="GLO-0040" class="glo"><div id="GLO-0040-text-html" class=""><p><strong>Tapas</strong>: </p>
+<p>Tapas are small salty Spanish dishes, usually served with drinks in a bar.Tabernas Sevilla sells 60 different tapas classified in 8 categories which are dessert, meat, own kitchen, salad, omelettes, bar, boards, cheese and cold meats which prices vary between 2 and 18 euros depending on the desired dish and its quantity. </p>
+<p>These dishes are offered in 3 different quantities, in tapa, half ration and full ration, however, the tapas portions are only available by reservation if the customer indicates these dishes, otherwise, only the dishes only offered in tapas will be available once on site.</p>
+<p>They are all available at this address: <a href="https://www.arengalia.es/carta-de-tapas">https://www.arengalia.es/carta-de-tapas</a>   </p></div>
 </div>
 <div id="GRF-0005" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\dish 2.jpeg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 4: </span>
-<textarea id="GRF-0005-name-md" class="markdown">A picture of a dish</textarea>
-<span id="GRF-0005-name-html"></span>
-<script>generate_markdown("GRF-0005-name",true);</script>
+<span class="figure_caption_label">Figure 4:
+                 </span>
+<span id="GRF-0005-name-html" class="">A picture of a dish</span>
 </p>
 </div>
-<div id="GLO-0056" class="glo">
-<textarea id="GLO-0056-text-md" class="markdown">**User profile**: ¬¬The client will be able to connect to the Tabernas Sevilla <a href="#GLO-0050" class="rem_ref">website</a> in <a href="#GLO-0055" class="rem_ref">order</a> to access different functionalities such as <a href="#GLO-0045" class="rem_ref">delivery</a> or take away of meals.¬ In addition, they will be able to give their opinion on the different 	dishes ordered through their profile and will be able to access the history of their orders in <a href="#GLO-0055" class="rem_ref">order</a> to find a particular dish. </textarea>
-<div id="GLO-0056-text-html" class=""></div>
-<script>generate_markdown("GLO-0056-text");</script>
+<div id="GLO-0056" class="glo"><div id="GLO-0056-text-html" class=""><p><strong>User profile</strong>: </p>
+<p>The client will be able to connect to the Tabernas Sevilla website in order to access different functionalities such as delivery or take away of meals.<br />
+ In addition, they will be able to give their opinion on the different     dishes ordered through their profile and will be able to access the history of their orders in order to find a particular dish. </p></div>
 </div>
-<div id="GLO-0049" class="glo">
-<textarea id="GLO-0049-text-md" class="markdown">**Waiting list**: ¬¬The <a href="#GLO-0049" class="rem_ref">waiting list</a> is independent at each Tabernas Sevilla restaurant. It is managed directly by the waiters and the restaurant manager.¬¬It is for the moment very rudimentary but is intended to be computerized in <a href="#GLO-0055" class="rem_ref">order</a> to allow a less long waiting time for <a href="#GLO-0046" class="rem_ref">customers</a> and a better management for the staff.¬</textarea>
-<div id="GLO-0049-text-html" class=""></div>
-<script>generate_markdown("GLO-0049-text");</script>
+<div id="GLO-0049" class="glo"><div id="GLO-0049-text-html" class=""><p><strong>Waiting list</strong>: </p>
+<p>The waiting list is independent at each Tabernas Sevilla restaurant. It is managed directly by the waiters and the restaurant manager.</p>
+<p>It is for the moment very rudimentary but is intended to be computerized in order to allow a less long waiting time for customers and a better management for the staff.   </p></div>
 </div>
-<div id="GLO-0050" class="glo">
-<textarea id="GLO-0050-text-md" class="markdown">**Website**: ¬The client will be able to connect to the Tabernas Sevilla <a href="#GLO-0050" class="rem_ref">website</a> in <a href="#GLO-0055" class="rem_ref">order</a> to access different functionalities such as <a href="#GLO-0045" class="rem_ref">delivery</a> or take away of meals.¬¬In addition, they will be able to give their opinion on the different 	dishes ordered through their profile and will be able to access the history of their orders in <a href="#GLO-0055" class="rem_ref">order</a> to find a particular dish.</textarea>
-<div id="GLO-0050-text-html" class=""></div>
-<script>generate_markdown("GLO-0050-text");</script>
+<div id="GLO-0050" class="glo"><div id="GLO-0050-text-html" class=""><p><strong>Website</strong>:<br />
+The client will be able to connect to the Tabernas Sevilla website in order to access different functionalities such as delivery or take away of meals.</p>
+<p>In addition, they will be able to give their opinion on the different     dishes ordered through their profile and will be able to access the history of their orders in order to find a particular dish.</p></div>
 </div>
-<div id="GLO-0042" class="glo">
-<textarea id="GLO-0042-text-md" class="markdown">**Wines**: ¬¬Tabernas Sevilla offers 5 types of <a href="#GLO-0042" class="rem_ref">wines</a> which are the generous, cellar, rosé, white and red for a total of 41 different <a href="#GLO-0042" class="rem_ref">wines</a> to date. ¬¬These <a href="#GLO-0042" class="rem_ref">wines</a> are offered in bottles whose price starts at 10 euros and can go up to 35 euros but some of them are also available in glass from 1.8 euros to 2.6 euros.¬¬ Finally, the customer can ask the waiter and access the history of the <a href="#GLO-0042" class="rem_ref">wines</a> of the week of this brand, knowing that Tabernas Sevilla offering its <a href="#GLO-0042" class="rem_ref">wines</a> of the week can be unique to one of the 4 restaurants or common to all.¬¬All of them can be find at this adress : https://www.arengalia.es/carta-de-vinos¬¬</textarea>
-<div id="GLO-0042-text-html" class=""></div>
-<script>generate_markdown("GLO-0042-text");</script>
+<div id="GLO-0042" class="glo"><div id="GLO-0042-text-html" class=""><p><strong>Wines</strong>: </p>
+<p>Tabernas Sevilla offers 5 types of wines which are the generous, cellar, rosé, white and red for a total of 41 different wines to date. </p>
+<p>These wines are offered in bottles whose price starts at 10 euros and can go up to 35 euros but some of them are also available in glass from 1.8 euros to 2.6 euros.</p>
+<p>Finally, the customer can ask the waiter and access the history of the wines of the week of this brand, knowing that Tabernas Sevilla offering its wines of the week can be unique to one of the 4 restaurants or common to all.</p>
+<p>All of them can be find at this adress : <a href="https://www.arengalia.es/carta-de-vinos">https://www.arengalia.es/carta-de-vinos</a></p></div>
 </div>
-<div id="GLO-0051" class="glo">
-<textarea id="GLO-0051-text-md" class="markdown">**Working stations**: ¬¬A piece of hardware that allows the waiter to assign the orders to a virtual table, and when the customer asks for the bill, the program will generate a bill according to the assigned food. ¬¬<a href="#GLO-0051" class="rem_ref">Working stations</a> can be found in any of the establihsments, for each of them there is one static monitor for the bar, and a portable PDA for every waiter. <a href="#GLO-0051" class="rem_ref">Working stations</a> use an application called BDP-NET software (see figures 8 and 9).</textarea>
-<div id="GLO-0051-text-html" class=""></div>
-<script>generate_markdown("GLO-0051-text");</script>
+<div id="GLO-0051" class="glo"><div id="GLO-0051-text-html" class=""><p><strong>Working stations</strong>: </p>
+<p>A piece of hardware that allows the waiter to assign the orders to a virtual table, and when the customer asks for the bill, the program will generate a bill according to the assigned food. </p>
+<p>Working stations can be found in any of the establihsments, for each of them there is one static monitor for the bar, and a portable PDA for every waiter. Working stations use an application called BDP-NET software (see figures 8 and 9).</p></div>
 </div>
 <h1 id="SEC-0010" class="section">3 Description of the current situation</h1>
 <div id="PRG-0002">
-<textarea id="PRG-0002-text-md" class="markdown">Currently, the business is going through challenging times. The pandemic that we live in makes it hard for the hostelry sector to succeed and reach their business goals. However, Tabernas Sevilla is financially stable and mature enough to resist these challenges. </textarea>
-<div id="PRG-0002-text-html" class=""></div>
-<script>generate_markdown("PRG-0002-text");</script>
+<div id="PRG-0002-text-html" class=""><p>Currently, the business is going through challenging times. The pandemic that we live in makes it hard for the hostelry sector to succeed and reach their business goals. However, Tabernas Sevilla is financially stable and mature enough to resist these challenges. </p></div>
 </div>
 <h2 id="SEC-0011" class="section">3.1 Pros and cons of the current situation</h2>
 <h3 id="SEC-0012" class="section">3.1.1 Strengths of the current situation</h3>
 <div id="GLO-0003" class="glo">
-<textarea id="GLO-0003-text-md" class="markdown">**01 - Maturity**: - The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. &lt;br&gt; &lt;br&gt;¬¬</textarea>
-<div id="GLO-0003-text-html" class=""></div>
-<script>generate_markdown("GLO-0003-text");</script>
+<div id="GLO-0003-text-html" class=""><p><strong>01 - Maturity</strong>: - The main advantage of Tabernas Sevilla is the age of the business. Since they started in 2001, they have had enough time to fix all the problems that have appeared during the business lifetime and to gain a good reputation in Seville. <br> <br></p></div>
 </div>
 <div id="GLO-0063" class="glo">
-<textarea id="GLO-0063-text-md" class="markdown">**02 - No issues**: - There are no significant issues to solve now, and that makes us able to make new improvements.</textarea>
-<div id="GLO-0063-text-html" class=""></div>
-<script>generate_markdown("GLO-0063-text");</script>
+<div id="GLO-0063-text-html" class=""><p><strong>02 - No issues</strong>: - There are no significant issues to solve now, and that makes us able to make new improvements.</p></div>
 </div>
 <h3 id="SEC-0013" class="section">3.1.2 Weaknesses of the current situation</h3>
 <div id="GLO-0004" class="glo">
-<textarea id="GLO-0004-text-md" class="markdown">**01 - Covid19**: - The ongoing pandemic makes it difficult to invest in new features and techniques. ¬</textarea>
-<div id="GLO-0004-text-html" class=""></div>
-<script>generate_markdown("GLO-0004-text");</script>
+<div id="GLO-0004-text-html" class=""><p><strong>01 - Covid19</strong>: - The ongoing pandemic makes it difficult to invest in new features and techniques.    </p></div>
 </div>
 <div id="GLO-0064" class="glo">
-<textarea id="GLO-0064-text-md" class="markdown">**02 - Complex booking**: ¬- The current process to book a table in a restaurant is complex.  ¬</textarea>
-<div id="GLO-0064-text-html" class=""></div>
-<script>generate_markdown("GLO-0064-text");</script>
+<div id="GLO-0064-text-html" class=""><p><strong>02 - Complex booking</strong>: </p>
+<ul>
+<li>The current process to book a table in a restaurant is complex.     </li>
+</ul></div>
 </div>
 <div id="GLO-0065" class="glo">
-<textarea id="GLO-0065-text-md" class="markdown">**03 - No social media profiles**: ¬- There is no social media involvement to promote the business. ¬</textarea>
-<div id="GLO-0065-text-html" class=""></div>
-<script>generate_markdown("GLO-0065-text");</script>
+<div id="GLO-0065-text-html" class=""><p><strong>03 - No social media profiles</strong>: </p>
+<ul>
+<li>There is no social media involvement to promote the business.    </li>
+</ul></div>
 </div>
 <h2 id="SEC-0014" class="section">3.2 Models of the processes of the current business</h2>
 <h3 id="SEC-0015" class="section">3.2.1 Description of the actors of the current business</h3>
-<div id="PRG-0005">
-<textarea id="PRG-0005-text-md" class="markdown">- <a href="#GLO-0047" class="rem_ref">Owner</a>: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The <a href="#GLO-0047" class="rem_ref">owner</a> contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the manager. &lt;br&gt;&lt;br&gt;¬- Manager: Skilled person with experience who is in charge of an establishment on behalf of the <a href="#GLO-0047" class="rem_ref">owner</a> and also watches over a group of workers.&lt;br&gt;&lt;br&gt;¬- Waiter: Person in charge of taking commands and bringing dishes to the <a href="#GLO-0046" class="rem_ref">diner</a>. &lt;br&gt;&lt;br&gt;¬- Chef: Person in charge of preparing and cooking food for the diners.&lt;br&gt;&lt;br&gt;¬- <a href="#GLO-0046" class="rem_ref">Diner</a>: Customer who comes to the business to consume the services we offer. &lt;br&gt;&lt;br&gt;¬</textarea>
-<div id="PRG-0005-text-html" class=""></div>
-<script>generate_markdown("PRG-0005-text");</script>
+<div id="PRG-0005"><div id="PRG-0005-text-html" class=""><ul>
+<li>Owner: Our client, who oversees the general management of the 4 restaurants and decision making of the business. The owner contacts and deals with providers and selects the menu for the restaurants. He delegates his functions to the manager. <br><br></li>
+<li>Manager: Skilled person with experience who is in charge of an establishment on behalf of the owner and also watches over a group of workers.<br><br></li>
+<li>Waiter: Person in charge of taking commands and bringing dishes to the diner. <br><br></li>
+<li>Chef: Person in charge of preparing and cooking food for the diners.<br><br></li>
+<li>Diner: Customer who comes to the business to consume the services we offer. <br><br>   </li>
+</ul></div>
 </div>
 <h3 id="SEC-0016" class="section">3.2.2 Description of the processes of the current business</h3>
-<div id="GLO-0052" class="glo">
-<textarea id="GLO-0052-text-md" class="markdown">**[P-01], Reservation**: To make a <a href="#GLO-0052" class="rem_ref">reservation</a>, the client can call the number of the restaurant or fill a form to gather basic information about the <a href="#GLO-0052" class="rem_ref">reservation</a>. Then, a foreman will send an email to the customer to pay the 25% of the price of  the selected menu, or 3 euros per <a href="#GLO-0046" class="rem_ref">diner</a> if there is no selected menu (in this case no <a href="#GLO-0040" class="rem_ref">tapas</a> will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. </textarea>
-<div id="GLO-0052-text-html" class=""></div>
-<script>generate_markdown("GLO-0052-text");</script>
-</div>
-<div id="GLO-0053" class="glo">
-<textarea id="GLO-0053-text-md" class="markdown">**[P-02], Customer enters into a tavern protocol**: When a <a href="#GLO-0046" class="rem_ref">diner</a> enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the <a href="#GLO-0046" class="rem_ref">diner</a> or diners have decided what they would like to eat, the waiter will write it down in their working station, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a <a href="#GLO-0046" class="rem_ref">diner</a> asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them. This process includes <a href="#GLO-0055" class="rem_ref">[P-04]</a>.</textarea>
-<div id="GLO-0053-text-html" class=""></div>
-<script>generate_markdown("GLO-0053-text");</script>
-</div>
-<div id="GLO-0054" class="glo">
-<textarea id="GLO-0054-text-md" class="markdown">**[P-03], Waiting list process**: When a <a href="#GLO-0046" class="rem_ref">diner</a> enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the <a href="#GLO-0049" class="rem_ref">waiting list</a>. If they do, the waiter will write the name and phone number of the <a href="#GLO-0046" class="rem_ref">diner</a> in a paper. When a table is free, the waiter must call the <a href="#GLO-0046" class="rem_ref">diner</a> to let them know that they can come already.</textarea>
-<div id="GLO-0054-text-html" class=""></div>
-<script>generate_markdown("GLO-0054-text");</script>
-</div>
-<div id="GLO-0055" class="glo">
-<textarea id="GLO-0055-text-md" class="markdown">**[P-04], Order**: A customer orders food in a tavern and the waiter will write it down in their portable working station. The chef receives the <a href="#GLO-0055" class="rem_ref">order</a> and cheks if there are all the ingredients necessary, if there aren't they will put on a reminder to call for the provider later at the end of the day, if there are all the ingredients necessary, the chefs will start cooking and when it's done the food will be forwarded to the <a href="#GLO-0046" class="rem_ref">diner</a> through the waiter.</textarea>
-<div id="GLO-0055-text-html" class=""></div>
-<script>generate_markdown("GLO-0055-text");</script>
+<div id="GLO-0052" class="glo"><div id="GLO-0052-text-html" class=""><p><strong>[P-01], Reservation</strong>: To make a reservation, the client can call the number of the restaurant or fill a form to gather basic information about the reservation. Then, a foreman will send an email to the customer to pay the 25% of the price of  the selected menu, or 3 euros per diner if there is no selected menu (in this case no tapas will be served, only full sized dishes, unless the only size of the dish is a tapa). This money will be refunded once the diners finish their meal. </p></div>
 </div>
 <div id="GRF-0001" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\bpmn 1.jpeg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 5: </span>
-<textarea id="GRF-0001-name-md" class="markdown">
-<a href="#GLO-0052" class="rem_ref">Reservation</a>
-</textarea>
-<span id="GRF-0001-name-html"></span>
-<script>generate_markdown("GRF-0001-name",true);</script>
+<span class="figure_caption_label">Figure 5:
+                 </span>
+<span id="GRF-0001-name-html" class="">Reservation</span>
 </p>
+</div>
+<div id="GLO-0053" class="glo"><div id="GLO-0053-text-html" class=""><p><strong>[P-02], Customer enters into a tavern protocol</strong>: When a diner enters the tavern, a waiter must ask them if they would like to take a seat, and then ask them what they would like to drink. Then, after the diner or diners have decided what they would like to eat, the waiter will write it down in their working station, and immediately the chefs will start cooking the ordered dishes. Once the food is ready, the chefs will put the dishes in the kitchen window and the waiter will move it to the diners table. When a diner asks for the bill, the waiter will print it with the electronic command and put it in the diners table, wait for them to pay with cash or credit card and say goodbye to them. This process includes [P-04].</p></div>
 </div>
 <div id="GRF-0002" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\bpmn2.jpeg" width="90%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 6: </span>
-<textarea id="GRF-0002-name-md" class="markdown">
-<a href="#GLO-0053" class="rem_ref">Customer enters into a tavern protocol</a>
-</textarea>
-<span id="GRF-0002-name-html"></span>
-<script>generate_markdown("GRF-0002-name",true);</script>
+<span class="figure_caption_label">Figure 6:
+                 </span>
+<span id="GRF-0002-name-html" class="">Customer enters into a tavern protocol</span>
 </p>
+</div>
+<div id="GLO-0054" class="glo"><div id="GLO-0054-text-html" class=""><p><strong>[P-03], Waiting list process</strong>: When a diner enters the tavern and the capacity of it is full, a waiter will ask them if they want to be in the waiting list. If they do, the waiter will write the name and phone number of the diner in a paper. When a table is free, the waiter must call the diner to let them know that they can come already.</p></div>
 </div>
 <div id="GRF-0003" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\bpmn3.jpeg" width="90%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 7: </span>
-<textarea id="GRF-0003-name-md" class="markdown">
-<a href="#GLO-0054" class="rem_ref">Waiting list process</a>
-</textarea>
-<span id="GRF-0003-name-html"></span>
-<script>generate_markdown("GRF-0003-name",true);</script>
+<span class="figure_caption_label">Figure 7:
+                 </span>
+<span id="GRF-0003-name-html" class="">Waiting list process</span>
 </p>
+</div>
+<div id="GLO-0055" class="glo"><div id="GLO-0055-text-html" class=""><p><strong>[P-04], Order</strong>: A customer orders food in a tavern and the waiter will write it down in their portable working station. The chef receives the order and cheks if there are all the ingredients necessary, if there aren't they will put on a reminder to call for the provider later at the end of the day, if there are all the ingredients necessary, the chefs will start cooking and when it's done the food will be forwarded to the diner through the waiter.</p></div>
 </div>
 <div id="GRF-0017" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\bpmn4.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 8: </span>
-<textarea id="GRF-0017-name-md" class="markdown">
-<a href="#GLO-0055" class="rem_ref">Order</a>
-</textarea>
-<span id="GRF-0017-name-html"></span>
-<script>generate_markdown("GRF-0017-name",true);</script>
+<span class="figure_caption_label">Figure 8:
+                 </span>
+<span id="GRF-0017-name-html" class="">Order</span>
 </p>
 </div>
 <h2 id="SEC-0017" class="section">3.3 Current technological environment</h2>
 <h3 id="SEC-0018" class="section">3.3.1 Description of the hardware environment</h3>
-<div id="PRG-0007">
-<textarea id="PRG-0007-text-md" class="markdown">- It is formed by all the <a href="#GLO-0051" class="rem_ref">working stations</a> that all the four restaurants have, in which the waiters keep track of what the diners <a href="#GLO-0055" class="rem_ref">order</a>. This hardware uses the software BDP-NET. <a href="#GLO-0051" class="rem_ref">Working stations</a> can be both portable and static (see figures 8 and 9  below).¬&lt;br&gt;¬There is also wi-fi connection in all of the <a href="#GLO-0043" class="rem_ref">establishments</a> and two computers in the office, one for the <a href="#GLO-0047" class="rem_ref">owner</a> and one for the secretary, where they can access the general database.</textarea>
-<div id="PRG-0007-text-html" class=""></div>
-<script>generate_markdown("PRG-0007-text");</script>
+<div id="PRG-0007"><div id="PRG-0007-text-html" class=""><ul>
+<li>It is formed by all the working stations that all the four restaurants have, in which the waiters keep track of what the diners order. This hardware uses the software BDP-NET. Working stations can be both portable and static (see figures 8 and 9  below).
+<br><br />
+There is also wi-fi connection in all of the establishments and two computers in the office, one for the owner and one for the secretary, where they can access the general database.</li>
+</ul></div>
 </div>
 <div id="GRF-0014" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\TPV ELECTRONICO.jpg" width="20%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 9: </span>
-<textarea id="GRF-0014-name-md" class="markdown">Static working station </textarea>
-<span id="GRF-0014-name-html"></span>
-<script>generate_markdown("GRF-0014-name",true);</script>
+<span class="figure_caption_label">Figure 9:
+                 </span>
+<span id="GRF-0014-name-html" class="">Static working station </span>
 </p>
 </div>
 <div id="GRF-0015" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\pda bar.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 10: </span>
-<textarea id="GRF-0015-name-md" class="markdown">Portable working station</textarea>
-<span id="GRF-0015-name-html"></span>
-<script>generate_markdown("GRF-0015-name",true);</script>
+<span class="figure_caption_label">Figure 10:
+                 </span>
+<span id="GRF-0015-name-html" class="">Portable working station</span>
 </p>
 </div>
 <h3 id="SEC-0019" class="section">3.3.2 Description of the software environment</h3>
-<div id="PRG-0008">
-<textarea id="PRG-0008-text-md" class="markdown">- The current software environment is composed of a database, a <a href="#GLO-0050" class="rem_ref">website</a> under the ".es" domain and an application called BDP-Net, which manages the workstations in the restaurants and connects it to the computer in the office (closed software).¬¬Through the <a href="#GLO-0050" class="rem_ref">website</a> you can ask for a <a href="#GLO-0052" class="rem_ref">reservation</a> and see the menu online.</textarea>
-<div id="PRG-0008-text-html" class=""></div>
-<script>generate_markdown("PRG-0008-text");</script>
+<div id="PRG-0008"><div id="PRG-0008-text-html" class=""><ul>
+<li>The current software environment is composed of a database, a website under the ".es" domain and an application called BDP-Net, which manages the workstations in the restaurants and connects it to the computer in the office (closed software).</li>
+</ul>
+<p>Through the website you can ask for a reservation and see the menu online.</p></div>
 </div>
 <div id="GRF-0016" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Webp.net-resizeimage.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 11: </span>
-<textarea id="GRF-0016-name-md" class="markdown">
-<a href="#GLO-0050" class="rem_ref">Website</a>
-</textarea>
-<span id="GRF-0016-name-html"></span>
-<script>generate_markdown("GRF-0016-name",true);</script>
+<span class="figure_caption_label">Figure 11:
+                 </span>
+<span id="GRF-0016-name-html" class="">Website</span>
 </p>
 </div>
 <h1 id="SEC-0020" class="section">4 Business needs</h1>
 <h2 id="SEC-0021" class="section">4.1 Business goals</h2>
 <h3 id="SEC-0028" class="section">4.1.1 Ratings</h3>
-<div id="GLO-0013" class="glo">
-<textarea id="GLO-0013-text-md" class="markdown">**US-001 Waiter's Rating**: ¬¬**As a** customer¬¬**I want** to be able to rate the waiters in the restaurant¬¬**So that** other <a href="#GLO-0046" class="rem_ref">customers</a> can have more opinions.¬</textarea>
-<div id="GLO-0013-text-html" class=""></div>
-<script>generate_markdown("GLO-0013-text");</script>
+<div id="GLO-0013" class="glo"><div id="GLO-0013-text-html" class=""><p><strong>US-001 Waiter's Rating</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to be able to rate the waiters in the restaurant</p>
+<p><strong>So that</strong> other customers can have more opinions.   </p></div>
 </div>
-<div id="GLO-0021" class="glo">
-<textarea id="GLO-0021-text-md" class="markdown">**US-005 Rate dishes**: ¬¬**As a** customer¬¬**I want** to evaluate the different dishes I eat¬¬**So that** I could give my opinion and serve as a reference to other <a href="#GLO-0046" class="rem_ref">customers</a>
-</textarea>
-<div id="GLO-0021-text-html" class=""></div>
-<script>generate_markdown("GLO-0021-text");</script>
+<div id="GLO-0021" class="glo"><div id="GLO-0021-text-html" class=""><p><strong>US-005 Rate dishes</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to evaluate the different dishes I eat</p>
+<p><strong>So that</strong> I could give my opinion and serve as a reference to other customers</p></div>
 </div>
 <div id="GLO-0031" class="glo">
-<textarea id="GLO-0031-text-md" class="markdown">**US-015 Dishes ranking**: ¬¬**As a** customer ¬¬**I want to** see a ranking with the best valued or most demanded dishes ¬¬**So that** I could choose between a lot of dishes  </textarea>
-<div id="GLO-0031-text-html" class=""></div>
-<script>generate_markdown("GLO-0031-text");</script>
+<div id="GLO-0031-text-html" class=""><p><strong>US-015 Dishes ranking</strong>: </p>
+<p><strong>As a</strong> customer </p>
+<p><strong>I want to</strong> see a ranking with the best valued or most demanded dishes </p>
+<p><strong>So that</strong> I could choose between a lot of dishes  </p></div>
 </div>
-<div id="GLO-0037" class="glo">
-<textarea id="GLO-0037-text-md" class="markdown">**US-021 Comment the review**: ¬¬**As an** admin¬¬**I want** to be able to leave a comment on a <a href="#GLO-0044" class="rem_ref">review</a> written by a customer, ¬¬**So that** I could interact with <a href="#GLO-0046" class="rem_ref">customers</a>
-</textarea>
-<div id="GLO-0037-text-html" class=""></div>
-<script>generate_markdown("GLO-0037-text");</script>
+<div id="GLO-0037" class="glo"><div id="GLO-0037-text-html" class=""><p><strong>US-021 Comment the review</strong>: </p>
+<p><strong>As an</strong> admin</p>
+<p><strong>I want</strong> to be able to leave a comment on a review written by a customer, </p>
+<p><strong>So that</strong> I could interact with customers</p></div>
 </div>
 <h3 id="SEC-0029" class="section">4.1.2 Adding entities</h3>
-<div id="GLO-0024" class="glo">
-<textarea id="GLO-0024-text-md" class="markdown">**US-008 User registration**: ¬¬**As a** customer ¬¬**I want** to be able to register on the <a href="#GLO-0050" class="rem_ref">website</a>¬¬**So that** I do not have to give my details every time I place an <a href="#GLO-0055" class="rem_ref">order</a>.  </textarea>
-<div id="GLO-0024-text-html" class=""></div>
-<script>generate_markdown("GLO-0024-text");</script>
+<div id="GLO-0024" class="glo"><div id="GLO-0024-text-html" class=""><p><strong>US-008 User registration</strong>: </p>
+<p><strong>As a</strong> customer </p>
+<p><strong>I want</strong> to be able to register on the website</p>
+<p><strong>So that</strong> I do not have to give my details every time I place an order.  </p></div>
 </div>
 <div id="GLO-0025" class="glo">
-<textarea id="GLO-0025-text-md" class="markdown">**US-009 New workers**: ¬¬**As an** admin¬¬**I want** to be able to register new cooks or waiters into the system ¬¬**So that** I could give them the necessary permissions to be able to perform their functions.  </textarea>
-<div id="GLO-0025-text-html" class=""></div>
-<script>generate_markdown("GLO-0025-text");</script>
+<div id="GLO-0025-text-html" class=""><p><strong>US-009 New workers</strong>: </p>
+<p><strong>As an</strong> admin</p>
+<p><strong>I want</strong> to be able to register new cooks or waiters into the system </p>
+<p><strong>So that</strong> I could give them the necessary permissions to be able to perform their functions.  </p></div>
 </div>
 <div id="GLO-0034" class="glo">
-<textarea id="GLO-0034-text-md" class="markdown">**US-018 New dish**: ¬¬**As a** admin ¬¬**I want** to introduce a new dish to the system ¬¬**So that** I could expand the menu </textarea>
-<div id="GLO-0034-text-html" class=""></div>
-<script>generate_markdown("GLO-0034-text");</script>
+<div id="GLO-0034-text-html" class=""><p><strong>US-018 New dish</strong>: </p>
+<p><strong>As a</strong> admin </p>
+<p><strong>I want</strong> to introduce a new dish to the system </p>
+<p><strong>So that</strong> I could expand the menu </p></div>
 </div>
 <h3 id="SEC-0030" class="section">4.1.3 Reservations</h3>
-<div id="GLO-0019" class="glo">
-<textarea id="GLO-0019-text-md" class="markdown">**US-003 Web Booking**: ¬¬**As a** client¬¬**I want** to be able to book a table from the <a href="#GLO-0050" class="rem_ref">website</a> and, optionally, the food I will eat¬¬**So that** I could speed up the process and be waiting less time. </textarea>
-<div id="GLO-0019-text-html" class=""></div>
-<script>generate_markdown("GLO-0019-text");</script>
+<div id="GLO-0019" class="glo"><div id="GLO-0019-text-html" class=""><p><strong>US-003 Web Booking</strong>: </p>
+<p><strong>As a</strong> client</p>
+<p><strong>I want</strong> to be able to book a table from the website and, optionally, the food I will eat</p>
+<p><strong>So that</strong> I could speed up the process and be waiting less time. </p></div>
 </div>
 <div id="GLO-0027" class="glo">
-<textarea id="GLO-0027-text-md" class="markdown">**US-011 Estimated time**: ¬¬**As a** client¬¬**I want** to have an estimate of the time I will be able to be attended ¬¬**So that** I could be able to choose if I want to wait or not</textarea>
-<div id="GLO-0027-text-html" class=""></div>
-<script>generate_markdown("GLO-0027-text");</script>
+<div id="GLO-0027-text-html" class=""><p><strong>US-011 Estimated time</strong>: </p>
+<p><strong>As a</strong> client</p>
+<p><strong>I want</strong> to have an estimate of the time I will be able to be attended </p>
+<p><strong>So that</strong> I could be able to choose if I want to wait or not</p></div>
 </div>
-<div id="GLO-0030" class="glo">
-<textarea id="GLO-0030-text-md" class="markdown">**US-014 Cancel reservation**: ¬¬**As a** client¬¬**I want  to** be able to cancel the <a href="#GLO-0052" class="rem_ref">reservation</a> I have previously made¬¬**So that** I can be reimbursed on time.  </textarea>
-<div id="GLO-0030-text-html" class=""></div>
-<script>generate_markdown("GLO-0030-text");</script>
+<div id="GLO-0030" class="glo"><div id="GLO-0030-text-html" class=""><p><strong>US-014 Cancel reservation</strong>: </p>
+<p><strong>As a</strong> client</p>
+<p><strong>I want  to</strong> be able to cancel the reservation I have previously made</p>
+<p><strong>So that</strong> I can be reimbursed on time.  </p></div>
 </div>
 <h3 id="SEC-0031" class="section">4.1.4 Orders</h3>
-<div id="GLO-0018" class="glo">
-<textarea id="GLO-0018-text-md" class="markdown">**US-002 Order history**: ¬¬**As a** customer¬¬**I want** to be able to see my <a href="#GLO-0055" class="rem_ref">order</a> history¬¬**So that** I can repeat an <a href="#GLO-0055" class="rem_ref">order</a> I have already placed. </textarea>
-<div id="GLO-0018-text-html" class=""></div>
-<script>generate_markdown("GLO-0018-text");</script>
+<div id="GLO-0018" class="glo"><div id="GLO-0018-text-html" class=""><p><strong>US-002 Order history</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to be able to see my order history</p>
+<p><strong>So that</strong> I can repeat an order I have already placed. </p></div>
 </div>
-<div id="GLO-0022" class="glo">
-<textarea id="GLO-0022-text-md" class="markdown">**US-006 Digital control**: ¬¬**As a** cook¬¬**I want** to see the details of the <a href="#GLO-0055" class="rem_ref">order</a>¬¬**So that** I could attend to them chronologically and guarantee customer satisfaction.  </textarea>
-<div id="GLO-0022-text-html" class=""></div>
-<script>generate_markdown("GLO-0022-text");</script>
+<div id="GLO-0022" class="glo"><div id="GLO-0022-text-html" class=""><p><strong>US-006 Digital control</strong>: </p>
+<p><strong>As a</strong> cook</p>
+<p><strong>I want</strong> to see the details of the order</p>
+<p><strong>So that</strong> I could attend to them chronologically and guarantee customer satisfaction.  </p></div>
 </div>
-<div id="GLO-0026" class="glo">
-<textarea id="GLO-0026-text-md" class="markdown">**US-010 Emergency Orders**: ¬¬**As a** manager¬¬**I want** to know the estimated time of <a href="#GLO-0045" class="rem_ref">delivery</a> of the orders¬¬**So that** I could prioritize those that require more speed</textarea>
-<div id="GLO-0026-text-html" class=""></div>
-<script>generate_markdown("GLO-0026-text");</script>
+<div id="GLO-0026" class="glo"><div id="GLO-0026-text-html" class=""><p><strong>US-010 Emergency Orders</strong>: </p>
+<p><strong>As a</strong> manager</p>
+<p><strong>I want</strong> to know the estimated time of delivery of the orders</p>
+<p><strong>So that</strong> I could prioritize those that require more speed</p></div>
 </div>
-<div id="GLO-0029" class="glo">
-<textarea id="GLO-0029-text-md" class="markdown">**US-013 Order status**: ¬¬**As a** customer¬¬**I want to** be able to see the status of the <a href="#GLO-0055" class="rem_ref">order</a> and the time remaining for <a href="#GLO-0045" class="rem_ref">delivery</a>¬¬**So that** I can plan the collection</textarea>
-<div id="GLO-0029-text-html" class=""></div>
-<script>generate_markdown("GLO-0029-text");</script>
+<div id="GLO-0029" class="glo"><div id="GLO-0029-text-html" class=""><p><strong>US-013 Order status</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want to</strong> be able to see the status of the order and the time remaining for delivery</p>
+<p><strong>So that</strong> I can plan the collection</p></div>
 </div>
 <div id="GLO-0032" class="glo">
-<textarea id="GLO-0032-text-md" class="markdown">**US-016 Make an order**: ¬¬**As a** customer¬¬**I want** to place orders, either to be picked up locally or to be sent to the address you specify¬¬**So that** I could choose the best option for me.¬</textarea>
-<div id="GLO-0032-text-html" class=""></div>
-<script>generate_markdown("GLO-0032-text");</script>
+<div id="GLO-0032-text-html" class=""><p><strong>US-016 Make an order</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to place orders, either to be picked up locally or to be sent to the address you specify</p>
+<p><strong>So that</strong> I could choose the best option for me.   </p></div>
 </div>
-<div id="GLO-0039" class="glo">
-<textarea id="GLO-0039-text-md" class="markdown">**US-022 Order denied**: ¬¬**As a** staff member¬¬**I want** to be able to deny a customer an <a href="#GLO-0055" class="rem_ref">order</a> and specify a reason ¬¬**So that** they understand the impossibility of fulfilment </textarea>
-<div id="GLO-0039-text-html" class=""></div>
-<script>generate_markdown("GLO-0039-text");</script>
+<div id="GLO-0039" class="glo"><div id="GLO-0039-text-html" class=""><p><strong>US-022 Order denied</strong>: </p>
+<p><strong>As a</strong> staff member</p>
+<p><strong>I want</strong> to be able to deny a customer an order and specify a reason </p>
+<p><strong>So that</strong> they understand the impossibility of fulfilment </p></div>
 </div>
 <h3 id="SEC-0032" class="section">4.1.5 Extra functionalities</h3>
 <div id="GLO-0020" class="glo">
-<textarea id="GLO-0020-text-md" class="markdown">**US-004 Promotions**: ¬¬**As a** customer¬¬**I want** to see the promotions available on the web¬¬**So that** I could access the best offers  </textarea>
-<div id="GLO-0020-text-html" class=""></div>
-<script>generate_markdown("GLO-0020-text");</script>
+<div id="GLO-0020-text-html" class=""><p><strong>US-004 Promotions</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to see the promotions available on the web</p>
+<p><strong>So that</strong> I could access the best offers  </p></div>
 </div>
-<div id="GLO-0023" class="glo">
-<textarea id="GLO-0023-text-md" class="markdown">**US-007 Online menu**: ¬¬**As a** customer¬¬**I want** to be able to see the menu on the <a href="#GLO-0050" class="rem_ref">website</a> with photos¬¬**So that** I could have a proper preview of the dishes on offer.  </textarea>
-<div id="GLO-0023-text-html" class=""></div>
-<script>generate_markdown("GLO-0023-text");</script>
+<div id="GLO-0023" class="glo"><div id="GLO-0023-text-html" class=""><p><strong>US-007 Online menu</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to be able to see the menu on the website with photos</p>
+<p><strong>So that</strong> I could have a proper preview of the dishes on offer.  </p></div>
 </div>
 <div id="GLO-0028" class="glo">
-<textarea id="GLO-0028-text-md" class="markdown">**US-012 Allergen filtering**: ¬¬**As a** customer¬¬**I want** to be able to filter the menu according to allergens¬¬**So that** I could avoid food poisoning.  </textarea>
-<div id="GLO-0028-text-html" class=""></div>
-<script>generate_markdown("GLO-0028-text");</script>
+<div id="GLO-0028-text-html" class=""><p><strong>US-012 Allergen filtering</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to be able to filter the menu according to allergens</p>
+<p><strong>So that</strong> I could avoid food poisoning.  </p></div>
 </div>
 <div id="GLO-0033" class="glo">
-<textarea id="GLO-0033-text-md" class="markdown">**US-017 Capacity**: ¬¬**As a** customer¬¬**I want** to know the current capacity of the establishment ¬¬**So that** I can go if it is not full</textarea>
-<div id="GLO-0033-text-html" class=""></div>
-<script>generate_markdown("GLO-0033-text");</script>
+<div id="GLO-0033-text-html" class=""><p><strong>US-017 Capacity</strong>: </p>
+<p><strong>As a</strong> customer</p>
+<p><strong>I want</strong> to know the current capacity of the establishment </p>
+<p><strong>So that</strong> I can go if it is not full</p></div>
 </div>
 <div id="GLO-0035" class="glo">
-<textarea id="GLO-0035-text-md" class="markdown">**US-019 Unemployment**: ¬¬**As an** user ¬¬**I want** to be able to send my CV¬¬**So that** I could apply for a job </textarea>
-<div id="GLO-0035-text-html" class=""></div>
-<script>generate_markdown("GLO-0035-text");</script>
+<div id="GLO-0035-text-html" class=""><p><strong>US-019 Unemployment</strong>: </p>
+<p><strong>As an</strong> user </p>
+<p><strong>I want</strong> to be able to send my CV</p>
+<p><strong>So that</strong> I could apply for a job </p></div>
 </div>
 <div id="GLO-0036" class="glo">
-<textarea id="GLO-0036-text-md" class="markdown">**US-020 Subscribe to the newsletter**: ¬¬**As a** client¬¬**I want** to be able to subscribe to the Tabernas Sevilla newsletter¬¬**So that** I can keep up to date with the latest news.  </textarea>
-<div id="GLO-0036-text-html" class=""></div>
-<script>generate_markdown("GLO-0036-text");</script>
+<div id="GLO-0036-text-html" class=""><p><strong>US-020 Subscribe to the newsletter</strong>: </p>
+<p><strong>As a</strong> client</p>
+<p><strong>I want</strong> to be able to subscribe to the Tabernas Sevilla newsletter</p>
+<p><strong>So that</strong> I can keep up to date with the latest news.  </p></div>
 </div>
 <h2 id="SEC-0022" class="section">4.2 Models of the processes of the business to be developed</h2>
 <h3 id="SEC-0023" class="section">4.2.1 Description of the actors of the business to be developed</h3>
-<div id="PRG-0017">
-<textarea id="PRG-0017-text-md" class="markdown">The business actors will remain the same as the current ones, with the novelty of User.¬¬-	**User**: Customer who has previously registered on the <a href="#GLO-0050" class="rem_ref">website</a> to <a href="#GLO-0055" class="rem_ref">order</a> food and/or to make a <a href="#GLO-0052" class="rem_ref">reservation</a>¬</textarea>
-<div id="PRG-0017-text-html" class=""></div>
-<script>generate_markdown("PRG-0017-text");</script>
+<div id="PRG-0017"><div id="PRG-0017-text-html" class=""><p>The business actors will remain the same as the current ones, with the novelty of User.</p>
+<ul>
+<li><strong>User</strong>: Customer who has previously registered on the website to order food and/or to make a booking   </li>
+</ul></div>
 </div>
 <h3 id="SEC-0024" class="section">4.2.2 Description of the processes of the business to be developed</h3>
-<div id="PRG-0016">
-<textarea id="PRG-0016-text-md" class="markdown">- **Place an <a href="#GLO-0055" class="rem_ref">order</a>**: after you have registered on the <a href="#GLO-0050" class="rem_ref">website</a> and logged in, fill in a form with the food you want to <a href="#GLO-0055" class="rem_ref">order</a> and the time you want to pick it up locally. You can also select the option to have the <a href="#GLO-0055" class="rem_ref">order</a> delivered to a home address.¬¬- **Reserve a table**: after you have registered on the <a href="#GLO-0050" class="rem_ref">website</a> and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to reserve a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance¬¬- **<a href="#GLO-0049" class="rem_ref">Waiting list</a> management**: after you have registered on the <a href="#GLO-0050" class="rem_ref">website</a> and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the <a href="#GLO-0048" class="rem_ref">bookings</a> already selected.¬¬- **Rate dishes**: after you have registered on the <a href="#GLO-0050" class="rem_ref">website</a>, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.¬</textarea>
-<div id="PRG-0016-text-html" class=""></div>
-<script>generate_markdown("PRG-0016-text");</script>
+<div id="PRG-0016"><div id="PRG-0016-text-html" class=""><ul>
+<li><p><strong>Place an order</strong>: after you have registered on the website and logged in, fill in a form with the food you want to order and the time you want to pick it up locally. You can also select the option to have the order delivered to a home address.</p></li>
+<li><p><strong>Book a table</strong>: after you have registered on the website and logged in, you fill in a form specifying which of the four venues you want to book, at what time you want to book a table and, optionally, you can choose what dishes you are going to eat so that when you arrive at the venue, those dishes are already prepared and you don't have to wait too long. You cannot book a table less than one hour in advance</p></li>
+<li><p><strong>Waiting list management</strong>: after you have registered on the website and logged in, you can see the estimated waiting time based on the number of people currently in the venue and the bookings already selected.</p></li>
+<li><p><strong>Rate dishes</strong>: after you have registered on the website, logged in and scanned the invoice for the products consumed, you can rate them. This will form a ranking in which the most ordered dishes and the best rated dishes will participate.   </p></li>
+</ul></div>
 </div>
 <h1 id="SEC-0033" class="section">5 Description of the subsystems to develop</h1>
-<div id="PRG-0057">
-<textarea id="PRG-0057-text-md" class="markdown">There will only be a system to develop, that is a <a href="#GLO-0050" class="rem_ref">website</a> for all to use. This <a href="#GLO-0050" class="rem_ref">website</a> will use a database to store all the information regarding the users, accounts and the products that are being sold.¬¬The <a href="#GLO-0050" class="rem_ref">website</a> will be deployed using a tool like google engine, where you have to pay an amount of money to keep it running, and the database will be stored in the owner's computer, so he can have easy  access.</textarea>
-<div id="PRG-0057-text-html" class=""></div>
-<script>generate_markdown("PRG-0057-text");</script>
+<div id="PRG-0057"><div id="PRG-0057-text-html" class=""><p>There will only be a system to develop, that is a website for all to use. This website will use a database to store all the information regarding the users, accounts and the products that are being sold.</p>
+<p>The website will be deployed using a tool like google engine, where you have to pay an amount of money to keep it running, and the database will be stored in the owner's computer, so he can have easy  access.</p></div>
 </div>
 <h1 id="SEC-0039" class="section">6 Catalogue of system requirements to be developed</h1>
 <h2 id="SEC-0040" class="section">6.1 General system requirements</h2>
@@ -872,18 +739,13 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="OBJ-0001-description-md" class="markdown">The system shall allow the user to make a <a href="#GLO-0052" class="rem_ref">reservation</a> in a specific time frame.</textarea>
-<div id="OBJ-0001-description-html" class=""></div>
-<script>generate_markdown("OBJ-0001-description");</script>
+<td colspan="1"><div id="OBJ-0001-description-html" class=""><p>The system shall allow the user to make a reservation in a specific time frame.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="OBJ-0001-comments-md" class="markdown">None</textarea>
-<div id="OBJ-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("OBJ-0001-comments");</script>
+<div id="OBJ-0001-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -905,17 +767,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="OBJ-0002-description-md" class="markdown">The system shall allow users to create an account by entering their data, so that they can place orders correctly.</textarea>
-<div id="OBJ-0002-description-html" class=""></div>
-<script>generate_markdown("OBJ-0002-description");</script>
+<div id="OBJ-0002-description-html" class=""><p>The system shall allow users to create an account by entering their data, so that they can place orders correctly.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="OBJ-0002-comments-md" class="markdown">None</textarea>
-<div id="OBJ-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("OBJ-0002-comments");</script>
+<div id="OBJ-0002-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -937,17 +795,14 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="OBJ-0003-description-md" class="markdown">The system shall show visitors to the page the letter in digitized format¬.</textarea>
-<div id="OBJ-0003-description-html" class=""></div>
-<script>generate_markdown("OBJ-0003-description");</script>
+<div id="OBJ-0003-description-html" class=""><p>The system shall show visitors to the page the letter in digitized format<br />
+.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="OBJ-0003-comments-md" class="markdown">None</textarea>
-<div id="OBJ-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("OBJ-0003-comments");</script>
+<div id="OBJ-0003-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -969,17 +824,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="OBJ-0004-description-md" class="markdown">The system shall allow the manager to record, modify and delete data on workers in the restaurant.</textarea>
-<div id="OBJ-0004-description-html" class=""></div>
-<script>generate_markdown("OBJ-0004-description");</script>
+<div id="OBJ-0004-description-html" class=""><p>The system shall allow the manager to record, modify and delete data on workers in the restaurant.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="OBJ-0004-comments-md" class="markdown">None</textarea>
-<div id="OBJ-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("OBJ-0004-comments");</script>
+<div id="OBJ-0004-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -1001,17 +852,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="OBJ-0005-description-md" class="markdown">The system shall allow users to choose how to pick up the shipment and the establishment they want.</textarea>
-<div id="OBJ-0005-description-html" class=""></div>
-<script>generate_markdown("OBJ-0005-description");</script>
+<div id="OBJ-0005-description-html" class=""><p>The system shall allow users to choose how to pick up the shipment and the establishment they want.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="OBJ-0005-comments-md" class="markdown">None</textarea>
-<div id="OBJ-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("OBJ-0005-comments");</script>
+<div id="OBJ-0005-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -1032,18 +879,13 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="OBJ-0006-description-md" class="markdown">The system shall allow users to cancel a previously made <a href="#GLO-0052" class="rem_ref">reservation</a>.</textarea>
-<div id="OBJ-0006-description-html" class=""></div>
-<script>generate_markdown("OBJ-0006-description");</script>
+<td colspan="1"><div id="OBJ-0006-description-html" class=""><p>The system shall allow users to cancel a previously made reservation.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="OBJ-0006-comments-md" class="markdown">None</textarea>
-<div id="OBJ-0006-comments-html" class="remus_comments"></div>
-<script>generate_markdown("OBJ-0006-comments");</script>
+<div id="OBJ-0006-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -1053,28 +895,25 @@
 <div id="GRF-0043" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\User case 1.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 12: </span>
-<textarea id="GRF-0043-name-md" class="markdown">User case 1</textarea>
-<span id="GRF-0043-name-html"></span>
-<script>generate_markdown("GRF-0043-name",true);</script>
+<span class="figure_caption_label">Figure 12:
+                 </span>
+<span id="GRF-0043-name-html" class="">User case 1</span>
 </p>
 </div>
 <div id="GRF-0044" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\User case 2.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 13: </span>
-<textarea id="GRF-0044-name-md" class="markdown">User case 2</textarea>
-<span id="GRF-0044-name-html"></span>
-<script>generate_markdown("GRF-0044-name",true);</script>
+<span class="figure_caption_label">Figure 13:
+                 </span>
+<span id="GRF-0044-name-html" class="">User case 2</span>
 </p>
 </div>
 <div id="GRF-0045" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\User case 3.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 14: </span>
-<textarea id="GRF-0045-name-md" class="markdown">User case 3</textarea>
-<span id="GRF-0045-name-html"></span>
-<script>generate_markdown("GRF-0045-name",true);</script>
+<span class="figure_caption_label">Figure 14:
+                 </span>
+<span id="GRF-0045-name-html" class="">User case 3</span>
 </p>
 </div>
 <h3 id="SEC-0043" class="section">6.2.2 Specifying system actors</h3>
@@ -1095,17 +934,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="ACT-0001-actorRole-md" class="markdown">This actor represents the total system administrator.</textarea>
-<div id="ACT-0001-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0001-actorRole");</script>
+<div id="ACT-0001-actorRole-html" class=""><p>This actor represents the total system administrator.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="ACT-0001-comments-md" class="markdown">Pablo Arenas is the only person with this role.</textarea>
-<div id="ACT-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0001-comments");</script>
+<div id="ACT-0001-comments-html" class="remus_comments"><p>Pablo Arenas is the only person with this role.</p></div>
 </td>
 </tr>
 </table>
@@ -1127,17 +962,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="ACT-0002-actorRole-md" class="markdown">This actor represents the managers of the 4  restaurants.</textarea>
-<div id="ACT-0002-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0002-actorRole");</script>
+<div id="ACT-0002-actorRole-html" class=""><p>This actor represents the managers of the 4  restaurants.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="ACT-0002-comments-md" class="markdown">Managers have full access to the page's capabilities.</textarea>
-<div id="ACT-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0002-comments");</script>
+<div id="ACT-0002-comments-html" class="remus_comments"><p>Managers have full access to the page's capabilities.</p></div>
 </td>
 </tr>
 </table>
@@ -1159,17 +990,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="ACT-0003-actorRole-md" class="markdown">This actor represents the chefs of the different restaurants.</textarea>
-<div id="ACT-0003-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0003-actorRole");</script>
+<div id="ACT-0003-actorRole-html" class=""><p>This actor represents the chefs of the different restaurants.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="ACT-0003-comments-md" class="markdown">Cooks have special permissions such as viewing and managing commands.</textarea>
-<div id="ACT-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0003-comments");</script>
+<div id="ACT-0003-comments-html" class="remus_comments"><p>Cooks have special permissions such as viewing and managing commands.</p></div>
 </td>
 </tr>
 </table>
@@ -1191,17 +1018,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="ACT-0004-actorRole-md" class="markdown">This actor represents the waiters of the various restaurants.</textarea>
-<div id="ACT-0004-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0004-actorRole");</script>
+<div id="ACT-0004-actorRole-html" class=""><p>This actor represents the waiters of the various restaurants.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="ACT-0004-comments-md" class="markdown">Waiters have higher permissions than average users, but cannot view commands or modify their data.</textarea>
-<div id="ACT-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0004-comments");</script>
+<div id="ACT-0004-comments-html" class="remus_comments"><p>Waiters have higher permissions than average users, but cannot view commands or modify their data.</p></div>
 </td>
 </tr>
 </table>
@@ -1222,18 +1045,13 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="ACT-0005-actorRole-md" class="markdown">This actor represents the <a href="#GLO-0046" class="rem_ref">customers</a> of the different restaurants.</textarea>
-<div id="ACT-0005-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0005-actorRole");</script>
+<td colspan="1"><div id="ACT-0005-actorRole-html" class=""><p>This actor represents the customers of the different restaurants.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="ACT-0005-comments-md" class="markdown">Basic user without special permissions.</textarea>
-<div id="ACT-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0005-comments");</script>
+<div id="ACT-0005-comments-html" class="remus_comments"><p>Basic user without special permissions.</p></div>
 </td>
 </tr>
 </table>
@@ -1255,34 +1073,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0001--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer qualifies the treatment received and his experience as a consumer.</span>. </textarea>
-<div id="UC-0001--html" class=""></div>
-<script>generate_markdown("UC-0001-");</script>
+<td colspan="2"><div id="UC-0001--html" class=""><p>The system shall behave as described in the following use case when the customer qualifies the treatment received and his experience as a consumer.. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0001-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0001-precondition-html" class=""></div>
-<script>generate_markdown("UC-0001-precondition");</script>
+<div id="UC-0001-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0001-postcondition-md" class="markdown">The user has qualified the service and the system has recorded the valuation of the service</textarea>
-<div id="UC-0001-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0001-postcondition");</script>
+<div id="UC-0001-postcondition-html" class=""><p>The user has qualified the service and the system has recorded the valuation of the service</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0001-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0001-comments");</script>
+<div id="UC-0001-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1303,34 +1112,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0002--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the capacity of an establishment is requested by the customer</span>. </textarea>
-<div id="UC-0002--html" class=""></div>
-<script>generate_markdown("UC-0002-");</script>
+<td colspan="2"><div id="UC-0002--html" class=""><p>The system shall behave as described in the following use case when the capacity of an establishment is requested by the customer. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0002-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0002-precondition-html" class=""></div>
-<script>generate_markdown("UC-0002-precondition");</script>
+<div id="UC-0002-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0002-postcondition-md" class="markdown">The user has seen the capacity of the establishment</textarea>
-<div id="UC-0002-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0002-postcondition");</script>
+<div id="UC-0002-postcondition-html" class=""><p>The user has seen the capacity of the establishment</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0002-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0002-comments");</script>
+<div id="UC-0002-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1351,34 +1151,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0003--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the <a href="#GLO-0055" class="rem_ref">order</a> history is requested by the customer.</span>. </textarea>
-<div id="UC-0003--html" class=""></div>
-<script>generate_markdown("UC-0003-");</script>
+<td colspan="2"><div id="UC-0003--html" class=""><p>The system shall behave as described in the following use case when the order history is requested by the customer.. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0003-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0003-precondition-html" class=""></div>
-<script>generate_markdown("UC-0003-precondition");</script>
+<div id="UC-0003-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0003-postcondition-md" class="markdown">The user has qualified the service and the system has recorded the valuation of the service</textarea>
-<div id="UC-0003-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0003-postcondition");</script>
+<div id="UC-0003-postcondition-html" class=""><p>The user has qualified the service and the system has recorded the valuation of the service</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0003-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0003-comments");</script>
+<div id="UC-0003-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1399,34 +1190,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0004--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer decides to apply a promotion in force.</span>. </textarea>
-<div id="UC-0004--html" class=""></div>
-<script>generate_markdown("UC-0004-");</script>
+<td colspan="2"><div id="UC-0004--html" class=""><p>The system shall behave as described in the following use case when the customer decides to apply a promotion in force.. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0004-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0004-precondition-html" class=""></div>
-<script>generate_markdown("UC-0004-precondition");</script>
+<div id="UC-0004-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0004-postcondition-md" class="markdown">The user has applied a promotion and the system has applied the discount to it</textarea>
-<div id="UC-0004-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0004-postcondition");</script>
+<div id="UC-0004-postcondition-html" class=""><p>The user has applied a promotion and the system has applied the discount to it</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0004-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0004-comments");</script>
+<div id="UC-0004-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1447,35 +1229,24 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0005--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer makes the <a href="#GLO-0052" class="rem_ref">reservation</a> of a table by determining a time and a place</span>. </textarea>
-<div id="UC-0005--html" class=""></div>
-<script>generate_markdown("UC-0005-");</script>
+<td colspan="2"><div id="UC-0005--html" class=""><p>The system shall behave as described in the following use case when the customer makes the reservation of a table by determining a time and a place. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0005-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0005-precondition-html" class=""></div>
-<script>generate_markdown("UC-0005-precondition");</script>
+<div id="UC-0005-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
-<td colspan="2">
-<textarea id="UC-0005-postcondition-md" class="markdown">The user has booked a table and the system has registered that <a href="#GLO-0052" class="rem_ref">reservation</a>
-</textarea>
-<div id="UC-0005-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0005-postcondition");</script>
+<td colspan="2"><div id="UC-0005-postcondition-html" class=""><p>The user has booked a table and the system has registered that reservation</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0005-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0005-comments");</script>
+<div id="UC-0005-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1496,34 +1267,24 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0006--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer or processor cancels an <a href="#GLO-0055" class="rem_ref">order</a></span>. </textarea>
-<div id="UC-0006--html" class=""></div>
-<script>generate_markdown("UC-0006-");</script>
+<td colspan="2"><div id="UC-0006--html" class=""><p>The system shall behave as described in the following use case when the customer or processor cancels an order. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0006-precondition-md" class="markdown">The customer and manager must be registered and authenticated to the system</textarea>
-<div id="UC-0006-precondition-html" class=""></div>
-<script>generate_markdown("UC-0006-precondition");</script>
+<div id="UC-0006-precondition-html" class=""><p>The customer and manager must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
-<td colspan="2">
-<textarea id="UC-0006-postcondition-md" class="markdown">The user or manager has canceled an <a href="#GLO-0055" class="rem_ref">order</a> and the system records that cancellation</textarea>
-<div id="UC-0006-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0006-postcondition");</script>
+<td colspan="2"><div id="UC-0006-postcondition-html" class=""><p>The user or manager has canceled an order and the system records that cancellation</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0006-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0006-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0006-comments");</script>
+<div id="UC-0006-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1544,35 +1305,24 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0007--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer places an <a href="#GLO-0055" class="rem_ref">order</a>.</span>. </textarea>
-<div id="UC-0007--html" class=""></div>
-<script>generate_markdown("UC-0007-");</script>
+<td colspan="2"><div id="UC-0007--html" class=""><p>The system shall behave as described in the following use case when the customer places an order.. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0007-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0007-precondition-html" class=""></div>
-<script>generate_markdown("UC-0007-precondition");</script>
+<div id="UC-0007-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
-<td colspan="2">
-<textarea id="UC-0007-postcondition-md" class="markdown">The user has placed an <a href="#GLO-0055" class="rem_ref">order</a> and the system has posted that <a href="#GLO-0055" class="rem_ref">order</a>
-</textarea>
-<div id="UC-0007-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0007-postcondition");</script>
+<td colspan="2"><div id="UC-0007-postcondition-html" class=""><p>The user has placed an order and the system has posted that order</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0007-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0007-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0007-comments");</script>
+<div id="UC-0007-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1593,34 +1343,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0008--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer grades a meal.</span>. </textarea>
-<div id="UC-0008--html" class=""></div>
-<script>generate_markdown("UC-0008-");</script>
+<td colspan="2"><div id="UC-0008--html" class=""><p>The system shall behave as described in the following use case when the customer grades a meal.. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0008-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0008-precondition-html" class=""></div>
-<script>generate_markdown("UC-0008-precondition");</script>
+<div id="UC-0008-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0008-postcondition-md" class="markdown">The user has graded the dish and the system has recorded the valuation of the service</textarea>
-<div id="UC-0008-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0008-postcondition");</script>
+<div id="UC-0008-postcondition-html" class=""><p>The user has graded the dish and the system has recorded the valuation of the service</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0008-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0008-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0008-comments");</script>
+<div id="UC-0008-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1641,34 +1382,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0009--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer submits their CV to offer to work</span>. </textarea>
-<div id="UC-0009--html" class=""></div>
-<script>generate_markdown("UC-0009-");</script>
+<td colspan="2"><div id="UC-0009--html" class=""><p>The system shall behave as described in the following use case when the customer submits their CV to offer to work. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0009-precondition-md" class="markdown">The client does not need to be authenticated  to the system</textarea>
-<div id="UC-0009-precondition-html" class=""></div>
-<script>generate_markdown("UC-0009-precondition");</script>
+<div id="UC-0009-precondition-html" class=""><p>The client does not need to be authenticated  to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0009-postcondition-md" class="markdown">The user has submitted their CV and the system has registered the  shipment of the document</textarea>
-<div id="UC-0009-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0009-postcondition");</script>
+<div id="UC-0009-postcondition-html" class=""><p>The user has submitted their CV and the system has registered the  shipment of the document</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0009-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0009-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0009-comments");</script>
+<div id="UC-0009-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1689,34 +1421,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0010--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the customer requests to view the menu</span>. </textarea>
-<div id="UC-0010--html" class=""></div>
-<script>generate_markdown("UC-0010-");</script>
+<td colspan="2"><div id="UC-0010--html" class=""><p>The system shall behave as described in the following use case when the customer requests to view the menu. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0010-precondition-md" class="markdown">The customer must be registered and authenticated to the system</textarea>
-<div id="UC-0010-precondition-html" class=""></div>
-<script>generate_markdown("UC-0010-precondition");</script>
+<div id="UC-0010-precondition-html" class=""><p>The customer must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0010-postcondition-md" class="markdown">The user has qualified the service and the system has recorded the valuation of the service</textarea>
-<div id="UC-0010-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0010-postcondition");</script>
+<div id="UC-0010-postcondition-html" class=""><p>The user has qualified the service and the system has recorded the valuation of the service</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0010-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0010-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0010-comments");</script>
+<div id="UC-0010-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1737,34 +1460,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0011--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the admin requests to change the prices or photos of a plate</span>. </textarea>
-<div id="UC-0011--html" class=""></div>
-<script>generate_markdown("UC-0011-");</script>
+<td colspan="2"><div id="UC-0011--html" class=""><p>The system shall behave as described in the following use case when the admin requests to change the prices or photos of a plate. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0011-precondition-md" class="markdown">The administrator must be registered and authenticated to the system</textarea>
-<div id="UC-0011-precondition-html" class=""></div>
-<script>generate_markdown("UC-0011-precondition");</script>
+<div id="UC-0011-precondition-html" class=""><p>The administrator must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0011-postcondition-md" class="markdown">The administrator has modified the menu and the system has recorded  the change made to the menu</textarea>
-<div id="UC-0011-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0011-postcondition");</script>
+<div id="UC-0011-postcondition-html" class=""><p>The administrator has modified the menu and the system has recorded  the change made to the menu</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0011-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0011-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0011-comments");</script>
+<div id="UC-0011-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1785,34 +1499,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0012--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the administrator or manager creates a new promotion</span>. </textarea>
-<div id="UC-0012--html" class=""></div>
-<script>generate_markdown("UC-0012-");</script>
+<td colspan="2"><div id="UC-0012--html" class=""><p>The system shall behave as described in the following use case when the administrator or manager creates a new promotion. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0012-precondition-md" class="markdown">The administrator and manager must be authenticated to the system</textarea>
-<div id="UC-0012-precondition-html" class=""></div>
-<script>generate_markdown("UC-0012-precondition");</script>
+<div id="UC-0012-precondition-html" class=""><p>The administrator and manager must be authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0012-postcondition-md" class="markdown">The administrator and manager have created a promotion and the system has registered the new promotion</textarea>
-<div id="UC-0012-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0012-postcondition");</script>
+<div id="UC-0012-postcondition-html" class=""><p>The administrator and manager have created a promotion and the system has registered the new promotion</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0012-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0012-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0012-comments");</script>
+<div id="UC-0012-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1833,34 +1538,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0013--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">the administrator comments on a customer <a href="#GLO-0044" class="rem_ref">review</a></span>. </textarea>
-<div id="UC-0013--html" class=""></div>
-<script>generate_markdown("UC-0013-");</script>
+<td colspan="2"><div id="UC-0013--html" class=""><p>The system shall behave as described in the following use case when the administrator comments on a customer review. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0013-precondition-md" class="markdown">The administrator must be registered and authenticated to the system</textarea>
-<div id="UC-0013-precondition-html" class=""></div>
-<script>generate_markdown("UC-0013-precondition");</script>
+<div id="UC-0013-precondition-html" class=""><p>The administrator must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0013-postcondition-md" class="markdown">The administrator commented and the system posted that comment</textarea>
-<div id="UC-0013-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0013-postcondition");</script>
+<div id="UC-0013-postcondition-html" class=""><p>The administrator commented and the system posted that comment</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0013-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0013-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0013-comments");</script>
+<div id="UC-0013-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1881,34 +1577,25 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="UC-0014--md" class="markdown">The system shall behave as described in the following use case when <span class="triggering_event">bills are requested by the waiter, cook or manager</span>. </textarea>
-<div id="UC-0014--html" class=""></div>
-<script>generate_markdown("UC-0014-");</script>
+<td colspan="2"><div id="UC-0014--html" class=""><p>The system shall behave as described in the following use case when bills are requested by the waiter, cook or manager. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondition</th>
 <td colspan="2">
-<textarea id="UC-0014-precondition-md" class="markdown">The waiter, cook and manager must be registered and authenticated to the system</textarea>
-<div id="UC-0014-precondition-html" class=""></div>
-<script>generate_markdown("UC-0014-precondition");</script>
+<div id="UC-0014-precondition-html" class=""><p>The waiter, cook and manager must be registered and authenticated to the system</p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondition</th>
 <td colspan="2">
-<textarea id="UC-0014-postcondition-md" class="markdown">The waiter, the cook or the manager has seen the bills and the system  has shown them.</textarea>
-<div id="UC-0014-postcondition-html" class=""></div>
-<script>generate_markdown("UC-0014-postcondition");</script>
+<div id="UC-0014-postcondition-html" class=""><p>The waiter, the cook or the manager has seen the bills and the system  has shown them.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="UC-0014-comments-md" class="markdown">Ninguno</textarea>
-<div id="UC-0014-comments-html" class="remus_comments"></div>
-<script>generate_markdown("UC-0014-comments");</script>
+<div id="UC-0014-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -1932,9 +1619,8 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0001-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the users.¬. More specifically:</textarea>
-<div id="IRQ-0001-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0001-relevantConcept");</script>
+<div id="IRQ-0001-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the users.<br />
+. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -1942,29 +1628,19 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0003">
-<textarea id="DAT-0003-description-md" class="markdown">name</textarea>
-<span id="DAT-0003-description-html"></span>
-<script>generate_markdown("DAT-0003-description",true);</script>
+<span id="DAT-0003-description-html" class="">name</span>
 </li>
 <li id="DAT-0004">
-<textarea id="DAT-0004-description-md" class="markdown">surname</textarea>
-<span id="DAT-0004-description-html"></span>
-<script>generate_markdown("DAT-0004-description",true);</script>
+<span id="DAT-0004-description-html" class="">surname</span>
 </li>
 <li id="DAT-0005">
-<textarea id="DAT-0005-description-md" class="markdown">avatar</textarea>
-<span id="DAT-0005-description-html"></span>
-<script>generate_markdown("DAT-0005-description",true);</script>
+<span id="DAT-0005-description-html" class="">avatar</span>
 </li>
 <li id="DAT-0006">
-<textarea id="DAT-0006-description-md" class="markdown">email</textarea>
-<span id="DAT-0006-description-html"></span>
-<script>generate_markdown("DAT-0006-description",true);</script>
+<span id="DAT-0006-description-html" class="">email</span>
 </li>
 <li id="DAT-0007">
-<textarea id="DAT-0007-description-md" class="markdown">phoneNumber</textarea>
-<span id="DAT-0007-description-html"></span>
-<script>generate_markdown("DAT-0007-description",true);</script>
+<span id="DAT-0007-description-html" class="">phoneNumber</span>
 </li>
 </ul>
 </td>
@@ -1972,9 +1648,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0001-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0001-comments");</script>
+<div id="IRQ-0001-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -1996,9 +1670,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0002-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the CVs.. More specifically:</textarea>
-<div id="IRQ-0002-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0002-relevantConcept");</script>
+<div id="IRQ-0002-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the CVs.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2006,39 +1678,25 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0008">
-<textarea id="DAT-0008-description-md" class="markdown">uploadDate</textarea>
-<span id="DAT-0008-description-html"></span>
-<script>generate_markdown("DAT-0008-description",true);</script>
+<span id="DAT-0008-description-html" class="">uploadDate</span>
 </li>
 <li id="DAT-0010">
-<textarea id="DAT-0010-description-md" class="markdown">name</textarea>
-<span id="DAT-0010-description-html"></span>
-<script>generate_markdown("DAT-0010-description",true);</script>
+<span id="DAT-0010-description-html" class="">name</span>
 </li>
 <li id="DAT-0011">
-<textarea id="DAT-0011-description-md" class="markdown">surname</textarea>
-<span id="DAT-0011-description-html"></span>
-<script>generate_markdown("DAT-0011-description",true);</script>
+<span id="DAT-0011-description-html" class="">surname</span>
 </li>
 <li id="DAT-0012">
-<textarea id="DAT-0012-description-md" class="markdown">birthday</textarea>
-<span id="DAT-0012-description-html"></span>
-<script>generate_markdown("DAT-0012-description",true);</script>
+<span id="DAT-0012-description-html" class="">birthday</span>
 </li>
 <li id="DAT-0013">
-<textarea id="DAT-0013-description-md" class="markdown">introduction</textarea>
-<span id="DAT-0013-description-html"></span>
-<script>generate_markdown("DAT-0013-description",true);</script>
+<span id="DAT-0013-description-html" class="">introduction</span>
 </li>
 <li id="DAT-0014">
-<textarea id="DAT-0014-description-md" class="markdown">email</textarea>
-<span id="DAT-0014-description-html"></span>
-<script>generate_markdown("DAT-0014-description",true);</script>
+<span id="DAT-0014-description-html" class="">email</span>
 </li>
 <li id="DAT-0015">
-<textarea id="DAT-0015-description-md" class="markdown">curriculum</textarea>
-<span id="DAT-0015-description-html"></span>
-<script>generate_markdown("DAT-0015-description",true);</script>
+<span id="DAT-0015-description-html" class="">curriculum</span>
 </li>
 </ul>
 </td>
@@ -2046,9 +1704,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0002-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0002-comments");</script>
+<div id="IRQ-0002-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2070,9 +1726,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0003-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the reservations.. More specifically:</textarea>
-<div id="IRQ-0003-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0003-relevantConcept");</script>
+<div id="IRQ-0003-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the reservations.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2080,29 +1734,19 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0016">
-<textarea id="DAT-0016-description-md" class="markdown">placementDate</textarea>
-<span id="DAT-0016-description-html"></span>
-<script>generate_markdown("DAT-0016-description",true);</script>
+<span id="DAT-0016-description-html" class="">placementDate</span>
 </li>
 <li id="DAT-0017">
-<textarea id="DAT-0017-description-md" class="markdown">reservationDate</textarea>
-<span id="DAT-0017-description-html"></span>
-<script>generate_markdown("DAT-0017-description",true);</script>
+<span id="DAT-0017-description-html" class="">reservationDate</span>
 </li>
 <li id="DAT-0018">
-<textarea id="DAT-0018-description-md" class="markdown">seating</textarea>
-<span id="DAT-0018-description-html"></span>
-<script>generate_markdown("DAT-0018-description",true);</script>
+<span id="DAT-0018-description-html" class="">seating</span>
 </li>
 <li id="DAT-0019">
-<textarea id="DAT-0019-description-md" class="markdown">contactPhone</textarea>
-<span id="DAT-0019-description-html"></span>
-<script>generate_markdown("DAT-0019-description",true);</script>
+<span id="DAT-0019-description-html" class="">contactPhone</span>
 </li>
 <li id="DAT-0020">
-<textarea id="DAT-0020-description-md" class="markdown">notes</textarea>
-<span id="DAT-0020-description-html"></span>
-<script>generate_markdown("DAT-0020-description",true);</script>
+<span id="DAT-0020-description-html" class="">notes</span>
 </li>
 </ul>
 </td>
@@ -2110,9 +1754,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0003-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0003-comments");</script>
+<div id="IRQ-0003-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2134,9 +1776,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0004-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the tables.. More specifically:</textarea>
-<div id="IRQ-0004-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0004-relevantConcept");</script>
+<div id="IRQ-0004-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the tables.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2144,19 +1784,13 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0021">
-<textarea id="DAT-0021-description-md" class="markdown">number</textarea>
-<span id="DAT-0021-description-html"></span>
-<script>generate_markdown("DAT-0021-description",true);</script>
+<span id="DAT-0021-description-html" class="">number</span>
 </li>
 <li id="DAT-0022">
-<textarea id="DAT-0022-description-md" class="markdown">seating</textarea>
-<span id="DAT-0022-description-html"></span>
-<script>generate_markdown("DAT-0022-description",true);</script>
+<span id="DAT-0022-description-html" class="">seating</span>
 </li>
 <li id="DAT-0023">
-<textarea id="DAT-0023-description-md" class="markdown">hourSeated</textarea>
-<span id="DAT-0023-description-html"></span>
-<script>generate_markdown("DAT-0023-description",true);</script>
+<span id="DAT-0023-description-html" class="">hourSeated</span>
 </li>
 </ul>
 </td>
@@ -2164,9 +1798,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0004-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0004-comments");</script>
+<div id="IRQ-0004-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2188,9 +1820,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0005-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to there views.. More specifically:</textarea>
-<div id="IRQ-0005-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0005-relevantConcept");</script>
+<div id="IRQ-0005-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to there views.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2198,24 +1828,16 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0024">
-<textarea id="DAT-0024-description-md" class="markdown">title¬</textarea>
-<span id="DAT-0024-description-html"></span>
-<script>generate_markdown("DAT-0024-description",true);</script>
+<span id="DAT-0024-description-html" class="">title </span>
 </li>
 <li id="DAT-0025">
-<textarea id="DAT-0025-description-md" class="markdown">description</textarea>
-<span id="DAT-0025-description-html"></span>
-<script>generate_markdown("DAT-0025-description",true);</script>
+<span id="DAT-0025-description-html" class="">description</span>
 </li>
 <li id="DAT-0026">
-<textarea id="DAT-0026-description-md" class="markdown">score</textarea>
-<span id="DAT-0026-description-html"></span>
-<script>generate_markdown("DAT-0026-description",true);</script>
+<span id="DAT-0026-description-html" class="">score</span>
 </li>
 <li id="DAT-0027">
-<textarea id="DAT-0027-description-md" class="markdown">moment</textarea>
-<span id="DAT-0027-description-html"></span>
-<script>generate_markdown("DAT-0027-description",true);</script>
+<span id="DAT-0027-description-html" class="">moment</span>
 </li>
 </ul>
 </td>
@@ -2223,9 +1845,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0005-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0005-comments");</script>
+<div id="IRQ-0005-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2246,10 +1866,7 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="2">
-<textarea id="IRQ-0006-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the <a href="#GLO-0043" class="rem_ref">establishments</a>.. More specifically:</textarea>
-<div id="IRQ-0006-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0006-relevantConcept");</script>
+<td colspan="2"><div id="IRQ-0006-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the establishments.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2257,44 +1874,28 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0028">
-<textarea id="DAT-0028-description-md" class="markdown">title</textarea>
-<span id="DAT-0028-description-html"></span>
-<script>generate_markdown("DAT-0028-description",true);</script>
+<span id="DAT-0028-description-html" class="">title</span>
 </li>
 <li id="DAT-0029">
-<textarea id="DAT-0029-description-md" class="markdown">description</textarea>
-<span id="DAT-0029-description-html"></span>
-<script>generate_markdown("DAT-0029-description",true);</script>
+<span id="DAT-0029-description-html" class="">description</span>
 </li>
 <li id="DAT-0030">
-<textarea id="DAT-0030-description-md" class="markdown">pictures</textarea>
-<span id="DAT-0030-description-html"></span>
-<script>generate_markdown("DAT-0030-description",true);</script>
+<span id="DAT-0030-description-html" class="">pictures</span>
 </li>
 <li id="DAT-0031">
-<textarea id="DAT-0031-description-md" class="markdown">capacity¬</textarea>
-<span id="DAT-0031-description-html"></span>
-<script>generate_markdown("DAT-0031-description",true);</script>
+<span id="DAT-0031-description-html" class="">capacity </span>
 </li>
 <li id="DAT-0032">
-<textarea id="DAT-0032-description-md" class="markdown">currentCapacity</textarea>
-<span id="DAT-0032-description-html"></span>
-<script>generate_markdown("DAT-0032-description",true);</script>
+<span id="DAT-0032-description-html" class="">currentCapacity</span>
 </li>
 <li id="DAT-0033">
-<textarea id="DAT-0033-description-md" class="markdown">phone</textarea>
-<span id="DAT-0033-description-html"></span>
-<script>generate_markdown("DAT-0033-description",true);</script>
+<span id="DAT-0033-description-html" class="">phone</span>
 </li>
 <li id="DAT-0034">
-<textarea id="DAT-0034-description-md" class="markdown">openingHours</textarea>
-<span id="DAT-0034-description-html"></span>
-<script>generate_markdown("DAT-0034-description",true);</script>
+<span id="DAT-0034-description-html" class="">openingHours</span>
 </li>
 <li id="DAT-0035">
-<textarea id="DAT-0035-description-md" class="markdown">score</textarea>
-<span id="DAT-0035-description-html"></span>
-<script>generate_markdown("DAT-0035-description",true);</script>
+<span id="DAT-0035-description-html" class="">score</span>
 </li>
 </ul>
 </td>
@@ -2302,9 +1903,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0006-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0006-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0006-comments");</script>
+<div id="IRQ-0006-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2326,9 +1925,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0007-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the promotions.. More specifically:</textarea>
-<div id="IRQ-0007-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0007-relevantConcept");</script>
+<div id="IRQ-0007-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the promotions.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2336,34 +1933,22 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0036">
-<textarea id="DAT-0036-description-md" class="markdown">title</textarea>
-<span id="DAT-0036-description-html"></span>
-<script>generate_markdown("DAT-0036-description",true);</script>
+<span id="DAT-0036-description-html" class="">title</span>
 </li>
 <li id="DAT-0037">
-<textarea id="DAT-0037-description-md" class="markdown">description</textarea>
-<span id="DAT-0037-description-html"></span>
-<script>generate_markdown("DAT-0037-description",true);</script>
+<span id="DAT-0037-description-html" class="">description</span>
 </li>
 <li id="DAT-0038">
-<textarea id="DAT-0038-description-md" class="markdown">code</textarea>
-<span id="DAT-0038-description-html"></span>
-<script>generate_markdown("DAT-0038-description",true);</script>
+<span id="DAT-0038-description-html" class="">code</span>
 </li>
 <li id="DAT-0039">
-<textarea id="DAT-0039-description-md" class="markdown">use</textarea>
-<span id="DAT-0039-description-html"></span>
-<script>generate_markdown("DAT-0039-description",true);</script>
+<span id="DAT-0039-description-html" class="">use</span>
 </li>
 <li id="DAT-0040">
-<textarea id="DAT-0040-description-md" class="markdown">startDate</textarea>
-<span id="DAT-0040-description-html"></span>
-<script>generate_markdown("DAT-0040-description",true);</script>
+<span id="DAT-0040-description-html" class="">startDate</span>
 </li>
 <li id="DAT-0041">
-<textarea id="DAT-0041-description-md" class="markdown">endDate</textarea>
-<span id="DAT-0041-description-html"></span>
-<script>generate_markdown("DAT-0041-description",true);</script>
+<span id="DAT-0041-description-html" class="">endDate</span>
 </li>
 </ul>
 </td>
@@ -2371,9 +1956,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0007-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0007-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0007-comments");</script>
+<div id="IRQ-0007-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2395,9 +1978,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0008-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the orders.. More specifically:</textarea>
-<div id="IRQ-0008-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0008-relevantConcept");</script>
+<div id="IRQ-0008-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the orders.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2405,29 +1986,19 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0042">
-<textarea id="DAT-0042-description-md" class="markdown">placementDate</textarea>
-<span id="DAT-0042-description-html"></span>
-<script>generate_markdown("DAT-0042-description",true);</script>
+<span id="DAT-0042-description-html" class="">placementDate</span>
 </li>
 <li id="DAT-0043">
-<textarea id="DAT-0043-description-md" class="markdown">type</textarea>
-<span id="DAT-0043-description-html"></span>
-<script>generate_markdown("DAT-0043-description",true);</script>
+<span id="DAT-0043-description-html" class="">type</span>
 </li>
 <li id="DAT-0044">
-<textarea id="DAT-0044-description-md" class="markdown">status</textarea>
-<span id="DAT-0044-description-html"></span>
-<script>generate_markdown("DAT-0044-description",true);</script>
+<span id="DAT-0044-description-html" class="">status</span>
 </li>
 <li id="DAT-0045">
-<textarea id="DAT-0045-description-md" class="markdown">address</textarea>
-<span id="DAT-0045-description-html"></span>
-<script>generate_markdown("DAT-0045-description",true);</script>
+<span id="DAT-0045-description-html" class="">address</span>
 </li>
 <li id="DAT-0046">
-<textarea id="DAT-0046-description-md" class="markdown">active</textarea>
-<span id="DAT-0046-description-html"></span>
-<script>generate_markdown("DAT-0046-description",true);</script>
+<span id="DAT-0046-description-html" class="">active</span>
 </li>
 </ul>
 </td>
@@ -2435,9 +2006,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0008-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0008-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0008-comments");</script>
+<div id="IRQ-0008-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2459,9 +2028,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0009-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the dishes.. More specifically:</textarea>
-<div id="IRQ-0009-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0009-relevantConcept");</script>
+<div id="IRQ-0009-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the dishes.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2469,34 +2036,22 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0047">
-<textarea id="DAT-0047-description-md" class="markdown">title</textarea>
-<span id="DAT-0047-description-html"></span>
-<script>generate_markdown("DAT-0047-description",true);</script>
+<span id="DAT-0047-description-html" class="">title</span>
 </li>
 <li id="DAT-0048">
-<textarea id="DAT-0048-description-md" class="markdown">description</textarea>
-<span id="DAT-0048-description-html"></span>
-<script>generate_markdown("DAT-0048-description",true);</script>
+<span id="DAT-0048-description-html" class="">description</span>
 </li>
 <li id="DAT-0049">
-<textarea id="DAT-0049-description-md" class="markdown">picture</textarea>
-<span id="DAT-0049-description-html"></span>
-<script>generate_markdown("DAT-0049-description",true);</script>
+<span id="DAT-0049-description-html" class="">picture</span>
 </li>
 <li id="DAT-0050">
-<textarea id="DAT-0050-description-md" class="markdown">price</textarea>
-<span id="DAT-0050-description-html"></span>
-<script>generate_markdown("DAT-0050-description",true);</script>
+<span id="DAT-0050-description-html" class="">price</span>
 </li>
 <li id="DAT-0051">
-<textarea id="DAT-0051-description-md" class="markdown">score</textarea>
-<span id="DAT-0051-description-html"></span>
-<script>generate_markdown("DAT-0051-description",true);</script>
+<span id="DAT-0051-description-html" class="">score</span>
 </li>
 <li id="DAT-0052">
-<textarea id="DAT-0052-description-md" class="markdown">allergen</textarea>
-<span id="DAT-0052-description-html"></span>
-<script>generate_markdown("DAT-0052-description",true);</script>
+<span id="DAT-0052-description-html" class="">allergen</span>
 </li>
 </ul>
 </td>
@@ -2504,9 +2059,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0009-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0009-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0009-comments");</script>
+<div id="IRQ-0009-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2528,9 +2081,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0010-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the comments.. More specifically:</textarea>
-<div id="IRQ-0010-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0010-relevantConcept");</script>
+<div id="IRQ-0010-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the comments.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2538,19 +2089,13 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0053">
-<textarea id="DAT-0053-description-md" class="markdown">comment</textarea>
-<span id="DAT-0053-description-html"></span>
-<script>generate_markdown("DAT-0053-description",true);</script>
+<span id="DAT-0053-description-html" class="">comment</span>
 </li>
 <li id="DAT-0054">
-<textarea id="DAT-0054-description-md" class="markdown">moment</textarea>
-<span id="DAT-0054-description-html"></span>
-<script>generate_markdown("DAT-0054-description",true);</script>
+<span id="DAT-0054-description-html" class="">moment</span>
 </li>
 <li id="DAT-0055">
-<textarea id="DAT-0055-description-md" class="markdown">score</textarea>
-<span id="DAT-0055-description-html"></span>
-<script>generate_markdown("DAT-0055-description",true);</script>
+<span id="DAT-0055-description-html" class="">score</span>
 </li>
 </ul>
 </td>
@@ -2558,9 +2103,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0010-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0010-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0010-comments");</script>
+<div id="IRQ-0010-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2582,9 +2125,7 @@
 <tr>
 <th>Description</th>
 <td colspan="2">
-<textarea id="IRQ-0011-relevantConcept-md" class="markdown">The system shall store the information corresponding to The system must store the information corresponding to the cancellations.. More specifically:</textarea>
-<div id="IRQ-0011-relevantConcept-html" class="relevant_concept"></div>
-<script>generate_markdown("IRQ-0011-relevantConcept");</script>
+<div id="IRQ-0011-relevantConcept-html" class="relevant_concept"><p>The system shall store the information corresponding to The system must store the information corresponding to the cancellations.. More specifically:</p></div>
 </td>
 </tr>
 <tr>
@@ -2592,14 +2133,10 @@
 <td colspan="2">
 <ul class="specific_data">
 <li id="DAT-0056">
-<textarea id="DAT-0056-description-md" class="markdown">placementDate</textarea>
-<span id="DAT-0056-description-html"></span>
-<script>generate_markdown("DAT-0056-description",true);</script>
+<span id="DAT-0056-description-html" class="">placementDate</span>
 </li>
 <li id="DAT-0057">
-<textarea id="DAT-0057-description-md" class="markdown">reason</textarea>
-<span id="DAT-0057-description-html"></span>
-<script>generate_markdown("DAT-0057-description",true);</script>
+<span id="DAT-0057-description-html" class="">reason</span>
 </li>
 </ul>
 </td>
@@ -2607,9 +2144,7 @@
 <tr>
 <th>Comments</th>
 <td colspan="2">
-<textarea id="IRQ-0011-comments-md" class="markdown">None</textarea>
-<div id="IRQ-0011-comments-html" class="remus_comments"></div>
-<script>generate_markdown("IRQ-0011-comments");</script>
+<div id="IRQ-0011-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2631,18 +2166,14 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="CRQ-0001-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must comply with the following business rule: The client can't make a <a href="#GLO-0052" class="rem_ref">reservation</a> in the web-app if the capacity of the establishment is full.¬.</textarea>
-<div id="CRQ-0001-description-html" class=""></div>
-<script>generate_markdown("CRQ-0001-description");</script>
+<td colspan="1"><div id="CRQ-0001-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must comply with the following business rule: The client can't make a reservation in the web-app if the capacity of the establishment is full.<br />
+.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0001-comments-md" class="markdown">None</textarea>
-<div id="CRQ-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0001-comments");</script>
+<div id="CRQ-0001-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2663,18 +2194,14 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="CRQ-0002-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The <a href="#GLO-0052" class="rem_ref">reservation</a> needs to have an estimated duration of 2 hours in <a href="#GLO-0055" class="rem_ref">order</a> to make the <a href="#GLO-0047" class="rem_ref">owner</a> able to accommodate the maximum number of clients possible.full.¬.</textarea>
-<div id="CRQ-0002-description-html" class=""></div>
-<script>generate_markdown("CRQ-0002-description");</script>
+<td colspan="1"><div id="CRQ-0002-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The reservation needs to have an estimated duration of 2 hours in order to make the owner able to accommodate the maximum number of clients possible.full.<br />
+.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0002-comments-md" class="markdown">None</textarea>
-<div id="CRQ-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0002-comments");</script>
+<div id="CRQ-0002-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2695,18 +2222,13 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="CRQ-0003-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The clients have to be able to make appointments unless it is more than 1 hour in advance in <a href="#GLO-0055" class="rem_ref">order</a> for the managers to accommodate clients who come without an appointment..</textarea>
-<div id="CRQ-0003-description-html" class=""></div>
-<script>generate_markdown("CRQ-0003-description");</script>
+<td colspan="1"><div id="CRQ-0003-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The clients have to be able to make appointments unless it is more than 1 hour in advance in order for the managers to accommodate clients who come without an appointment..</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0003-comments-md" class="markdown">None</textarea>
-<div id="CRQ-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0003-comments");</script>
+<div id="CRQ-0003-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2727,18 +2249,14 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="CRQ-0004-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must respect the following business rule: It is preferable that <a href="#GLO-0046" class="rem_ref">customers</a> reserve their table before coming whenever possible so that the waiters do not manage a huge <a href="#GLO-0049" class="rem_ref">waiting list</a>.¬.</textarea>
-<div id="CRQ-0004-description-html" class=""></div>
-<script>generate_markdown("CRQ-0004-description");</script>
+<td colspan="1"><div id="CRQ-0004-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must respect the following business rule: It is preferable that customers reserve their table before coming whenever possible so that the waiters do not manage a huge waiting list.<br />
+.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0004-comments-md" class="markdown">None</textarea>
-<div id="CRQ-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0004-comments");</script>
+<div id="CRQ-0004-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2759,18 +2277,14 @@
 </tr>
 <tr>
 <th>Description</th>
-<td colspan="1">
-<textarea id="CRQ-0005-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must comply with the following business rule: <a href="#GLO-0046" class="rem_ref">Customers</a> have to be able to access and view the system on both their smartphone and laptop so as not to limit use to a single device.¬.</textarea>
-<div id="CRQ-0005-description-html" class=""></div>
-<script>generate_markdown("CRQ-0005-description");</script>
+<td colspan="1"><div id="CRQ-0005-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must comply with the following business rule: Customers have to be able to access and view the system on both their smartphone and laptop so as not to limit use to a single device.<br />
+.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0005-comments-md" class="markdown">None</textarea>
-<div id="CRQ-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0005-comments");</script>
+<div id="CRQ-0005-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2792,17 +2306,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="CRQ-0006-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must comply with the following business rule: Clients must know in advance the time they will be able to sit at a table to make managers or waiters do not have to speed up the process and be able to manage my time..</textarea>
-<div id="CRQ-0006-description-html" class=""></div>
-<script>generate_markdown("CRQ-0006-description");</script>
+<div id="CRQ-0006-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must comply with the following business rule: Clients must know in advance the time they will be able to sit at a table to make managers or waiters do not have to speed up the process and be able to manage my time..</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0006-comments-md" class="markdown">None</textarea>
-<div id="CRQ-0006-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0006-comments");</script>
+<div id="CRQ-0006-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2826,17 +2336,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="NFR-0001-description-md" class="markdown">The system shall take a maximum of 10 minutes to recover from a total crash failure, 95% of the time..</textarea>
-<div id="NFR-0001-description-html" class=""></div>
-<script>generate_markdown("NFR-0001-description");</script>
+<div id="NFR-0001-description-html" class=""><p>The system shall take a maximum of 10 minutes to recover from a total crash failure, 95% of the time.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="NFR-0001-comments-md" class="markdown">None</textarea>
-<div id="NFR-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("NFR-0001-comments");</script>
+<div id="NFR-0001-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2859,17 +2365,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="NFR-0002-description-md" class="markdown">The system shall allow in 80% of the time that with a maximum of 5 clicks is sufficient to reach the desired information..</textarea>
-<div id="NFR-0002-description-html" class=""></div>
-<script>generate_markdown("NFR-0002-description");</script>
+<div id="NFR-0002-description-html" class=""><p>The system shall allow in 80% of the time that with a maximum of 5 clicks is sufficient to reach the desired information.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="NFR-0002-comments-md" class="markdown">None</textarea>
-<div id="NFR-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("NFR-0002-comments");</script>
+<div id="NFR-0002-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2892,17 +2394,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="NFR-0003-description-md" class="markdown">The system shall have a maximum response time of 5 seconds for any query operation..</textarea>
-<div id="NFR-0003-description-html" class=""></div>
-<script>generate_markdown("NFR-0003-description");</script>
+<div id="NFR-0003-description-html" class=""><p>The system shall have a maximum response time of 5 seconds for any query operation.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="NFR-0003-comments-md" class="markdown">None</textarea>
-<div id="NFR-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("NFR-0003-comments");</script>
+<div id="NFR-0003-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2925,17 +2423,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="NFR-0004-description-md" class="markdown">The system shall have the JAVA code comply with Code Conventions for the Java Programming Language recommendations.</textarea>
-<div id="NFR-0004-description-html" class=""></div>
-<script>generate_markdown("NFR-0004-description");</script>
+<div id="NFR-0004-description-html" class=""><p>The system shall have the JAVA code comply with Code Conventions for the Java Programming Language recommendations.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="NFR-0004-comments-md" class="markdown">None</textarea>
-<div id="NFR-0004-comments-html" class="remus_comments"></div>
-<script>generate_markdown("NFR-0004-comments");</script>
+<div id="NFR-0004-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2958,17 +2452,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="NFR-0005-description-md" class="markdown">The system shall avoid using extensions that are proprietary to the SQL-92 standard in the database management system you use..</textarea>
-<div id="NFR-0005-description-html" class=""></div>
-<script>generate_markdown("NFR-0005-description");</script>
+<div id="NFR-0005-description-html" class=""><p>The system shall avoid using extensions that are proprietary to the SQL-92 standard in the database management system you use.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="NFR-0005-comments-md" class="markdown">None</textarea>
-<div id="NFR-0005-comments-html" class="remus_comments"></div>
-<script>generate_markdown("NFR-0005-comments");</script>
+<div id="NFR-0005-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -2991,17 +2481,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="NFR-0006-description-md" class="markdown">The system shall be able to prevent systematic SQL injection attacks..</textarea>
-<div id="NFR-0006-description-html" class=""></div>
-<script>generate_markdown("NFR-0006-description");</script>
+<div id="NFR-0006-description-html" class=""><p>The system shall be able to prevent systematic SQL injection attacks.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="NFR-0006-comments-md" class="markdown">None</textarea>
-<div id="NFR-0006-comments-html" class="remus_comments"></div>
-<script>generate_markdown("NFR-0006-comments");</script>
+<div id="NFR-0006-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
@@ -3024,17 +2510,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="CRQ-0007-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must be host by Google Engine.</textarea>
-<div id="CRQ-0007-description-html" class=""></div>
-<script>generate_markdown("CRQ-0007-description");</script>
+<div id="CRQ-0007-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must be host by Google Engine.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0007-comments-md" class="markdown">Makes the system available 24/7.</textarea>
-<div id="CRQ-0007-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0007-comments");</script>
+<div id="CRQ-0007-comments-html" class="remus_comments"><p>Makes the system available 24/7.</p></div>
 </td>
 </tr>
 </table>
@@ -3056,17 +2538,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="CRQ-0008-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system has to be available and operational in all the browsers (mozilla firefox, google chrome, internet explorer, safari...)..</textarea>
-<div id="CRQ-0008-description-html" class=""></div>
-<script>generate_markdown("CRQ-0008-description");</script>
+<div id="CRQ-0008-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system has to be available and operational in all the browsers (mozilla firefox, google chrome, internet explorer, safari?).</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0008-comments-md" class="markdown">Users have to be able to connect on our system with any browser.</textarea>
-<div id="CRQ-0008-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0008-comments");</script>
+<div id="CRQ-0008-comments-html" class="remus_comments"><p>Users have to be able to connect on our system with any browser.</p></div>
 </td>
 </tr>
 </table>
@@ -3088,17 +2566,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="CRQ-0009-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must use H2 Database as a database management system for testing.</textarea>
-<div id="CRQ-0009-description-html" class=""></div>
-<script>generate_markdown("CRQ-0009-description");</script>
+<div id="CRQ-0009-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must use H2 Database as a database management system for testing.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0009-comments-md" class="markdown">Only used for testing.</textarea>
-<div id="CRQ-0009-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0009-comments");</script>
+<div id="CRQ-0009-comments-html" class="remus_comments"><p>Only used for testing.</p></div>
 </td>
 </tr>
 </table>
@@ -3120,17 +2594,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="CRQ-0010-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must use MySQL database system.</textarea>
-<div id="CRQ-0010-description-html" class=""></div>
-<script>generate_markdown("CRQ-0010-description");</script>
+<div id="CRQ-0010-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must use MySQL database system.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0010-comments-md" class="markdown">Used for production version.</textarea>
-<div id="CRQ-0010-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0010-comments");</script>
+<div id="CRQ-0010-comments-html" class="remus_comments"><p>Used for production version.</p></div>
 </td>
 </tr>
 </table>
@@ -3152,17 +2622,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="CRQ-0011-description-md" class="markdown">The system shall be compliant with the following business rule or constraint: The system must use Spring Boot framework.</textarea>
-<div id="CRQ-0011-description-html" class=""></div>
-<script>generate_markdown("CRQ-0011-description");</script>
+<div id="CRQ-0011-description-html" class=""><p>The system shall be compliant with the following business rule or constraint: The system must use Spring Boot framework.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="CRQ-0011-comments-md" class="markdown">As a way to have a decent mantainability. The team uses Spring Boot in the professional enviroment.</textarea>
-<div id="CRQ-0011-comments-html" class="remus_comments"></div>
-<script>generate_markdown("CRQ-0011-comments");</script>
+<div id="CRQ-0011-comments-html" class="remus_comments"><p>As a way to have a decent mantainability. The team uses Spring Boot in the professional enviroment.</p></div>
 </td>
 </tr>
 </table>
@@ -3185,17 +2651,13 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="FRQ-0023-description-md" class="markdown">The system shall The system must have a SSL certificate to ensure his security.</textarea>
-<div id="FRQ-0023-description-html" class=""></div>
-<script>generate_markdown("FRQ-0023-description");</script>
+<div id="FRQ-0023-description-html" class=""><p>The system shall The system must have a SSL certificate to ensure his security.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="FRQ-0023-comments-md" class="markdown">Adds an 'S' to the end of HTTP</textarea>
-<div id="FRQ-0023-comments-html" class="remus_comments"></div>
-<script>generate_markdown("FRQ-0023-comments");</script>
+<div id="FRQ-0023-comments-html" class="remus_comments"><p>Adds an 'S' to the end of HTTP</p></div>
 </td>
 </tr>
 </table>
@@ -3217,22 +2679,17 @@
 <tr>
 <th>Description</th>
 <td colspan="1">
-<textarea id="FRQ-0024-description-md" class="markdown">The system shall The system will be hosted under the .es domain.</textarea>
-<div id="FRQ-0024-description-html" class=""></div>
-<script>generate_markdown("FRQ-0024-description");</script>
+<div id="FRQ-0024-description-html" class=""><p>The system shall The system will be hosted under the .es domain.</p></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
-<td colspan="1">
-<textarea id="FRQ-0024-comments-md" class="markdown">Because the <a href="#GLO-0050" class="rem_ref">website</a> will be hosted in Spain.</textarea>
-<div id="FRQ-0024-comments-html" class="remus_comments"></div>
-<script>generate_markdown("FRQ-0024-comments");</script>
+<td colspan="1"><div id="FRQ-0024-comments-html" class="remus_comments"><p>Because the website will be hosted in Spain.</p></div>
 </td>
 </tr>
 </table>
 </div>
-<h1 id="SEC-0025" class="section">A Meeting Minutes</h1>
+<h1 id="SEC-0025" class="appendix">A Meeting Minutes</h1>
 <div id="MET-0001">
 <table class="meeting remus_table">
 <thead>
@@ -3253,9 +2710,7 @@
 <tr>
 <th>Place</th>
 <td colspan="1">
-<textarea id="MET-0001-place-md" class="markdown">"Tabernas Sevilla" Offices</textarea>
-<span id="MET-0001-place-html"></span>
-<script>generate_markdown("MET-0001-place",true);</script>
+<span id="MET-0001-place-html" class="">"Tabernas Sevilla" Offices</span>
 </td>
 </tr>
 <tr>
@@ -3282,18 +2737,29 @@
 </tr>
 <tr>
 <th>Results</th>
-<td colspan="1">
-<textarea id="MET-0001-results-md" class="markdown">The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.¬He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.¬First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. He explained in depth how the restaurant business works. He told us that they have 4 <a href="#GLO-0043" class="rem_ref">establishments</a> in Seville, and each of them has a manager, some waiters and some cooks (the number depends on the location). In these <a href="#GLO-0043" class="rem_ref">taverns</a> you can find typical spanish <a href="#GLO-0040" class="rem_ref">tapas</a>, such as croquetas, a variety of meats, san jacobos, cheese, iberic ham... At the end of the day, if some ingredients goes out of stock, the manager of the establishment notifies Pablo Arenas and he proceeds make an <a href="#GLO-0055" class="rem_ref">order</a> to the providers. We also asked him some questions about the business and the way he manages it, for example:¬¬Do you think your business lacks automation?&lt;br&gt;¬- "I think we have a pretty computerized business".¬What are you thinking about to improve your business?&lt;br&gt;¬- "Some time ago we thought of a system to manage waitlists, but we gave it up for lack of time to manage it. So I listen to your proposals".¬How does the booking system works?&lt;br&gt;¬- "If you call the telephone number of the tavern or you make a <a href="#GLO-0052" class="rem_ref">reservation</a> through the web, you have to indicate the number of diners, the time of arival, and you can (optional) specify a menu if you want to have it served quickly when you get here. The cost of <a href="#GLO-0052" class="rem_ref">reservation</a> is 3 euros per <a href="#GLO-0046" class="rem_ref">diner</a>, and this ammount will be refunded when you pay before leaving the tavern."¬&lt;br&gt;¬Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:¬o	The "take away" and "delivery" system (to fulfil the main goal: sell more).¬o	Improvement of the restaurant's waitlist management:¬o	Making possible the online booking without going to the restaurant.¬o	Creating a software that manages face-to-face <a href="#GLO-0049" class="rem_ref">waiting list</a> automatically.¬</textarea>
-<div id="MET-0001-results-html" class=""></div>
-<script>generate_markdown("MET-0001-results");</script>
+<td colspan="1"><div id="MET-0001-results-html" class=""><p>The day of the meeting we went to the offices of our client, Pablo Arenas. We met around 5pm and the meeting lasted about an hour and a half.<br />
+He made it clear to us that his main objective is to sell, every improvement or new functionality that we create does not matter if he cannot sell more than now.<br />
+First, we listened to our client how his company was working and the computerized system he was using ("BDP" it's the software's name) to better understand his business model and how we could improve it or design new functionalities. He explained in depth how the restaurant business works. He told us that they have 4 establishments in Seville, and each of them has a manager, some waiters and some cooks (the number depends on the location). In these taverns you can find typical spanish tapas, such as croquetas, a variety of meats, san jacobos, cheese, iberic ham? At the end of the day, if some ingredients goes out of stock, the manager of the establishment notifies Pablo Arenas and he proceeds make an order to the providers. We also asked him some questions about the business and the way he manages it, for example:</p>
+<p>Do you think your business lacks automation?<br></p>
+<ul>
+<li>"I think we have a pretty computerized business".<br />
+What are you thinking about to improve your business?<br></li>
+<li>"Some time ago we thought of a system to manage waitlists, but we gave it up for lack of time to manage it. So I listen to your proposals".<br />
+How does the booking system works?<br></li>
+<li>"If you call the telephone number of the tavern or you make a reservation through the web, you have to indicate the number of diners, the time of arival, and you can (optional) specify a menu if you want to have it served quickly when you get here. The cost of reservation is 3 euros per diner, and this ammount will be refunded when you pay before leaving the tavern."
+<br><br />
+Finally, we chose between the customer and ourselves what we thought was best for his business, we thought four possible solutions:<br />
+o    The "take away" and "delivery" system (to fulfil the main goal: sell more).<br />
+o    Improvement of the restaurant's waitlist management:<br />
+o    Making possible the online booking without going to the restaurant.<br />
+o    Creating a software that manages face-to-face waiting list automatically.   </li>
+</ul></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="MET-0001-comments-md" class="markdown">Ninguno</textarea>
-<div id="MET-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("MET-0001-comments");</script>
+<div id="MET-0001-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -3301,10 +2767,9 @@
 <div id="GRF-0013" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\selfie interview.jpeg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 15: </span>
-<textarea id="GRF-0013-name-md" class="markdown">Photo of the first meeting</textarea>
-<span id="GRF-0013-name-html"></span>
-<script>generate_markdown("GRF-0013-name",true);</script>
+<span class="figure_caption_label">Figure 15:
+                 </span>
+<span id="GRF-0013-name-html" class="">Photo of the first meeting</span>
 </p>
 </div>
 <div id="MET-0002">
@@ -3327,9 +2792,7 @@
 <tr>
 <th>Place</th>
 <td colspan="1">
-<textarea id="MET-0002-place-md" class="markdown">Skype</textarea>
-<span id="MET-0002-place-html"></span>
-<script>generate_markdown("MET-0002-place",true);</script>
+<span id="MET-0002-place-html" class="">Skype</span>
 </td>
 </tr>
 <tr>
@@ -3359,24 +2822,34 @@
 </tr>
 <tr>
 <th>Results</th>
-<td colspan="1">
-<textarea id="MET-0002-results-md" class="markdown">We had to make this second meeting via Skype due to the ongoing situation caused by the pandemic.&lt;br&gt;¬The goal of this meeting was to ask a few doubts we had about the bussiness and to seek approval of our client.&lt;br&gt;¬We showed him all of the work we have done so far, what interested him the most was the mockups, and he was very impressed with the result. He liked it overall, but he didn't really understood the purpose of the reviews since it can damage the reputation of the bussiness.&lt;br&gt;¬Here are the questions we asked him:&lt;br&gt;¬How long can you book in advance?¬- "You can make a <a href="#GLO-0052" class="rem_ref">reservation</a> with a maximum of 30 days in advance."&lt;br&gt;¬And what are the cancellation policies?¬- "If you cancell your <a href="#GLO-0052" class="rem_ref">reservation</a> with a margin of 48 hours or more, you can have your money back, if you cancel it within 48 hours before the <a href="#GLO-0052" class="rem_ref">reservation</a> we won't make a refund of the money you paid for the booking. We do this to avoid ghost clients."&lt;br&gt;¬Can you book outside the tavern or only inside?¬- "Both, inside and outside."&lt;br&gt;¬How do you feel about making promotions like the ones you can find in McDonalds and other fast food chains?¬- "Well, I haven't seen any bar or restaurant make these kind of offers, but maybe it could work -to have a point system for every time you <a href="#GLO-0055" class="rem_ref">order</a> something- to keep the clients coming."¬&lt;br&gt;¬After that we talked about the bussiness in these difficult times of the pandemic. Pablo Arenas, our client, told us that during this time they have inmplemented a take-away system (stealing our idea), and they now offer meriendas in their <a href="#GLO-0043" class="rem_ref">taverns</a>. After all they can handle the situation, if could be worse he told us. He hopes that when all of this is over they can start making the profit they made before the pandemic.¬</textarea>
-<div id="MET-0002-results-html" class=""></div>
-<script>generate_markdown("MET-0002-results");</script>
+<td colspan="1"><div id="MET-0002-results-html" class=""><p>We had to make this second meeting via Skype due to the ongoing situation caused by the pandemic.<br><br />
+The goal of this meeting was to ask a few doubts we had about the bussiness and to seek approval of our client.<br><br />
+We showed him all of the work we have done so far, what interested him the most was the mockups, and he was very impressed with the result. He liked it overall, but he didn't really understood the purpose of the reviews since it can damage the reputation of the bussiness.<br><br />
+Here are the questions we asked him:<br><br />
+How long can you book in advance?</p>
+<ul>
+<li>"You can make a reservation with a maximum of 30 days in advance."<br><br />
+And what are the cancellation policies?</li>
+<li>"If you cancell your reservation with a margin of 48 hours or more, you can have your money back, if you cancel it within 48 hours before the reservation we won't make a refund of the money you paid for the booking. We do this to avoid ghost clients."<br><br />
+Can you book outside the tavern or only inside?</li>
+<li>"Both, inside and outside."<br><br />
+How do you feel about making promotions like the ones you can find in McDonalds and other fast food chains?</li>
+<li>"Well, I haven't seen any bar or restaurant make these kind of offers, but maybe it could work -to have a point system for every time you order something- to keep the clients coming."
+<br><br />
+After that we talked about the bussiness in these difficult times of the pandemic. Pablo Arenas, our client, told us that during this time they have inmplemented a take-away system (stealing our idea), and they now offer meriendas in their taverns. After all they can handle the situation, if could be worse he told us. He hopes that when all of this is over they can start making the profit they made before the pandemic.   </li>
+</ul></div>
 </td>
 </tr>
 <tr>
 <th>Comments</th>
 <td colspan="1">
-<textarea id="MET-0002-comments-md" class="markdown">None</textarea>
-<div id="MET-0002-comments-html" class="remus_comments"></div>
-<script>generate_markdown("MET-0002-comments");</script>
+<div id="MET-0002-comments-html" class="remus_comments"><p>None</p></div>
 </td>
 </tr>
 </table>
 </div>
-<h1 id="SEC-0026" class="section">B Relevant Documentation</h1>
-<h1 id="SEC-0027" class="section">C Glossary of acronyms and abbreviations</h1>
+<h1 id="SEC-0026" class="appendix">B Relevant Documentation</h1>
+<h1 id="SEC-0027" class="appendix">C Glossary of acronyms and abbreviations</h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
             // set tooltips of rem:ref references to glossary items or class supertypes
