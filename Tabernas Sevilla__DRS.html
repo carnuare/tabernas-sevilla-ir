@@ -2,11 +2,97 @@
 <html lang="en">
 <head>
 <meta charset="iso-8859-1" />
-<meta name="generatedBy" content="REMUS" />
+<meta name="generatedBy" content="REMUS (REM 1.3)" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/stylesheets/remus.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/stylesheets/madeja.css" />
 <title>Project Tabernas Sevilla</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.2/showdown.js"></script>
 <script>
+            // showdown 1.0.2 (supported in IE 7 without es5-shim)
+            // Usage
+            // var result = converter.makeHtml(text);
+            // converter.setOption( "key", "value" );
+
+            var converter = new showdown.Converter();
+
+            // function to be used in XLST templates
+            // if inline=true, all CRLF tags are replaced
+            // by spaces to avoid internal <p>..</p> and
+            // the enclosing <p>..</p> (if any) is discarded.
+
+            function generate_markdown( id, inline )
+            {
+                // optional parameter
+                if ( inline === undefined ) {
+                    inline = false;
+                }
+
+                var md_id   = id + "-md";
+                var html_id = id + "-html";
+
+                var md_container   = document.getElementById( md_id );
+                var html_container = document.getElementById( html_id );
+
+                var md_text = md_container.value;
+
+                md_container.value = "remus_text = " + md_text; // for debugging
+
+                // Simple text replace can be performed using split and join faster
+                // than using replace with a regular expression as described in:
+                // https://dmitripavlutin.com/replace-all-string-occurrences-javascript/
+
+                /* no internal <p>...</p> in inline mode */
+                var newline = inline ? " " : "\n";
+                var two_newlines = newline + newline;
+
+                var crlf_tag             = "¬";
+                var two_crlf_tags        = crlf_tag + crlf_tag;
+                var three_spaces_newline = "   " + newline;
+                var reg_exp = new RegExp( "(" + crlf_tag + ")(?!(\\d\\.)|\\*|\\+|\\-|\\<)", 'g' );
+
+                // if ( inline )
+                //      replace all CRLF by spaces
+                // else
+                //      replace all CRLF+CRLF into \n\n
+                //      replace all CRLF not followed by *,+,-,&gt; or a digit+period into 3 spaces + \n
+                //      replace all remaining CRLF into \n
+                // endif
+                //
+                // try regular expressions at: https://regexr.com/
+
+                if ( inline ) {
+                    md_text = md_text.split( crlf_tag ).join( newline );
+                }
+                else {
+                    md_text = md_text.split( two_crlf_tags ).join( newline + newline );
+                    md_text = md_text.replace( reg_exp, three_spaces_newline + "$2" );
+                    md_text = md_text.split( crlf_tag ).join( newline );
+                }
+
+                md_container.value += "\n\nmd_text = " + md_text; // for debugging
+
+                // Don't get rid of enclosing <p>...</p> in paragraph mode,
+                // double \n inside markdown will close the first <p> generating an
+                // unbalanced </p> later and wrong html that will raise an
+                // error when assigned to innerHTML.
+
+                var html_text = converter.makeHtml( md_text );
+
+                if ( inline ) {
+                    // get rid of enclosing <p>...</p> (if any)
+                    // warning: generated item lists are not inside <p>...</p>
+                    // length("<p>") == 3, length("</p>") == 4
+                    if ( html_text.indexOf("<p>")       == 0 &&
+                         html_text.lastIndexOf("</p>")  == html_text.length - 4 )
+                    {
+                        html_text = html_text.slice( 3, -4 );
+                    }
+                }
+
+                md_container.value += ("\n\nhtml_text = " + html_text); // for debugging
+
+                html_container.innerHTML = html_text;
+            }
+
             // array for user warnings
             var warnings = new Array();
         </script>
@@ -19,7 +105,13 @@
 <div id="document_cover">
 <div id="browser_info">
 <script>
-                document.write( navigator.userAgent );
+                document.write( navigator.userAgent + "<br />" );
+                for( var opt in converter.getOptions() ) {
+                    document.write( "local option : " + opt + " = " + converter.getOption(opt) + "<br />" );
+                }
+                for( var opt in showdown.getOptions() ) {
+                    document.write( "global option : " + opt + " = " + showdown.getOption(opt) + "<br />" );
+                }
             </script>
 </div>
 <div id="project_name">Project Tabernas Sevilla</div>
@@ -58,228 +150,244 @@
 </nav>
 <div class="pagebreak"></div>
 <h1 id="SEC-0034" class="section">1 Introduction</h1>
-<div id="PRG-0067"><div id="PRG-0067-text-html" class=""><p>Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four <rem:ref oid="GLO-0043">establishments</rem:ref> across the capital, which are usually visited by young adults and families. Its specialty are sevillian <rem:ref oid="GLO-0040">tapas</rem:ref> and dishes. They also have a very large wine menu<br/><br/>Our system fulfils three fundamental functions for Tabernas Sevilla&apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&apos;s extensive menu they wish to <rem:ref oid="GLO-0055">order</rem:ref> and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the <rem:ref oid="GLO-0055">order</rem:ref> on site or selecting <rem:ref oid="GLO-0045">delivery</rem:ref> to the previously specified address.  <br/>  <br/>In addition, it has the functionality implemented to manage the capacity of the bar&apos;s <rem:ref oid="GLO-0046">customers</rem:ref>, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the <rem:ref oid="GLO-0049">waiting list</rem:ref>, which is currently done by hand by the waiters. <br/></rem:text></p></div>
+<div id="PRG-0067">
+<textarea id="PRG-0067-text-md" class="markdown">Tabernas Sevilla is a well-known chain of restaurants in Seville that has been around since 2001. There are four &lt;rem:ref oid="GLO-0043"&gt;<a href="#GLO-0043" class="rem_ref">establishments</a>&lt;/rem:ref&gt; across the capital, which are usually visited by young adults and families. Its specialty are sevillian &lt;rem:ref oid="GLO-0040"&gt;<a href="#GLO-0040" class="rem_ref">tapas</a>&lt;/rem:ref&gt; and dishes. They also have a very large wine menu&lt;br/&gt;&lt;br/&gt;Our system fulfils three fundamental functions for Tabernas Sevilla&amp;apos;s business model. It is based on a web page that allows the ordering of commands on-line. Using a computerized web menu, users can select which dishes from Tabernas Sevilla&amp;apos;s extensive menu they wish to &lt;rem:ref oid="GLO-0055"&gt;<a href="#GLO-0055" class="rem_ref">order</a>&lt;/rem:ref&gt; and which of the 4 restaurants available throughout Seville to collect them from, giving them an estimated time to collect the &lt;rem:ref oid="GLO-0055"&gt;<a href="#GLO-0055" class="rem_ref">order</a>&lt;/rem:ref&gt; on site or selecting &lt;rem:ref oid="GLO-0045"&gt;<a href="#GLO-0045" class="rem_ref">delivery</a>&lt;/rem:ref&gt; to the previously specified address.  &lt;br/&gt;  &lt;br/&gt;In addition, it has the functionality implemented to manage the capacity of the bar&amp;apos;s &lt;rem:ref oid="GLO-0046"&gt;<a href="#GLO-0046" class="rem_ref">customers</a>&lt;/rem:ref&gt;, being able to make table reservations in advance by agreeing on a time, and if desired, also agreeing on the dishes to be consumed. In this way, the client does not have to wait for his dishes when he arrives at the bar but can enjoy them in the best possible way. This helps to solve one of the basic problems of the business, the management of the &lt;rem:ref oid="GLO-0049"&gt;<a href="#GLO-0049" class="rem_ref">waiting list</a>&lt;/rem:ref&gt;, which is currently done by hand by the waiters. &lt;br/&gt;&lt;/rem:text&gt;</textarea>
+<div id="PRG-0067-text-html" class=""></div>
+<script>generate_markdown("PRG-0067-text");</script>
 </div>
 <h1 id="SEC-0035" class="section">2 Logic architecture of the system</h1>
 <h2 id="SEC-0058" class="section">2.1 Architecture of the system diagrams</h2>
 <div id="GRF-0042" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\3mvcSpringPattern.jpg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 1:
-                 </span>
-<span id="GRF-0042-name-html" class="">The MVC pattern in Spring</span>
+<span class="figure_caption_label">Figure 16: </span>
+<textarea id="GRF-0042-name-md" class="markdown">
+<a href="#GLO-0062" class="rem_ref">The MVC pattern in Spring</a>
+</textarea>
+<span id="GRF-0042-name-html"></span>
+<script>generate_markdown("GRF-0042-name",true);</script>
 </p>
 </div>
 <div id="GRF-0040" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\2-1DETAILED LAYER.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 2:
-                 </span>
-<span id="GRF-0040-name-html" class="">Detailed view of layers, services and architecture</span>
+<span class="figure_caption_label">Figure 17: </span>
+<textarea id="GRF-0040-name-md" class="markdown">
+<a href="#GLO-0066" class="rem_ref">Detailed view of layers</a>, <a href="#GLO-0066" class="rem_ref">services and architecture</a>
+</textarea>
+<span id="GRF-0040-name-html"></span>
+<script>generate_markdown("GRF-0040-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0059" class="section">2.2 Architecture of the system description</h2>
 <div id="GLO-0062" class="glo">
-<div id="GLO-0062-text-html" class=""><p><strong>The MVC pattern in Spring</strong>: </p>
-<p>The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.</p>
-<p>The Model encapsulates the application data and in general they will consist of POJO.</p>
-<p>The View is responsible for rendering the model data and in general it generates HTML output that the client's browser can interpret.</p>
-<p>The Controller is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.</p></div>
+<textarea id="GLO-0062-text-md" class="markdown">**The MVC pattern in Spring**: ¬¬The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.¬¬The Model encapsulates the application data and in general they will consist of POJO.¬¬The View is responsible for rendering the model data and in general it generates HTML output that the client's browser can interpret.¬¬The Controller is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.</textarea>
+<div id="GLO-0062-text-html" class=""></div>
+<script>generate_markdown("GLO-0062-text");</script>
 </div>
 <div id="GLO-0066" class="glo">
-<div id="GLO-0066-text-html" class=""><p><strong>Detailed view of layers, services and architecture</strong>: </p>
-<ol>
-<li><p>Request<br />
-The first step in the MVC flow is when a request is received by the Dispatcher Servlet. </p></li>
-<li><p>Dispatcher Servlet<br />
-Now, the Dispatcher Servlet will with the help of Handler Mapping understand the Controller class name associated with the received request. Once the Dispatcher Servlet knows which Controller will be able to handle the request, it will transfer the request to it. </p></li>
-<li><p>Controller<br />
-The Controller will process the request based on appropriate methods and will return it to Model Data and View Name.</p></li>
-<li><p>Model and View<br />
-It will return the processed data to the Dispatcher Servlet. </p></li>
-<li><p>View Resolver<br />
-Once Model and View receive the data, Dispatcher Servlet will transfer it to the View Resolver to get the actual view page. </p></li>
-<li><p>View<br />
-Finally, the Dispatcher Servlet will pass the Model object (results) to the view page. This is the final step of the flow where the results will be displayed. </p></li>
-</ol></div>
+<textarea id="GLO-0066-text-md" class="markdown">**Detailed view of layers, services and architecture**: ¬¬1. Request¬The first step in the MVC flow is when a request is received by the Dispatcher Servlet. ¬¬2. Dispatcher Servlet¬Now, the Dispatcher Servlet will with the help of Handler Mapping understand the Controller class name associated with the received request. Once the Dispatcher Servlet knows which Controller will be able to handle the request, it will transfer the request to it. ¬¬3. Controller¬The Controller will process the request based on appropriate methods and will return it to Model Data and View Name.¬¬4. Model and View¬It will return the processed data to the Dispatcher Servlet. ¬¬5. View Resolver¬Once Model and View receive the data, Dispatcher Servlet will transfer it to the View Resolver to get the actual view page. ¬¬6. View¬Finally, the Dispatcher Servlet will pass the Model object (results) to the view page. This is the final step of the flow where the results will be displayed. </textarea>
+<div id="GLO-0066-text-html" class=""></div>
+<script>generate_markdown("GLO-0066-text");</script>
 </div>
 <h1 id="SEC-0036" class="section">3 Model of classes of the system</h1>
 <h2 id="SEC-0061" class="section">3.1 System class diagram</h2>
 <div id="GRF-0038" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\data model.png" width="98%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 3:
-                 </span>
-<span id="GRF-0038-name-html" class="">Data model</span>
+<span class="figure_caption_label">Figure 18: </span>
+<textarea id="GRF-0038-name-md" class="markdown">Data model</textarea>
+<span id="GRF-0038-name-html"></span>
+<script>generate_markdown("GRF-0038-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0060" class="section">3.2 System class descriptoin</h2>
-<div id="PRG-0058"><div id="PRG-0058-text-html" class=""><p>There are 5 actors in the system: admin, customer, waiter, manager and cool. The website will have 3 different account privileges, customer, cook and admin.<br />
- There is a message system between the actors of the system, to send information about orders inside a tavern or from delivieries.</p>
-<p>Each time an order is made through the website, the system will allow the user to wirte a review about the dish. Also, the take away system will send the user an email every time the state of the delivery changes (as seen in the user interface prototype).</p>
-<p>Promotions and JobApplication are both connected to an estabilshment because they both depend on the tavern. </p>
-<p>Bookings are always associated to an establishment, and it can be made as long as there is free space inside or outside a tavern. A booking or reservation can introduce an order, so that when you arrive to the establishment, you have your food ready to eat without having to order and wait. </p>
-<p>All dishes have a list of allergens associated, and depending on whether or not that specific allergen can be found in the dish, the value "isPresent" will be true or false. So a dish might have 3 allergens listed but if they all have "isPresent" false, that dish does not contain any allergen.</p></div>
+<div id="PRG-0058">
+<textarea id="PRG-0058-text-md" class="markdown">There are 5 actors in the system: admin, customer, waiter, manager and cool. The <a href="#GLO-0050" class="rem_ref">website</a> will have 3 different account privileges, customer, cook and admin.¬ There is a message system between the actors of the system, to send information about orders inside a tavern or from delivieries.¬¬Each time an <a href="#GLO-0055" class="rem_ref">order</a> is made through the <a href="#GLO-0050" class="rem_ref">website</a>, the system will allow the user to wirte a <a href="#GLO-0044" class="rem_ref">review</a> about the dish. Also, the take away system will send the user an email every time the state of the <a href="#GLO-0045" class="rem_ref">delivery</a> changes (as seen in the user interface prototype).¬¬Promotions and JobApplication are both connected to an estabilshment because they both depend on the tavern. ¬¬<a href="#GLO-0048" class="rem_ref">Bookings</a> are always associated to an establishment, and it can be made as long as there is free space inside or outside a tavern. A <a href="#GLO-0052" class="rem_ref">booking</a> or <a href="#GLO-0052" class="rem_ref">reservation</a> can introduce an <a href="#GLO-0055" class="rem_ref">order</a>, so that when you arrive to the establishment, you have your food ready to eat without having to <a href="#GLO-0055" class="rem_ref">order</a> and wait. ¬¬All dishes have a list of allergens associated, and depending on whether or not that specific allergen can be found in the dish, the value "isPresent" will be true or false. So a dish might have 3 allergens listed but if they all have "isPresent" false, that dish does not contain any allergen.</textarea>
+<div id="PRG-0058-text-html" class=""></div>
+<script>generate_markdown("PRG-0058-text");</script>
 </div>
 <h1 id="SEC-0038" class="section">4 User interface</h1>
 <div id="GRF-0018" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 1.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 4:
-                 </span>
-<span id="GRF-0018-name-html" class="">General view of the website, where we can see how to access most of the functionalities of the web app.</span>
+<span class="figure_caption_label">Figure 19: </span>
+<textarea id="GRF-0018-name-md" class="markdown">General view of the <a href="#GLO-0050" class="rem_ref">website</a>, where we can see how to access most of the functionalities of the web app.</textarea>
+<span id="GRF-0018-name-html"></span>
+<script>generate_markdown("GRF-0018-name",true);</script>
 </p>
 </div>
 <div id="GRF-0019" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 2.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 5:
-                 </span>
-<span id="GRF-0019-name-html" class="">Registration view</span>
+<span class="figure_caption_label">Figure 20: </span>
+<textarea id="GRF-0019-name-md" class="markdown">Registration view</textarea>
+<span id="GRF-0019-name-html"></span>
+<script>generate_markdown("GRF-0019-name",true);</script>
 </p>
 </div>
 <div id="GRF-0020" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 3.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 6:
-                 </span>
-<span id="GRF-0020-name-html" class="">Online menu. Unregistered user view. You can select whether if you like to view food or drinks. There is also a filter to see which ones do not have specific allergens.</span>
+<span class="figure_caption_label">Figure 21: </span>
+<textarea id="GRF-0020-name-md" class="markdown">Online menu. Unregistered user view. You can select whether if you like to view food or drinks. There is also a filter to see which ones do not have specific allergens.</textarea>
+<span id="GRF-0020-name-html"></span>
+<script>generate_markdown("GRF-0020-name",true);</script>
 </p>
 </div>
 <div id="GRF-0021" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 4.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 7:
-                 </span>
-<span id="GRF-0021-name-html" class="">Product review view. Where a registered who had previously ordered the item can write or just rate a product with up to 5 stars. The admin can interact with the customers by replying to the comment.</span>
+<span class="figure_caption_label">Figure 22: </span>
+<textarea id="GRF-0021-name-md" class="markdown">Product <a href="#GLO-0044" class="rem_ref">review</a> view. Where a registered who had previously ordered the item can write or just rate a product with up to 5 stars. The admin can interact with the <a href="#GLO-0046" class="rem_ref">customers</a> by replying to the comment.</textarea>
+<span id="GRF-0021-name-html"></span>
+<script>generate_markdown("GRF-0021-name",true);</script>
 </p>
 </div>
 <div id="GRF-0022" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 5.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 8:
-                 </span>
-<span id="GRF-0022-name-html" class="">Promotions view. Unregistered user view. Where anyone can see the promotions available. </span>
+<span class="figure_caption_label">Figure 23: </span>
+<textarea id="GRF-0022-name-md" class="markdown">Promotions view. Unregistered user view. Where anyone can see the promotions available. </textarea>
+<span id="GRF-0022-name-html"></span>
+<script>generate_markdown("GRF-0022-name",true);</script>
 </p>
 </div>
 <div id="GRF-0023" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 6.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 9:
-                 </span>
-<span id="GRF-0023-name-html" class="">User profile view. Registered user view. Where you can change your credentials and personal data, add an address for your deliveries, and access other functionalities of the web-app.</span>
+<span class="figure_caption_label">Figure 24: </span>
+<textarea id="GRF-0023-name-md" class="markdown">
+<a href="#GLO-0056" class="rem_ref">User profile</a> view. Registered user view. Where you can change your credentials and personal data, add an address for your deliveries, and access other functionalities of the web-app.</textarea>
+<span id="GRF-0023-name-html"></span>
+<script>generate_markdown("GRF-0023-name",true);</script>
 </p>
 </div>
 <div id="GRF-0024" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 7.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 10:
-                 </span>
-<span id="GRF-0024-name-html" class="">History view. Registered user view. Where you can view past orders easily in case you want to repeat something. </span>
+<span class="figure_caption_label">Figure 25: </span>
+<textarea id="GRF-0024-name-md" class="markdown">History view. Registered user view. Where you can view past orders easily in case you want to repeat something. </textarea>
+<span id="GRF-0024-name-html"></span>
+<script>generate_markdown("GRF-0024-name",true);</script>
 </p>
 </div>
 <div id="GRF-0025" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 8.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 11:
-                 </span>
-<span id="GRF-0025-name-html" class="">Privacy settings view. Registered user view. Where you can subscribe to the Newsletter or delete your account. </span>
+<span class="figure_caption_label">Figure 26: </span>
+<textarea id="GRF-0025-name-md" class="markdown">Privacy settings view. Registered user view. Where you can subscribe to the Newsletter or delete your account. </textarea>
+<span id="GRF-0025-name-html"></span>
+<script>generate_markdown("GRF-0025-name",true);</script>
 </p>
 </div>
 <div id="GRF-0026" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 9.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 12:
-                 </span>
-<span id="GRF-0026-name-html" class="">User reviews view. Registered user view. Here you can see the reviews the registered user has written.</span>
+<span class="figure_caption_label">Figure 27: </span>
+<textarea id="GRF-0026-name-md" class="markdown">User reviews view. Registered user view. Here you can see the reviews the registered user has written.</textarea>
+<span id="GRF-0026-name-html"></span>
+<script>generate_markdown("GRF-0026-name",true);</script>
 </p>
 </div>
 <div id="GRF-0027" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 10.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 13:
-                 </span>
-<span id="GRF-0027-name-html" class="">Booking/reservation view. Unregistered user view. Where you can make a reservation in any of the establishments, inside or outside. You can also select if you are lactose intolerant or celiac to take it into account. </span>
+<span class="figure_caption_label">Figure 28: </span>
+<textarea id="GRF-0027-name-md" class="markdown">
+<a href="#GLO-0052" class="rem_ref">Booking</a>/<a href="#GLO-0052" class="rem_ref">reservation</a> view. Unregistered user view. Where you can make a <a href="#GLO-0052" class="rem_ref">reservation</a> in any of the <a href="#GLO-0043" class="rem_ref">establishments</a>, inside or outside. You can also select if you are lactose intolerant or celiac to take it into account. </textarea>
+<span id="GRF-0027-name-html"></span>
+<script>generate_markdown("GRF-0027-name",true);</script>
 </p>
 </div>
 <div id="GRF-0028" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 11.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 14:
-                 </span>
-<span id="GRF-0028-name-html" class="">Chef data view. Registered chef view. Where the user-type-chef can see and change their personal data. This chef is registered by the administrator (seen later).</span>
+<span class="figure_caption_label">Figure 29: </span>
+<textarea id="GRF-0028-name-md" class="markdown">Chef data view. Registered chef view. Where the user-type-chef can see and change their personal data. This chef is registered by the administrator (seen later).</textarea>
+<span id="GRF-0028-name-html"></span>
+<script>generate_markdown("GRF-0028-name",true);</script>
 </p>
 </div>
 <div id="GRF-0029" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 12.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 15:
-                 </span>
-<span id="GRF-0029-name-html" class="">Electronic command view. Registered chef view. Where a chef can see the orders associated with their establishment. The orders are shown depending on the emergency, and they can be cancelled by the chef. </span>
+<span class="figure_caption_label">Figure 30: </span>
+<textarea id="GRF-0029-name-md" class="markdown">Electronic command view. Registered chef view. Where a chef can see the orders associated with their establishment. The orders are shown depending on the emergency, and they can be cancelled by the chef. </textarea>
+<span id="GRF-0029-name-html"></span>
+<script>generate_markdown("GRF-0029-name",true);</script>
 </p>
 </div>
 <div id="GRF-0030" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 13.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 16:
-                 </span>
-<span id="GRF-0030-name-html" class="">Manage chefs' view. Admin view. The admin is the only type of user who can add chefs to a given establishment (or to delete them). </span>
+<span class="figure_caption_label">Figure 31: </span>
+<textarea id="GRF-0030-name-md" class="markdown">Manage chefs' view. Admin view. The admin is the only type of user who can add chefs to a given establishment (or to delete them). </textarea>
+<span id="GRF-0030-name-html"></span>
+<script>generate_markdown("GRF-0030-name",true);</script>
 </p>
 </div>
 <div id="GRF-0031" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 14.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 17:
-                 </span>
-<span id="GRF-0031-name-html" class="">Register chef view. Admin view. Form to register a new chef. </span>
+<span class="figure_caption_label">Figure 32: </span>
+<textarea id="GRF-0031-name-md" class="markdown">Register chef view. Admin view. Form to register a new chef. </textarea>
+<span id="GRF-0031-name-html"></span>
+<script>generate_markdown("GRF-0031-name",true);</script>
 </p>
 </div>
 <div id="GRF-0032" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 16.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 18:
-                 </span>
-<span id="GRF-0032-name-html" class="">Checkout view. Unregistered user view. When you finish selecting what you want to eat, you must confirm the order. You can choose to have it delivered to you address or to pick it up in a tavern. You must be logged in before ordering food. </span>
+<span class="figure_caption_label">Figure 33: </span>
+<textarea id="GRF-0032-name-md" class="markdown">Checkout view. Unregistered user view. When you finish selecting what you want to eat, you must confirm the <a href="#GLO-0055" class="rem_ref">order</a>. You can choose to have it delivered to you address or to pick it up in a tavern. You must be logged in before ordering food. </textarea>
+<span id="GRF-0032-name-html"></span>
+<script>generate_markdown("GRF-0032-name",true);</script>
 </p>
 </div>
 <div id="GRF-0033" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 17.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 19:
-                 </span>
-<span id="GRF-0033-name-html" class="">Confirmation of order view. Registered user view. When you confirm an order, you can see the state of it, its details, and the estimated delivery time. </span>
+<span class="figure_caption_label">Figure 34: </span>
+<textarea id="GRF-0033-name-md" class="markdown">Confirmation of <a href="#GLO-0055" class="rem_ref">order</a> view. Registered user view. When you confirm an <a href="#GLO-0055" class="rem_ref">order</a>, you can see the state of it, its details, and the estimated <a href="#GLO-0045" class="rem_ref">delivery</a> time. </textarea>
+<span id="GRF-0033-name-html"></span>
+<script>generate_markdown("GRF-0033-name",true);</script>
 </p>
 </div>
 <div id="GRF-0034" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 18.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 20:
-                 </span>
-<span id="GRF-0034-name-html" class="">Establishment view. Unregistered user view. When selecting a tavern, you can see a ranking of the waiters whom you can rate and write reviews about when you log in. This view also indicated the current capacity and the estimated time of availability.</span>
+<span class="figure_caption_label">Figure 35: </span>
+<textarea id="GRF-0034-name-md" class="markdown">Establishment view. Unregistered user view. When selecting a tavern, you can see a ranking of the waiters whom you can rate and write reviews about when you log in. This view also indicated the current capacity and the estimated time of availability.</textarea>
+<span id="GRF-0034-name-html"></span>
+<script>generate_markdown("GRF-0034-name",true);</script>
 </p>
 </div>
 <div id="GRF-0035" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 19.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 21:
-                 </span>
-<span id="GRF-0035-name-html" class="">Manage products view. Admin view. Where the admin can view and add all the dishes and wines/drinks available in all taverns.</span>
+<span class="figure_caption_label">Figure 36: </span>
+<textarea id="GRF-0035-name-md" class="markdown">Manage products view. Admin view. Where the admin can view and add all the dishes and <a href="#GLO-0042" class="rem_ref">wines</a>/drinks available in all <a href="#GLO-0043" class="rem_ref">taverns</a>.</textarea>
+<span id="GRF-0035-name-html"></span>
+<script>generate_markdown("GRF-0035-name",true);</script>
 </p>
 </div>
 <div id="GRF-0036" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 20.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 22:
-                 </span>
-<span id="GRF-0036-name-html" class="">Add product view. Admin view. Where the admin adds a new item, dish or drink. </span>
+<span class="figure_caption_label">Figure 37: </span>
+<textarea id="GRF-0036-name-md" class="markdown">Add product view. Admin view. Where the admin adds a new item, dish or drink. </textarea>
+<span id="GRF-0036-name-html"></span>
+<script>generate_markdown("GRF-0036-name",true);</script>
 </p>
 </div>
 <div id="GRF-0037" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 21.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 23:
-                 </span>
-<span id="GRF-0037-name-html" class="">Employment view. Registered user view (can be accessed without registration). Where you can send your CV to the business. </span>
+<span class="figure_caption_label">Figure 38: </span>
+<textarea id="GRF-0037-name-md" class="markdown">Employment view. Registered user view (can be accessed without registration). Where you can send your CV to the business. </textarea>
+<span id="GRF-0037-name-html"></span>
+<script>generate_markdown("GRF-0037-name",true);</script>
 </p>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
