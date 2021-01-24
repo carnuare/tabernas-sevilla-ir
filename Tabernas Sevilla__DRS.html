@@ -146,6 +146,9 @@
 <li>3.2 <a href="#SEC-0060">System class descriptoin</a></li>
 </ul>
 <li>4 <a href="#SEC-0038">User interface</a></li>
+<ul class="toc_list">
+<li>4.1 <a href="#SEC-0062">Discarded work</a></li>
+</ul>
 </ul>
 </nav>
 <div class="pagebreak"></div>
@@ -203,7 +206,7 @@
 </div>
 <h2 id="SEC-0060" class="section">3.2 System class descriptoin</h2>
 <div id="PRG-0058">
-<textarea id="PRG-0058-text-md" class="markdown">There are 5 actors in the system: admin, customer, waiter, manager and cool. The <a href="#GLO-0050" class="rem_ref">website</a> will have 3 different account privileges, customer, cook and admin.¬ There is a message system between the actors of the system, to send information about orders inside a tavern or from delivieries.¬¬Each time an <a href="#GLO-0055" class="rem_ref">order</a> is made through the <a href="#GLO-0050" class="rem_ref">website</a>, the system will allow the user to wirte a <a href="#GLO-0044" class="rem_ref">review</a> about the dish. Also, the take away system will send the user an email every time the state of the <a href="#GLO-0045" class="rem_ref">delivery</a> changes (as seen in the user interface prototype).¬¬Promotions and JobApplication are both connected to an estabilshment because they both depend on the tavern. ¬¬<a href="#GLO-0048" class="rem_ref">Bookings</a> are always associated to an establishment, and it can be made as long as there is free space inside or outside a tavern. A <a href="#GLO-0052" class="rem_ref">booking</a> or <a href="#GLO-0052" class="rem_ref">reservation</a> can introduce an <a href="#GLO-0055" class="rem_ref">order</a>, so that when you arrive to the establishment, you have your food ready to eat without having to <a href="#GLO-0055" class="rem_ref">order</a> and wait. ¬¬All dishes have a list of allergens associated, and depending on whether or not that specific allergen can be found in the dish, the value "isPresent" will be true or false. So a dish might have 3 allergens listed but if they all have "isPresent" false, that dish does not contain any allergen.</textarea>
+<textarea id="PRG-0058-text-md" class="markdown">There are 5 actors in the system: admin, customer, waiter, manager and cool. The <a href="#GLO-0050" class="rem_ref">website</a> will have 3 different account privileges, customer, cook and admin.¬ There is a message system between the actors of the system, to send information about orders inside a tavern or from delivieries.¬¬Each time an <a href="#GLO-0055" class="rem_ref">order</a> is made through the <a href="#GLO-0050" class="rem_ref">website</a>, the system will allow the user to wirte a <a href="#GLO-0044" class="rem_ref">review</a> about the dish. Also, the take away system will send the user an email every time the state of the <a href="#GLO-0045" class="rem_ref">delivery</a> changes (as seen in the user interface prototype).¬¬Promotions and JobApplication are both connected to an estabilshment because they both depend on the tavern. ¬¬<a href="#GLO-0048" class="rem_ref">Bookings</a> are always associated to an establishment, and it can be made as long as there is free space inside or outside a tavern. A <a href="#GLO-0052" class="rem_ref">booking</a> or reservation can introduce an <a href="#GLO-0055" class="rem_ref">order</a>, so that when you arrive to the establishment, you have your food ready to eat without having to <a href="#GLO-0055" class="rem_ref">order</a> and wait. ¬¬All dishes have a list of allergens associated, and depending on whether or not that specific allergen can be found in the dish, the value "isPresent" will be true or false. So a dish might have 3 allergens listed but if they all have "isPresent" false, that dish does not contain any allergen.</textarea>
 <div id="PRG-0058-text-html" class=""></div>
 <script>generate_markdown("PRG-0058-text");</script>
 </div>
@@ -235,19 +238,10 @@
 <script>generate_markdown("GRF-0020-name",true);</script>
 </p>
 </div>
-<div id="GRF-0021" class="figure">
-<img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 4.png" />
-<p class="figure_caption">
-<span class="figure_caption_label">Figure 22: </span>
-<textarea id="GRF-0021-name-md" class="markdown">Product <a href="#GLO-0044" class="rem_ref">review</a> view. Where a registered who had previously ordered the item can write or just rate a product with up to 5 stars. The admin can interact with the <a href="#GLO-0046" class="rem_ref">customers</a> by replying to the comment.</textarea>
-<span id="GRF-0021-name-html"></span>
-<script>generate_markdown("GRF-0021-name",true);</script>
-</p>
-</div>
 <div id="GRF-0022" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 5.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 23: </span>
+<span class="figure_caption_label">Figure 22: </span>
 <textarea id="GRF-0022-name-md" class="markdown">Promotions view. Unregistered user view. Where anyone can see the promotions available. </textarea>
 <span id="GRF-0022-name-html"></span>
 <script>generate_markdown("GRF-0022-name",true);</script>
@@ -256,7 +250,7 @@
 <div id="GRF-0023" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 6.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 24: </span>
+<span class="figure_caption_label">Figure 23: </span>
 <textarea id="GRF-0023-name-md" class="markdown">
 <a href="#GLO-0056" class="rem_ref">User profile</a> view. Registered user view. Where you can change your credentials and personal data, add an address for your deliveries, and access other functionalities of the web-app.</textarea>
 <span id="GRF-0023-name-html"></span>
@@ -266,7 +260,7 @@
 <div id="GRF-0024" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 7.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 25: </span>
+<span class="figure_caption_label">Figure 24: </span>
 <textarea id="GRF-0024-name-md" class="markdown">History view. Registered user view. Where you can view past orders easily in case you want to repeat something. </textarea>
 <span id="GRF-0024-name-html"></span>
 <script>generate_markdown("GRF-0024-name",true);</script>
@@ -275,7 +269,7 @@
 <div id="GRF-0025" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 8.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 26: </span>
+<span class="figure_caption_label">Figure 25: </span>
 <textarea id="GRF-0025-name-md" class="markdown">Privacy settings view. Registered user view. Where you can subscribe to the Newsletter or delete your account. </textarea>
 <span id="GRF-0025-name-html"></span>
 <script>generate_markdown("GRF-0025-name",true);</script>
@@ -284,7 +278,7 @@
 <div id="GRF-0026" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 9.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 27: </span>
+<span class="figure_caption_label">Figure 26: </span>
 <textarea id="GRF-0026-name-md" class="markdown">User reviews view. Registered user view. Here you can see the reviews the registered user has written.</textarea>
 <span id="GRF-0026-name-html"></span>
 <script>generate_markdown("GRF-0026-name",true);</script>
@@ -293,9 +287,9 @@
 <div id="GRF-0027" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 10.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 28: </span>
+<span class="figure_caption_label">Figure 27: </span>
 <textarea id="GRF-0027-name-md" class="markdown">
-<a href="#GLO-0052" class="rem_ref">Booking</a>/<a href="#GLO-0052" class="rem_ref">reservation</a> view. Unregistered user view. Where you can make a <a href="#GLO-0052" class="rem_ref">reservation</a> in any of the <a href="#GLO-0043" class="rem_ref">establishments</a>, inside or outside. You can also select if you are lactose intolerant or celiac to take it into account. </textarea>
+<a href="#GLO-0052" class="rem_ref">Booking</a>/reservation view. Unregistered user view. Where you can make a reservation in any of the <a href="#GLO-0043" class="rem_ref">establishments</a>, inside or outside. You can also select if you are lactose intolerant or celiac to take it into account. </textarea>
 <span id="GRF-0027-name-html"></span>
 <script>generate_markdown("GRF-0027-name",true);</script>
 </p>
@@ -303,7 +297,7 @@
 <div id="GRF-0028" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 11.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 29: </span>
+<span class="figure_caption_label">Figure 28: </span>
 <textarea id="GRF-0028-name-md" class="markdown">Chef data view. Registered chef view. Where the user-type-chef can see and change their personal data. This chef is registered by the administrator (seen later).</textarea>
 <span id="GRF-0028-name-html"></span>
 <script>generate_markdown("GRF-0028-name",true);</script>
@@ -312,7 +306,7 @@
 <div id="GRF-0029" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 12.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 30: </span>
+<span class="figure_caption_label">Figure 29: </span>
 <textarea id="GRF-0029-name-md" class="markdown">Electronic command view. Registered chef view. Where a chef can see the orders associated with their establishment. The orders are shown depending on the emergency, and they can be cancelled by the chef. </textarea>
 <span id="GRF-0029-name-html"></span>
 <script>generate_markdown("GRF-0029-name",true);</script>
@@ -321,7 +315,7 @@
 <div id="GRF-0030" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 13.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 31: </span>
+<span class="figure_caption_label">Figure 30: </span>
 <textarea id="GRF-0030-name-md" class="markdown">Manage chefs' view. Admin view. The admin is the only type of user who can add chefs to a given establishment (or to delete them). </textarea>
 <span id="GRF-0030-name-html"></span>
 <script>generate_markdown("GRF-0030-name",true);</script>
@@ -330,7 +324,7 @@
 <div id="GRF-0031" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 14.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 32: </span>
+<span class="figure_caption_label">Figure 31: </span>
 <textarea id="GRF-0031-name-md" class="markdown">Register chef view. Admin view. Form to register a new chef. </textarea>
 <span id="GRF-0031-name-html"></span>
 <script>generate_markdown("GRF-0031-name",true);</script>
@@ -339,7 +333,7 @@
 <div id="GRF-0032" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 16.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 33: </span>
+<span class="figure_caption_label">Figure 32: </span>
 <textarea id="GRF-0032-name-md" class="markdown">Checkout view. Unregistered user view. When you finish selecting what you want to eat, you must confirm the <a href="#GLO-0055" class="rem_ref">order</a>. You can choose to have it delivered to you address or to pick it up in a tavern. You must be logged in before ordering food. </textarea>
 <span id="GRF-0032-name-html"></span>
 <script>generate_markdown("GRF-0032-name",true);</script>
@@ -348,7 +342,7 @@
 <div id="GRF-0033" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 17.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 34: </span>
+<span class="figure_caption_label">Figure 33: </span>
 <textarea id="GRF-0033-name-md" class="markdown">Confirmation of <a href="#GLO-0055" class="rem_ref">order</a> view. Registered user view. When you confirm an <a href="#GLO-0055" class="rem_ref">order</a>, you can see the state of it, its details, and the estimated <a href="#GLO-0045" class="rem_ref">delivery</a> time. </textarea>
 <span id="GRF-0033-name-html"></span>
 <script>generate_markdown("GRF-0033-name",true);</script>
@@ -357,7 +351,7 @@
 <div id="GRF-0034" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 18.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 35: </span>
+<span class="figure_caption_label">Figure 34: </span>
 <textarea id="GRF-0034-name-md" class="markdown">Establishment view. Unregistered user view. When selecting a tavern, you can see a ranking of the waiters whom you can rate and write reviews about when you log in. This view also indicated the current capacity and the estimated time of availability.</textarea>
 <span id="GRF-0034-name-html"></span>
 <script>generate_markdown("GRF-0034-name",true);</script>
@@ -366,7 +360,7 @@
 <div id="GRF-0035" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 19.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 36: </span>
+<span class="figure_caption_label">Figure 35: </span>
 <textarea id="GRF-0035-name-md" class="markdown">Manage products view. Admin view. Where the admin can view and add all the dishes and <a href="#GLO-0042" class="rem_ref">wines</a>/drinks available in all <a href="#GLO-0043" class="rem_ref">taverns</a>.</textarea>
 <span id="GRF-0035-name-html"></span>
 <script>generate_markdown("GRF-0035-name",true);</script>
@@ -375,7 +369,7 @@
 <div id="GRF-0036" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 20.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 37: </span>
+<span class="figure_caption_label">Figure 36: </span>
 <textarea id="GRF-0036-name-md" class="markdown">Add product view. Admin view. Where the admin adds a new item, dish or drink. </textarea>
 <span id="GRF-0036-name-html"></span>
 <script>generate_markdown("GRF-0036-name",true);</script>
@@ -384,10 +378,25 @@
 <div id="GRF-0037" class="figure">
 <img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 21.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figure 38: </span>
+<span class="figure_caption_label">Figure 37: </span>
 <textarea id="GRF-0037-name-md" class="markdown">Employment view. Registered user view (can be accessed without registration). Where you can send your CV to the business. </textarea>
 <span id="GRF-0037-name-html"></span>
 <script>generate_markdown("GRF-0037-name",true);</script>
+</p>
+</div>
+<h2 id="SEC-0062" class="section">4.1 Discarded work</h2>
+<div id="PRG-0068">
+<textarea id="PRG-0068-text-md" class="markdown">The rest of the user interface is discarded work, since out client has changed his mind on these functionalities.</textarea>
+<div id="PRG-0068-text-html" class=""></div>
+<script>generate_markdown("PRG-0068-text");</script>
+</div>
+<div id="GRF-0021" class="figure">
+<img class="figure_image" src=".\Fotos Tabernas Sevilla\Mockups\mock 4.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figure 38: </span>
+<textarea id="GRF-0021-name-md" class="markdown">Product <a href="#GLO-0044" class="rem_ref">review</a> view. Where a registered who had previously ordered the item can write or just rate a product with up to 5 stars. The admin can interact with the <a href="#GLO-0046" class="rem_ref">customers</a> by replying to the comment.</textarea>
+<span id="GRF-0021-name-html"></span>
+<script>generate_markdown("GRF-0021-name",true);</script>
 </p>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
